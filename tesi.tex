@@ -1,0 +1,51 @@
+\input{model/Modello_Tesi}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%% FRONTESPIZIO
+\input{start-end/frontespizio}
+
+%%%%%%%%%%%%%%%% RINGRAZIAMENTI
+\clearpage{\pagestyle{plain}\cleardoublepage}
+\input{start-end/thanks}
+
+%%%%%%%%%%%%%%%% ABSTRACT
+\clearpage{\pagestyle{plain}\cleardoublepage}
+\input{start-end/abstract}
+
+%%%%%%%%%%%%%%%% INDICE
+\clearpage{\pagestyle{plain}\cleardoublepage}
+\listoffigures %Lista figure
+\listofalgorithms %Lista algoritmi 
+\listoftables %Lista tabelle
+\tableofcontents %Indice
+\clearpage{\pagestyle{plain}\cleardoublepage} %Numerazione araba per i capitoli
+\pagenumbering{arabic}
+
+
+%%%%%%%%%%%%%%%% CAPITOLO 1
+\clearpage{\pagestyle{plain}\cleardoublepage} %Comando per iniziare il capitolo su pagina dispari
+\label{chapter:chapter_1} %Label per creare riferimenti al capitolo
+\input{Chapters/Chapter_1/0_chapter_1} %File in cui è scritto il capitolo
+\label{chapter:chapter_2} %Label per creare riferimenti al capitolo
+\input{Chapters/Chapter_2/0_chapter_2} %File in cui è scritto il capitolo
+\label{chapter:chapter_3} %Label per creare riferimenti al capitolo
+\input{Chapters/Chapter_3/0_chapter_3} %File in cui è scritto il capitolo
+\label{chapter:chapter_4} %Label per creare riferimenti al capitolo
+\input{Chapters/Chapter_4/0_chapter_4} %File in cui è scritto il capitolo
+\label{chapter:chapter_5} %Label per creare riferimenti al capitolo
+\input{Chapters/Chapter_5/0_chapter_5} %File in cui è scritto il capitolo
+\label{chapter:chapter_6} %Label per creare riferimenti al capitolo
+\input{Chapters/Chapter_6/0_chapter_6} %File in cui è scritto il capitolo
+
+
+
+%%%%%%%%%%%%%%%% BIBLIOGRAFIA
+\clearpage{\pagestyle{plain}\cleardoublepage}
+\addcontentsline{toc}{chapter}{References} %Per aggiungerlo nell'indice
+{\small
+\bibliographystyle{model/biblio_style}
+\bibliography{start-end/reference}
+}
+
+\end{document}

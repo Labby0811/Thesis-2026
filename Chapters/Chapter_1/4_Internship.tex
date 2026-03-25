@@ -1,0 +1,21 @@
+The thesis project was carried out during an internship period at \textbf{Flexsight Srl}.\\
+During this period, responsibility for the \textbf{SMACT-related project} was assigned to the undersigned, and the project was developed primarily in an autonomous manner, with periodic collaboration and technical support from colleagues when required.\\\\
+A key aspect of the work involved \textbf{on-site interactions at the production facility} to gather requirements and clarify technical specifications. This included structured discussions with project supervisors to better understand objectives, resolve ambiguities, and address feasibility constraints. Moreover, coordination with factory operators was essential to determine which activities could be performed without interfering with production, to identify operational limitations, and to adapt specific production procedures in order to enable proper data acquisition.\\
+Extensive \textbf{information exchange} between supervisors, operators, and the project team significantly contributed to the design of the processing pipeline and to the final outcome of the project. The planning phase, combined with careful coordination of operator activities, ensured that data could be collected accurately, safely, and efficiently.\\
+
+\subsection{Pipeline summary}
+Following the planning phase, the \textbf{installation of the cameras and computing units} was carried out, together with the configuration of the acquisition parameters required to initiate the first operational stage: the Motion Detection phase. 
+\\The project is, in fact, structured into three main components:
+\begin{itemize}
+  \item \textbf{Motion detection algorithm}:\\
+  This module was designed to acquire and collect data by continuously monitoring the workstation areas (Figure \ref{fig:sites12}).
+  This phase consisted of an automated and fully autonomous data collection process conducted over a period of two weeks. During this interval, the system operated without human intervention, continuously analyzing the scene and capturing relevant frames based on motion-triggered events.
+  \\Cameras were oriented toward the production lines and configured to acquire images only when a product passed beneath them, triggering image acquisition. By defining appropriate motion thresholds and a Region of Interest (ROI), the dataset was built efficiently while minimizing redundant frames. 
+  
+  \item \textbf{Object detection}:\\
+  For this component, a \textbf{DEIMv2} \cite{huang_real-time_2026} neural network was trained to detect bread loaves and dough balls using the dataset acquired in the previous phase. To train the network, the dataset was automatically labeled using \textbf{Language Segment-Anything} \cite{medeiros_luca-medeiroslang-segment-anything_2026}, a pretrained zero-shot model based on SAM2 (Segment Anything Model 2) and the GroundingDINO detection model. This model generates object masks and bounding boxes given a textual prompt, enabling automatic annotation of the training images.
+  After training, the DEIMv2 network was able to produce bounding boxes identifying the spatial location of the products within the images.
+  
+  \item \textbf{Feature extraction}:\\
+  Given the detected bounding boxes, volume-related features for dough balls and color-related features for baked loaves were extracted and aggregated to compute statistical distribution curves at the end of the process. Dough volume was estimated by reconstructing the point cloud within each bounding box using RGB-D information acquired by the Kinect sensor \cite{microsoft_azure_nodate}. Color-related features were computed by extracting statistical descriptors from the detected loaf regions in the RGB domain, enabling quantitative evaluation of crust browning and visual quality consistency.
+\end{itemize}

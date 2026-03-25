@@ -1,0 +1,26 @@
+\pagestyle{plain} %Per avere la pagina pulita
+%Definisco il layout
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist 
+
+%Nuovo ambiente per i ringraziamenti
+\newenvironment{Thanks}%
+    {\begin{center}%
+    \bfseries{Thanks} \end{center}}
+
+%%Scrittura dei ringraziamenti   
+\begin{Thanks}
+    \begin{changemargin}{1cm}{2cm}
+    \textit{}
+    \end{changemargin}
+\end{Thanks}
+
+%%Aforisma o citazione in angolo a destra della pagina
+\vfill
+\begin{flushright}{
+	\slshape    
+	``Che l'auto non ha preso il gatto e il camion è tornato a casa\\
+Nel cuore della notte''} \\ 
+	\medskip
+    --- Cit.Corsi
+\end{flushright}

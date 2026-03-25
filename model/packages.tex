@@ -1,0 +1,78 @@
+%************
+%* packages *
+%************
+
+%Codifica
+\usepackage[utf8]{inputenc}
+
+%Lingua, sostituire italian con english nel caso in cui la tesi sia scritta in inglese
+\usepackage[english]{babel}
+
+%Pacchetto per definire layout di pagina
+\usepackage{fancyhdr}
+\usepackage{sectsty}
+
+% Margini (fronte-retro): interno=3cm, esterno=2cm, sup/inf=2cm
+% NB: senza includehead/includefoot, i 2cm sono fino all'area testo (non fino a testata/piede).
+\usepackage[
+  a4paper,
+  top=2cm,
+  bottom=2cm,
+  inner=3cm,
+  outer=2cm
+]{geometry}
+
+%Spazia linee all'interno del documento
+\usepackage{setspace}
+
+%Listati di codice
+\usepackage{verbatim}
+\usepackage{listings}
+
+%Didascalie immagini
+\usepackage[hang,small,sf,font=scriptsize, labelfont=bf]{caption}
+\usepackage{subcaption}
+%Rende le subcaption della stessa dimensione delle caption
+\captionsetup[sub]{font=scriptsize,labelfont=bf}
+
+%Inclusione immagini
+\usepackage{graphicx}
+
+%Impostazioni note a piè pagina
+\usepackage[stable]{footmisc}
+
+%Citazioni e riferimenti a label
+\usepackage[english]{varioref}
+
+%Colori
+\usepackage[usenames]{color}
+\usepackage{xcolor}
+\usepackage{colortbl}
+
+%Crea link ipertestuali
+\usepackage[hidelinks]{hyperref}
+
+%Formattazione url
+\usepackage{url}
+
+%Inserimento formule
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+
+%Inserimento pseudocodice
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+%Citazione frasi
+\usepackage{csquotes}
+
+%Inserimento di Lorem ipsum nel testo
+\usepackage{lipsum}
+%\usepackage{lmodern}
+
+%Se si vuole automaticamente nell'indice la lista delle figure, algoritmi e biblio
+\usepackage[nottoc]{tocbibind}
+
+%Font
+\usepackage{newtxtext}
+\usepackage{newtxmath}

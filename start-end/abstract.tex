@@ -1,0 +1,16 @@
+%definisco il layout dell'abstract
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist 
+
+%Genero l'ambiente per l'abstract
+\newcommand\summaryname{Abstract}
+\newenvironment{Abstract}%
+    {\begin{center}%
+    \bfseries{\summaryname} \end{center}}
+    
+\begin{Abstract}
+    \begin{changemargin}{1cm}{1cm}
+        This thesis presents the development of an embedded computer vision system for the real-time acquisition, detection and analysis of bakery products, operating in an edge environment without network connectivity. \\The system is based on NVIDIA Jetson Nano DK and Raspberry Pi 5 platforms and integrates RGB-D Microsoft Kinect sensors and Raspberry Pi Camera Module 3 Wide deployed at two acquisition sites, enabling the synchronous collection of two-dimensional and three-dimensional data. The acquired images are processed by a real-time detector for the automatic identification of bread. Following the detection stage, descriptive features are extracted at different phases of the production process: during the dough stage, through point cloud analysis for volume estimation and geometric characterization; during the finished product stage, through the extraction of visual features related to color and shape. The extracted features are collected into a structured dataset and used to model the statistical distribution of product characteristics, enabling a quantitative description of the variations observed throughout the production process. The proposed approach demonstrates the effectiveness of integrating computer vision, deep learning, and 3D acquisition techniques within embedded systems for monitoring and data-driven analysis in industrial environments.  
+        % changemargin %levalo per far tornare i margini alla dimensione corretta
+    \end{changemargin}
+\end{Abstract}
