@@ -1,0 +1,59 @@
+\begin{thebibliography}{10}\itemsep=-1pt
+
+\bibitem{huang_real-time_2026}
+Shihua Huang, Yongjie Hou, Longfei Liu, Xuanlong Yu, and Xi Shen.
+\newblock Real-{Time} {Object} {Detection} {Meets} {DINOv3}, Jan. 2026.
+\newblock arXiv:2509.20787 [cs].
+
+\bibitem{medeiros_luca-medeiroslang-segment-anything_2026}
+Luca Medeiros.
+\newblock luca-medeiros/lang-segment-anything, Feb. 2026.
+\newblock original-date: 2023-04-06T12:40:38Z.
+
+\bibitem{microsoft_azure_nodate}
+Microsoft.
+\newblock Azure {Kinect} {DK} hardware specifications.
+
+\bibitem{ibm_what_nodate}
+{IBM}, {Rina Diane Caballar}, and {Cole Stryker}.
+\newblock What {Is} {Computer} {Vision}? {\textbar} {IBM}.
+
+\bibitem{ibm_what_2024}
+{IBM}, {Jacob Murel Ph.D.}, and {Eda Kavlakoglu}.
+\newblock What is {Object} {Detection}? {\textbar} {IBM}, Jan. 2024.
+
+\bibitem{ibm_what_2023}
+{IBM}, {Dave Bergmann}, and {Cole Stryker}.
+\newblock What {Is} {Instance} {Segmentation}? {\textbar} {IBM}, Oct. 2023.
+
+\bibitem{dosovitskiy_image_2021}
+Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn,
+  Xiaohua Zhai, Thomas Unterthiner, Mostafa Dehghani, Matthias Minderer, Georg
+  Heigold, Sylvain Gelly, Jakob Uszkoreit, and Neil Houlsby.
+\newblock An {Image} is {Worth} 16x16 {Words}: {Transformers} for {Image}
+  {Recognition} at {Scale}, June 2021.
+\newblock arXiv:2010.11929 [cs].
+
+\bibitem{nvidia_corporation_jetson_nodate}
+{NVIDIA Corporation}.
+\newblock Jetson {Nano} {2GB} {Developer} {Kit} {User} {Guide}.
+
+\bibitem{moe_long_nvidia_nodate}
+{Moe Long}.
+\newblock {NVIDIA} {Jetson} {Nano} {2GB} {Developer} {Kit} {Review}.
+
+\bibitem{microsoft_about_nodate}
+Microsoft.
+\newblock About {Azure} {Kinect} {DK}.
+
+\bibitem{microsoft_azure-kinect-sensor-sdk_2026}
+{Microsoft}.
+\newblock Azure-{Kinect}-{Sensor}-{SDK} github, Feb. 2026.
+\newblock original-date: 2018-12-10T17:50:05Z.
+
+\bibitem{gorordo_fernandez_pykinectazure_2026}
+Ibai Gorordo~Fernandez.
+\newblock {pyKinectAzure}, Feb. 2026.
+\newblock original-date: 2020-06-14T13:13:12Z.
+
+\end{thebibliography}

@@ -1,0 +1,21 @@
+\babel@toc {english}{}\relax 
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Overview of Site 1 and Site 2}}{2}{figure.caption.6}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Light source placed next to the Raspberry Pi Camera to illuminate the scene and keep lighting as constant as possible}}{6}{figure.caption.9}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces In the image, the detected objects are enclosed by bounding boxes and annotated with their corresponding class labels}}{7}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Different types of image segmentation}}{9}{figure.caption.13}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Overview of site 1 and close-up of machine output}}{14}{figure.caption.15}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces NVIDIA Jetson Nano 2GB Developer Kit connectivity.}}{16}{figure.caption.19}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Microsoft Azure Kinect DK}}{18}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Available depth sensor fields of view (NFOV and WFOV).}}{18}{figure.caption.22}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Microsoft Azure Kinect DK hardware and connectivity.}}{19}{figure.caption.25}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Different depth estimation approaches}}{20}{figure.caption.27}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Different ToF approaches}}{20}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Time of flight equations derivation}}{21}{figure.caption.29}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Example of SDK transformation from depth image to color camera FOV and viceversa}}{22}{figure.caption.31}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Point of view of the Raspberry Pi Camera Module 3 Wide during the manual extraction phase, showing operators removing baked bread loaves from the trays under real production conditions}}{23}{figure.caption.33}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

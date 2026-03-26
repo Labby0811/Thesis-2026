@@ -1,0 +1,7 @@
+PWD C:\Users\giuse\OneDrive - Università degli Studi di Padova\Uni\Tirocinio_e_Tesi\TESI\Thesis-2026
+INPUT C:\Users\giuse\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
+INPUT esempi.tex
+OUTPUT esempi.log
+INPUT C:\Users\giuse\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmcsc10.tfm
+INPUT C:\Users\giuse\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti10.tfm
+INPUT C:\Users\giuse\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
