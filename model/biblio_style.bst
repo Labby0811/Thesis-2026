@@ -37,6 +37,7 @@ ENTRY
     author
     booktitle
     chapter
+    doi
     edition
     editor
     howpublished
@@ -53,6 +54,8 @@ ENTRY
     series
     title
     type
+    url
+    urldate
     volume
     year
   }
@@ -201,6 +204,33 @@ FUNCTION {emphasize}
 { duplicate$ empty$
     { pop$ "" }
     { "{\em " swap$ * "}" * }
+  if$
+}
+
+FUNCTION {format.url}
+{ url empty$
+    { "" }
+    { "[Online]. Available: \url{" url * "}" * }
+  if$
+}
+
+FUNCTION {misc.is.paperlike}
+{ doi empty$
+    not
+    publisher empty$
+      'skip$
+      { publisher "arXiv" = or }
+    if$
+    note empty$
+      'skip$
+      { note #1 #6 substring$ "arXiv:" = or }
+    if$
+}
+
+FUNCTION {misc.is.web}
+{ url empty$
+    { #0 }
+    { misc.is.paperlike not }
   if$
 }
 
@@ -783,7 +813,12 @@ FUNCTION {misc}
   howpublished output
   format.date output
   new.block
-  note output
+  misc.is.web
+    { new.block
+      format.url output
+    }
+    { note output }
+  if$
   fin.entry
   empty.misc.check
 }

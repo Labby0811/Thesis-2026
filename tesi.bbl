@@ -5,26 +5,86 @@ Shihua Huang, Yongjie Hou, Longfei Liu, Xuanlong Yu, and Xi Shen.
 \newblock Real-{Time} {Object} {Detection} {Meets} {DINOv3}, Jan. 2026.
 \newblock arXiv:2509.20787 [cs].
 
-\bibitem{medeiros_luca-medeiroslang-segment-anything_2026}
-Luca Medeiros.
-\newblock luca-medeiros/lang-segment-anything, Mar. 2026.
-\newblock original-date: 2023-04-06T12:40:38Z.
+\bibitem{zhao_detrs_2024}
+Yian Zhao, Wenyu Lv, Shangliang Xu, Jinman Wei, Guanzhong Wang, Qingqing Dang,
+  Yi Liu, and Jie Chen.
+\newblock {DETRs} {Beat} {YOLOs} on {Real}-time {Object} {Detection}, Apr.
+  2024.
+\newblock arXiv:2304.08069 [cs].
+
+\bibitem{nvidia_corporation_jetson_nodate}
+{NVIDIA Corporation}.
+\newblock Jetson {Nano} {2GB} {Developer} {Kit} - {Get} {Started}.
+\newblock [Online]. Available:
+  \url{https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-2gb-devkit}.
 
 \bibitem{microsoft_azure_nodate}
 Microsoft.
 \newblock Azure {Kinect} {DK} hardware specifications.
+\newblock [Online]. Available:
+  \url{https://learn.microsoft.com/en-us/previous-versions/azure/kinect-dk/hardware-specification}.
+
+\bibitem{medeiros_luca-medeiroslang-segment-anything_2026}
+Luca Medeiros.
+\newblock luca-medeiros/lang-segment-anything, Mar. 2026.
+\newblock [Online]. Available:
+  \url{https://github.com/luca-medeiros/lang-segment-anything}.
 
 \bibitem{ibm_what_nodate}
 {IBM}, {Rina Diane Caballar}, and {Cole Stryker}.
 \newblock What {Is} {Computer} {Vision}? {\textbar} {IBM}.
+\newblock [Online]. Available:
+  \url{https://www.ibm.com/think/topics/computer-vision#691946467}.
 
 \bibitem{ibm_what_2024}
 {IBM}, {Jacob Murel Ph.D.}, and {Eda Kavlakoglu}.
 \newblock What is {Object} {Detection}? {\textbar} {IBM}, Jan. 2024.
+\newblock [Online]. Available:
+  \url{https://www.ibm.com/think/topics/object-detection}.
 
 \bibitem{ibm_what_2023}
 {IBM}, {Dave Bergmann}, and {Cole Stryker}.
 \newblock What {Is} {Instance} {Segmentation}? {\textbar} {IBM}, Oct. 2023.
+\newblock [Online]. Available:
+  \url{https://www.ibm.com/think/topics/instance-segmentation}.
+
+\bibitem{tensorflow_mean_iou_2026}
+{TensorFlow}.
+\newblock tf.keras.metrics.meaniou, 2026.
+\newblock [Online]. Available:
+  \url{https://www.tensorflow.org/api_docs/python/tf/keras/metrics/MeanIoU}.
+
+\bibitem{muller_guideline_2022}
+Dominik M{\"u}ller, Ivan Soto-Rey, and Frank Kramer.
+\newblock Towards a guideline for evaluation metrics in medical image
+  segmentation.
+\newblock {\em Journal of Imaging}, 11(6):144, May 2022.
+
+\bibitem{sklearn_precision_recall_2026}
+{scikit-learn developers}.
+\newblock 3.4. metrics and scoring: quantifying the quality of predictions,
+  2026.
+\newblock [Online]. Available:
+  \url{https://scikit-learn.org/stable/modules/model_evaluation.html}.
+
+\bibitem{sklearn_roc_auc_2026}
+{scikit-learn developers}.
+\newblock roc\_auc\_score, 2026.
+\newblock [Online]. Available:
+  \url{https://scikit-learn.org/stable/modules/generated/sklearn.metrics.roc_auc_score.html}.
+
+\bibitem{detectron2_coco_evaluation_2020}
+{Detectron2 Contributors}.
+\newblock detectron2.evaluation.coco\_evaluation, 2020.
+\newblock [Online]. Available:
+  \url{https://detectron2.readthedocs.io/en/v0.6/_modules/detectron2/evaluation/coco_evaluation.html}.
+
+\bibitem{kirillov_panoptic_2019}
+Alexander Kirillov, Kaiming He, Ross Girshick, Carsten Rother, and Piotr
+  Doll{\'a}r.
+\newblock Panoptic segmentation.
+\newblock In {\em Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition (CVPR)}, pages 9404--9413, June 2019.
 
 \bibitem{dosovitskiy_image_2021}
 Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn,
@@ -52,26 +112,28 @@ Alexander Kirillov, Eric Mintun, Nikhila Ravi, Hanzi Mao, Chloe Rolland, Laura
 \newblock Segment {Anything}, Apr. 2023.
 \newblock arXiv:2304.02643 [cs].
 
-\bibitem{nvidia_corporation_jetson_nodate}
-{NVIDIA Corporation}.
-\newblock Jetson {Nano} {2GB} {Developer} {Kit} - {Get} {Started}.
-
 \bibitem{moe_long_nvidia_nodate}
 {Moe Long}.
 \newblock {NVIDIA} {Jetson} {Nano} {2GB} {Developer} {Kit} {Review}.
+\newblock [Online]. Available:
+  \url{https://www.electromaker.io/blog/article/nvidia-jetson-nano-2gb-developer-kit-review}.
 
 \bibitem{microsoft_about_nodate}
 Microsoft.
 \newblock About {Azure} {Kinect} {DK}.
+\newblock [Online]. Available:
+  \url{https://learn.microsoft.com/en-us/previous-versions/azure/kinect-dk/about-azure-kinect-dk}.
 
 \bibitem{microsoft_azure-kinect-sensor-sdk_2026}
 {Microsoft}.
 \newblock Azure-{Kinect}-{Sensor}-{SDK} github, Feb. 2026.
-\newblock original-date: 2018-12-10T17:50:05Z.
+\newblock [Online]. Available:
+  \url{https://github.com/microsoft/Azure-Kinect-Sensor-SDK}.
 
 \bibitem{gorordo_fernandez_pykinectazure_2026}
 Ibai Gorordo~Fernandez.
 \newblock {pyKinectAzure}, Feb. 2026.
-\newblock original-date: 2020-06-14T13:13:12Z.
+\newblock [Online]. Available:
+  \url{https://github.com/ibaiGorordo/pyKinectAzure}.
 
 \end{thebibliography}

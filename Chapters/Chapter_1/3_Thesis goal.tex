@@ -1,44 +1,46 @@
-The objective of the project is to collect as much information as possible about the performance of the production process, with a focus on both dough balls and final baked bread.\\
-To determine the position of loaves and dough units at different stages of the process, a real-time deep learning network based on \textbf{DETR (DEtection TRansformer)} is employed for object detection.\\
-Once the bounding boxes have been identified, downstream analysis is performed differently at the two acquisition sites. \\
-At Site 1, the \textbf{volume} of each dough ball is estimated from RGB-D data.\\
-At Site 2, instead of directly extracting handcrafted color and shape descriptors, a dedicated \textbf{anomaly detection network} is applied to the loaf regions to identify potentially defective products.\\
-To achieve this, the system is deployed across two acquisition sites:
+The objective of this thesis is to collect and analyse production data in order to evaluate the performance of the bread manufacturing process, with particular emphasis on its two main stages: dough-ball production and final bread baking.
+To assess product quality, the proposed pipeline must first determine the position of dough units and loaves at the different stages of the process.
+To this end, \textbf{DEIMv2} \cite{huang_real-time_2026}, a state-of-the-art real-time deep learning model based on the \textbf{DETR (DEtection TRansformer)} architecture \cite{zhao_detrs_2024}, is employed for object detection.
+Once the bounding boxes have been identified, downstream analysis is carried out differently at the two acquisition sites.
 \begin{itemize}
-    \item \textbf{Site 1}: located at the output of the dough processing stage.\\
-    At this site, a \textbf{NVIDIA Jetson Nano} is connected to a \textbf{Microsoft Azure Kinect} sensor, which is installed to acquire RGB-D data. These data are subsequently processed to estimate the dough volume.
-    \item \textbf{Site 2}: located at the point where bread is removed from the baking tray.\\
-    At this site, a \textbf{Raspberry Pi 5} equipped with a \textbf{Raspberry Pi Camera} captures RGB images of the loaves. These images are analyzed by an anomaly detection model to flag non-conforming products.
+    \item \textbf{Site 1}: located at the output of the dough-processing stage.
+    At this site, an \textbf{NVIDIA Jetson Nano} \cite{nvidia_corporation_jetson_nodate} is connected to a \textbf{Microsoft Azure Kinect} \cite{microsoft_azure_nodate} sensor, which acquires RGB-D data. These data are subsequently processed to estimate the \textbf{volume of the dough balls}. Depth information is essential for this task because it enables a reliable three-dimensional reconstruction of the dough units, which in turn supports accurate volume estimation through point-cloud processing or depth-based shape fitting techniques.
+
+    \item \textbf{Site 2}: located at the point where the bread is removed from the baking tray.
+    At this site, a \textbf{Raspberry Pi 5} equipped with a \textbf{Raspberry Pi Camera} captures RGB images of the loaves. Because the illumination conditions are not constant, the quality of the baking process is not assessed through handcrafted colour and shape descriptors alone. Instead, a dedicated \textbf{anomaly detection network} is applied to the loaf regions in order to identify potentially defective products. This approach provides a more robust assessment of bread quality, since it can learn complex patterns associated with satisfactory and unsatisfactory baking outcomes even under varying lighting conditions.
 \end{itemize}
 
 \begin{figure}[h]
     \centering
     \begin{subfigure}[t]{0.48\textwidth}
         \centering
-        \vspace{0pt}% allinea in alto
+        \vspace{0pt}
         \includegraphics[scale=0.07, angle=-90]{images/Site1.jpg}
-        \caption{Site 1: from here the dough balls come out and stop on the blue tray}
+        \caption{Site 1: output of the machine where the dough balls are outputted and collected on the blue table}
         \label{fig:site1}
     \end{subfigure}\hfill
     \begin{subfigure}[t]{0.48\textwidth}
         \centering
-        \vspace{0pt}% allinea in alto
+        \vspace{0pt}
         \includegraphics[scale=0.14]{images/sito2_giorno.jpeg}
-        \caption{Site 2: area where bread is baked}
+        \caption{Site 2: area in which the baked bread is removed from the tray}
         \label{fig:site2}
     \end{subfigure}
     \caption{Overview of Site 1 and Site 2}
     \label{fig:sites12}
 \end{figure}
 
-Ultimately, once all the data have been extracted and processed, statistical distributions of dough ball volumes and anomaly scores for baked loaves are constructed. These distributions constitute the final analytical output of the system and provide a quantitative overview of production performance.
+Lastly, once all the data have been extracted and processed, \textbf{statistical distributions} of dough-ball volumes and anomaly scores for baked loaves are constructed. These distributions constitute the final analytical output of the system and provide a quantitative overview of production performance.
 
-For each monitored variable, descriptive statistical indicators such as mean value, variance, and standard deviation are computed. The mean provides an estimate of the nominal production target, while the variance and standard deviation quantify dispersion and process variability. 
+For each monitored variable, descriptive statistical indicators such as the mean, variance, and standard deviation are computed. The mean provides an estimate of the nominal production target, while the variance and standard deviation quantify dispersion and process variability.
+By analysing both the distribution curves and their associated statistical descriptors, it becomes possible to evaluate the consistency and repeatability of the production process over different time intervals and conditions. In particular, deviations in volume distributions may indicate instability in the forming stage, whereas systematic shifts in anomaly-score distributions may reveal variations in baking conditions or product quality.
 
-By analyzing both the distribution curves and their associated statistical descriptors, it becomes possible to evaluate the consistency and repeatability of the production process across different time intervals. In particular, deviations in volume distributions may indicate instability in the forming stage, whereas systematic shifts in anomaly-score distributions may reveal variations in baking conditions or product quality.
-\newline
+The resulting statistical summary therefore represents a quantitative decision-support tool for quality evaluation. Rather than relying solely on qualitative visual inspection, the proposed framework enables objective measurement of process stability, variability, and deviation from expected operating conditions.
 
-The resulting statistical summary therefore represents a quantitative decision-support tool for quality assessment. Rather than relying solely on qualitative visual inspection, the proposed framework enables objective measurement of process stability, variability, and deviation from expected operating conditions.
 
-In this context, the thesis demonstrates how computer vision and embedded AI systems can be integrated into an industrial environment to transform raw sensory data into actionable statistical insights, bridging the gap between low-level image acquisition and high-level production performance evaluation. 
+%%%%TODO: AGGIUNGI REFERENCE A FIGURE
+To further enhance the interpretability of the results, visualisations such as 3D point-clouds or meshes of dough-ball volumes \ref{fig:3D_volume_rendering} and heatmaps of anomaly scores \ref{fig:Anomaly_map} are generated to provide intuitive insight into the underlying data distributions. These visual aids facilitate the identification of shapes, trends, clusters, or outliers that may not be immediately apparent from numerical summaries alone.
+
+In summary, the thesis aims to develop an integrated computer-vision and embedded-AI system for the real-time monitoring and performance evaluation of an industrial bread production process. By leveraging state-of-the-art object-detection and anomaly-detection techniques, the system extracts meaningful information from raw sensory data and ultimately provides a comprehensive statistical overview of production quality and consistency.
+In this context, the thesis demonstrates how computer-vision and embedded-AI systems can be integrated into an industrial environment to transform raw sensory data into actionable statistical insights, thereby bridging the gap between low-level image acquisition and high-level production-performance evaluation.
 
