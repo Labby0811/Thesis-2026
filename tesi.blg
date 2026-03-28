@@ -5,44 +5,44 @@ Reallocating 'name_of_file' (item size: 1) to 19 items.
 The style file: model/biblio_style.bst
 Reallocating 'name_of_file' (item size: 1) to 20 items.
 Database file #1: start-end/reference.bib
-You've used 21 entries,
+You've used 25 entries,
             2191 wiz_defined-function locations,
-            635 strings with 8919 characters,
-and the built_in function-call counts, 7232 in all, are:
-= -- 609
-> -- 507
+            651 strings with 9265 characters,
+and the built_in function-call counts, 8134 in all, are:
+= -- 689
+> -- 535
 < -- 1
-+ -- 204
-- -- 182
-* -- 493
-:= -- 1188
-add.period$ -- 63
-call.type$ -- 21
-change.case$ -- 154
++ -- 216
+- -- 190
+* -- 527
+:= -- 1328
+add.period$ -- 75
+call.type$ -- 25
+change.case$ -- 170
 chr.to.int$ -- 0
-cite$ -- 21
-duplicate$ -- 169
-empty$ -- 576
-format.name$ -- 182
-if$ -- 1539
+cite$ -- 25
+duplicate$ -- 197
+empty$ -- 684
+format.name$ -- 190
+if$ -- 1751
 int.to.chr$ -- 0
-int.to.str$ -- 21
+int.to.str$ -- 25
 missing$ -- 2
-newline$ -- 108
-num.names$ -- 42
-pop$ -- 246
+newline$ -- 128
+num.names$ -- 50
+pop$ -- 278
 preamble$ -- 1
-purify$ -- 133
+purify$ -- 145
 quote$ -- 0
-skip$ -- 209
+skip$ -- 249
 stack$ -- 0
-substring$ -- 165
-swap$ -- 33
+substring$ -- 185
+swap$ -- 37
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 84
+type$ -- 100
 warning$ -- 0
-while$ -- 46
-width$ -- 23
-write$ -- 209
+while$ -- 54
+width$ -- 27
+write$ -- 249
