@@ -7,7 +7,7 @@ Shihua Huang, Yongjie Hou, Longfei Liu, Xuanlong Yu, and Xi Shen.
 
 \bibitem{medeiros_luca-medeiroslang-segment-anything_2026}
 Luca Medeiros.
-\newblock luca-medeiros/lang-segment-anything, Feb. 2026.
+\newblock luca-medeiros/lang-segment-anything, Mar. 2026.
 \newblock original-date: 2023-04-06T12:40:38Z.
 
 \bibitem{microsoft_azure_nodate}
@@ -34,9 +34,27 @@ Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn,
   {Recognition} at {Scale}, June 2021.
 \newblock arXiv:2010.11929 [cs].
 
+\bibitem{oquab_dinov2_2024}
+Maxime Oquab, Timothée Darcet, Théo Moutakanni, Huy Vo, Marc Szafraniec,
+  Vasil Khalidov, Pierre Fernandez, Daniel Haziza, Francisco Massa, Alaaeldin
+  El-Nouby, Mahmoud Assran, Nicolas Ballas, Wojciech Galuba, Russell Howes,
+  Po-Yao Huang, Shang-Wen Li, Ishan Misra, Michael Rabbat, Vasu Sharma, Gabriel
+  Synnaeve, Hu Xu, Hervé Jegou, Julien Mairal, Patrick Labatut, Armand Joulin,
+  and Piotr Bojanowski.
+\newblock {DINOv2}: {Learning} {Robust} {Visual} {Features} without
+  {Supervision}, Feb. 2024.
+\newblock arXiv:2304.07193 [cs].
+
+\bibitem{kirillov_segment_2023}
+Alexander Kirillov, Eric Mintun, Nikhila Ravi, Hanzi Mao, Chloe Rolland, Laura
+  Gustafson, Tete Xiao, Spencer Whitehead, Alexander~C. Berg, Wan-Yen Lo, Piotr
+  Dollár, and Ross Girshick.
+\newblock Segment {Anything}, Apr. 2023.
+\newblock arXiv:2304.02643 [cs].
+
 \bibitem{nvidia_corporation_jetson_nodate}
 {NVIDIA Corporation}.
-\newblock Jetson {Nano} {2GB} {Developer} {Kit} {User} {Guide}.
+\newblock Jetson {Nano} {2GB} {Developer} {Kit} - {Get} {Started}.
 
 \bibitem{moe_long_nvidia_nodate}
 {Moe Long}.

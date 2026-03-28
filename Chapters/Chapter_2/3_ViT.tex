@@ -1,9 +1,25 @@
-In recent years, \textbf{Vision Transformers (ViT)} \cite{dosovitskiy_image_2021} have progressively reshaped the landscape of computer vision, offering an alternative to the long-standing dominance of convolutional neural networks (CNNs). Originally inspired by Transformer architectures in natural language processing, ViTs process images as sequences of patches rather than as continuous grids.
+In recent years, \textbf{Vision Transformers (ViT)}\cite{dosovitskiy_image_2021}, introduced by Dosovitskiy et al., have progressively reshaped the landscape of computer vision, offering an alternative to the long-standing dominance of convolutional neural networks (CNNs).  \\ Unlike the latter, which rely on local inductive biases such as translation equivariance and locality through sliding kernels, ViTs leverage the self-attention mechanism to capture global dependencies across the entire image from the very first layer. Originally inspired by Transformer architectures in natural language processing, ViTs process images as sequences of patches rather than as continuous grids.
 
-More specifically, an input image is divided into fixed-size patches, which are then linearly projected into embedding vectors and treated as tokens. These tokens are processed through a Transformer encoder, where self-attention mechanisms allow the model to capture relationships between distant regions of the image. This ability to model global context is one of the main strengths of ViTs, especially when compared to CNNs, whose receptive field grows only progressively with depth.
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.7]{images/ViT_vs_CNN.jpg}
+    \caption{Receptive field comparison between CNNs and ViTs. While CNNs have a local receptive field that grows with depth, ViTs can capture global context from the very first layer due to their self-attention mechanism.}
+    \label{fig:vit_vs_cnn}
+\end{figure}
 
-This architectural choice brings several advantages. ViTs tend to learn richer semantic representations, making them particularly effective in recognizing complex visual patterns and capturing long-range dependencies. Additionally, their performance scales well with larger datasets and model sizes, often outperforming CNN-based approaches in high-capacity regimes.
+More specifically, an input image is divided into fixed-size patches, which are combined with the positional encodings to preserve the position information, then linearly projected into embedding vectors and treated as tokens. These tokens are processed through a Transformer encoder, where \textbf{self-attention mechanisms} allow the model to capture relationships and correlations between distant regions of the image. This ability to model \textbf{global context} is one of the main strengths of ViTs, especially when compared to CNNs, whose receptive field grows only progressively with depth.
 
-However, these benefits come with non-negligible drawbacks. The self-attention operation has a quadratic complexity with respect to the number of tokens, which makes ViTs computationally demanding, especially for high-resolution inputs. This aspect has historically limited their use in real-time or resource-constrained environments.
+This architectural choice brings several advantages. When trained on large-scale datasets, ViTs can learn rich semantic representations and may outperform CNN-based approaches in high-capacity regimes
+\newline
 
-Despite these limitations, ViTs have become a key component in many modern computer vision pipelines. In particular, they are widely used as backbone networks in object detection and segmentation frameworks, where their ability to extract both global context and fine-grained features proves especially valuable. As also highlighted in the analyzed material \cite{your_pdf_ref}, recent models such as DINO-based architectures demonstrate how ViT backbones can provide strong semantic representations while still being adapted for efficient downstream tasks.
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.15]{images/cnn_vs_ViT.png}
+    \caption{Vision Transformer architecture.}
+    \label{fig:vit-architecture}
+\end{figure}
+
+However, these benefits come with non-negligible drawbacks. The self-attention operation has a \textbf{quadratic complexity} with respect to the number of tokens, which makes ViTs computationally demanding, especially for high-resolution inputs. This aspect has historically limited their use in real-time or resource-constrained environments.
+
+Despite these limitations, ViTs have become a key component in many modern computer vision pipelines. In particular, they are widely used as backbone networks in object detection and segmentation frameworks (such as DINO \cite{oquab_dinov2_2024}, SAM \cite{kirillov_segment_2023} and DEIMv2 \cite{huang_real-time_2026}), where their ability to extract both global context and fine-grained features proves especially valuable.
+This shift from local to global feature modeling represents one of the key paradigm changes introduced by Transformer-based architectures in computer vision.

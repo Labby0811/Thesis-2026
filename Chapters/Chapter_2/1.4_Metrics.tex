@@ -1,0 +1,22 @@
+In semantic segmentation, IoU is often computed independently for each class and then averaged across classes, yielding the \textbf{mean Intersection over Union (mIoU)}. This metric is particularly informative in multi-class settings because it penalizes both over-segmentation and missed regions.
+
+Other commonly adopted metrics include \textbf{precision} and \textbf{recall}, defined at pixel level as:
+
+\begin{equation}
+Precision = \frac{TP}{TP + FP}
+\end{equation}
+
+\begin{equation}
+Recall = \frac{TP}{TP + FN}
+\end{equation}
+
+Precision measures how many of the pixels predicted as positive are actually correct, while recall measures how many of the truly positive pixels are successfully retrieved by the model. Their harmonic mean is given by the \textbf{F1-score}, or equivalently the \textbf{Dice coefficient}, which is widely used in segmentation tasks:
+
+\begin{equation}
+F1 = Dice = \frac{2TP}{2TP + FP + FN}
+\end{equation}
+
+In binary segmentation problems or anomaly-detection settings, the \textbf{Area Under the Receiver Operating Characteristic Curve (AUROC)} can also be used. AUROC evaluates the model's ability to discriminate between positive and negative pixels across different decision thresholds. However, in strongly imbalanced segmentation tasks, overlap-based metrics such as IoU or Dice are often considered more informative.
+
+For instance segmentation and panoptic segmentation tasks, additional metrics such as \textbf{Average Precision (AP)} computed over mask IoU thresholds and \textbf{Panoptic Quality (PQ)} are often employed to jointly evaluate detection and segmentation performance.
+These evaluation metrics provide a quantitative measure of the agreement between predicted segmentation masks and ground-truth annotations, enabling objective comparison between different models and approaches.

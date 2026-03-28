@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.3.26)  26 MAR 2026 17:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.3.26)  28 MAR 2026 11:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -644,11 +644,7 @@ File: ot1ntxtlf.fd 2021/05/24 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 12.0pt on input line 3.
- (tesi.aux
-
-LaTeX Warning: Label `fig:ToF' multiply defined.
-
-)
+ (tesi.aux)
 \openout1 = `tesi.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 3.
@@ -758,12 +754,12 @@ LaTeX Info: Command `\ddddot' is already robust on input line 3.
 \c@mv@tabular=\count361
 \c@mv@boldtabular=\count362
  (start-end/frontespizio.tex
-<images/logo.png, id=194, 2309.62875pt x 1043.9pt>
+<images/logo.png, id=198, 2309.62875pt x 1043.9pt>
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
 Package pdftex.def Info: images/logo.png  used on input line 7.
 (pdftex.def)             Requested size: 182.09486pt x 82.30313pt.
-<images/logo_dei.pdf, id=195, 98.3675pt x 63.23625pt>
+<images/logo_dei.pdf, id=199, 98.3675pt x 63.23625pt>
 File: images/logo_dei.pdf Graphic file (type pdf)
 <use images/logo_dei.pdf>
 Package pdftex.def Info: images/logo_dei.pdf  used on input line 11.
@@ -790,10 +786,8 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 {C:/Users/giuse/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/giuse/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newtx/ntx-ot1-tlf-pc.enc}{C:/Users/giuse/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc} <./images/logo.png> <./images/logo_dei.pdf>] [2
 
 ]) (start-end/thanks.tex
-LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 12.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/sl' will be
-(Font)              scaled to size 12.0pt on input line 21.
+(Font)              scaled to size 12.0pt on input line 23.
 ) [1
 
 
@@ -807,7 +801,10 @@ LaTeX Font Info:    Font shape `OT1/qhv/m/n' will be
  [2
 
 
-{C:/Users/giuse/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-rm.enc}] (start-end/abstract.tex) [3] [4
+{C:/Users/giuse/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-rm.enc}] (start-end/abstract.tex
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 12.0pt on input line 11.
+) [3] [4
 
 
 ]
@@ -928,7 +925,7 @@ l.12 \end{itemize}
 
 
 {C:/Users/giuse/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ts1.enc}]
-<images/Site1.jpg, id=353, 4015.0pt x 3011.25pt>
+<images/Site1.jpg, id=366, 4015.0pt x 3011.25pt>
 File: images/Site1.jpg Graphic file (type jpg)
 <use images/Site1.jpg>
 Package pdftex.def Info: images/Site1.jpg  used on input line 19.
@@ -937,7 +934,7 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 8.0pt on input line 20.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 (Font)              scaled to size 8.0pt on input line 20.
-<images/sito2_giorno.jpeg, id=354, 1505.625pt x 2007.5pt>
+<images/sito2_giorno.jpeg, id=367, 1505.625pt x 2007.5pt>
 File: images/sito2_giorno.jpeg Graphic file (type jpg)
 <use images/sito2_giorno.jpeg>
 Package pdftex.def Info: images/sito2_giorno.jpeg  used on input line 26.
@@ -972,7 +969,7 @@ File: ot1ntxtt.fd 2012/04/20 v3.1
 LaTeX Font Info:    Font shape `OT1/ntxtt/m/n' will be
 (Font)              scaled to size 12.0pt on input line 9.
  [4]
-<images/faretto_sito_2(1).jpeg, id=377, 1505.625pt x 2007.5pt>
+<images/faretto_sito_2(1).jpeg, id=390, 1505.625pt x 2007.5pt>
 File: images/faretto_sito_2(1).jpeg Graphic file (type jpg)
 <use images/faretto_sito_2(1).jpeg>
 Package pdftex.def Info: images/faretto_sito_2(1).jpeg  used on input line 59.
@@ -984,7 +981,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 ) (Chapters/Chapter_1/5_Companies.tex [5])) (Chapters/Chapter_2/0_chapter_2.tex [6 <./images/faretto_sito_2(1).jpeg>]
 Chapter 2.
 (Chapters/Chapter_2/1_Computer vision.tex) (Chapters/Chapter_2/1.1_Object_detection.tex
-<images/object-detection.png, id=391, 915.42pt x 596.2275pt>
+<images/object-detection.png, id=404, 915.42pt x 596.2275pt>
 File: images/object-detection.png Graphic file (type png)
 <use images/object-detection.png>
 Package pdftex.def Info: images/object-detection.png  used on input line 8.
@@ -997,26 +994,47 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--27
  []
 
 ) (Chapters/Chapter_2/1.2_Image_segmentation.tex [8]
-<images/segmentation.png, id=412, 2006.49625pt x 1702.36pt>
+<images/segmentation.png, id=425, 2006.49625pt x 1702.36pt>
 File: images/segmentation.png Graphic file (type png)
 <use images/segmentation.png>
 Package pdftex.def Info: images/segmentation.png  used on input line 13.
 (pdftex.def)             Requested size: 200.66138pt x 170.24597pt.
- [9 <./images/segmentation.png>]) (Chapters/Chapter_2/1.3_Clustering.tex) (Chapters/Chapter_2/3_ViT.tex
+ [9 <./images/segmentation.png>]) (Chapters/Chapter_2/1.3_Clustering.tex) (Chapters/Chapter_2/1.4_Metrics.tex) (Chapters/Chapter_2/2_Neural_networks.tex) (Chapters/Chapter_2/3_ViT.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: Citation `your_pdf_ref' on page 10 undefined on input line 9.
+ [10]
+<images/ViT_vs_CNN.jpg, id=442, 286.06876pt x 177.66376pt>
+File: images/ViT_vs_CNN.jpg Graphic file (type jpg)
+<use images/ViT_vs_CNN.jpg>
+Package pdftex.def Info: images/ViT_vs_CNN.jpg  used on input line 5.
+(pdftex.def)             Requested size: 200.24675pt x 124.36377pt.
 
-) [10] (Chapters/Chapter_2/4_RT-DETR.tex) (Chapters/Chapter_2/5_Related_work.tex) (Chapters/Chapter_2/5.1_DEIMv2.tex) (Chapters/Chapter_2/5.2_YOLO.tex) (Chapters/Chapter_2/5.3_Image segmentation.tex) (Chapters/Chapter_2/5.4_Final considerations.tex)) (Chapters/Chapter_3/0_chapter_3.tex [11] [12
+Underfull \hbox (badness 10000) in paragraph at lines 12--14
+
+ []
+
+<images/cnn_vs_ViT.png, id=443, 1204.5pt x 1043.9pt>
+File: images/cnn_vs_ViT.png Graphic file (type png)
+<use images/cnn_vs_ViT.png>
+Package pdftex.def Info: images/cnn_vs_ViT.png  used on input line 17.
+(pdftex.def)             Requested size: 180.6672pt x 156.57823pt.
+) [11 <./images/ViT_vs_CNN.jpg>] (Chapters/Chapter_2/4_RT-DETR.tex
+<images/RT-DETR.png, id=454, 2830.575pt x 933.4875pt>
+File: images/RT-DETR.png Graphic file (type png)
+<use images/RT-DETR.png>
+Package pdftex.def Info: images/RT-DETR.png  used on input line 9.
+(pdftex.def)             Requested size: 424.56793pt x 140.01707pt.
+ [12 <./images/cnn_vs_ViT.png (PNG copy)> <./images/RT-DETR.png (PNG copy)>]) (Chapters/Chapter_2/5_Related_work.tex) (Chapters/Chapter_2/5.1_DEIMv2.tex) (Chapters/Chapter_2/5.2_YOLO.tex) (Chapters/Chapter_2/5.3_Image segmentation.tex) (Chapters/Chapter_2/5.4_Final considerations.tex)) (Chapters/Chapter_3/0_chapter_3.tex [13] [14
 
 ]
 Chapter 3.
 (Chapters/Chapter_3/1.0_Site1.tex
-<images/sito1(1).jpg, id=436, 4015.0pt x 3011.25pt>
+<images/sito1(1).jpg, id=469, 4015.0pt x 3011.25pt>
 File: images/sito1(1).jpg Graphic file (type jpg)
 <use images/sito1(1).jpg>
 Package pdftex.def Info: images/sito1(1).jpg  used on input line 14.
 (pdftex.def)             Requested size: 272.64633pt x 199.56586pt.
-<images/Output1-2.jpg, id=438, 1084.05pt x 1927.2pt>
+<images/Output1-2.jpg, id=471, 1084.05pt x 1927.2pt>
 File: images/Output1-2.jpg Graphic file (type jpg)
 <use images/Output1-2.jpg>
 Package pdftex.def Info: images/Output1-2.jpg  used on input line 21.
@@ -1025,8 +1043,8 @@ Package pdftex.def Info: images/Output1-2.jpg  used on input line 21.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[13] [14 <./images/sito1(1).jpg> <./images/Output1-2.jpg>]) (Chapters/Chapter_3/1.1_Nvidia_Jetson_Nano_DK.tex [15]
-<images/Jetson1.png, id=471, 944.7797pt x 794.97pt>
+[15] [16 <./images/sito1(1).jpg> <./images/Output1-2.jpg>]) (Chapters/Chapter_3/1.1_Nvidia_Jetson_Nano_DK.tex [17]
+<images/Jetson1.png, id=503, 944.7797pt x 794.97pt>
 File: images/Jetson1.png Graphic file (type png)
 <use images/Jetson1.png>
 Package pdftex.def Info: images/Jetson1.png  used on input line 11.
@@ -1035,18 +1053,18 @@ Package pdftex.def Info: images/Jetson1.png  used on input line 11.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[16 <./images/Jetson1.png>]) [17] (Chapters/Chapter_3/1.2_Azure_Microsoft_Kinect.tex
-<images/azure-kinect.jpg, id=489, 1084.05pt x 610.28pt>
+[18 <./images/Jetson1.png>]) [19] (Chapters/Chapter_3/1.2_Azure_Microsoft_Kinect.tex
+<images/azure-kinect.jpg, id=522, 1084.05pt x 610.28pt>
 File: images/azure-kinect.jpg Graphic file (type jpg)
 <use images/azure-kinect.jpg>
 Package pdftex.def Info: images/azure-kinect.jpg  used on input line 5.
 (pdftex.def)             Requested size: 273.14923pt x 153.77087pt.
-<images/camera-fov.png, id=494, 624.83438pt x 327.47343pt>
+<images/camera-fov.png, id=527, 624.83438pt x 327.47343pt>
 File: images/camera-fov.png Graphic file (type png)
 <use images/camera-fov.png>
 Package pdftex.def Info: images/camera-fov.png  used on input line 18.
 (pdftex.def)             Requested size: 295.90588pt x 155.08679pt.
- [18
+ [20
 
  <./images/azure-kinect.jpg> <./images/camera-fov.png>]
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
@@ -1101,56 +1119,56 @@ LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
 (Font)              scaled to size 6.1pt on input line 50.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 (Font)              scaled to size 10.95pt on input line 52.
-<images/kinect.png, id=502, 752.8125pt x 259.7203pt>
+<images/kinect.png, id=535, 752.8125pt x 259.7203pt>
 File: images/kinect.png Graphic file (type png)
 <use images/kinect.png>
 Package pdftex.def Info: images/kinect.png  used on input line 76.
 (pdftex.def)             Requested size: 364.19667pt x 125.65111pt.
  (Chapters/Chapter_3/1.2.1_ToF.tex
-<images/ToF.png, id=503, 361.35pt x 111.41624pt>
+<images/ToF.png, id=536, 361.35pt x 111.41624pt>
 File: images/ToF.png Graphic file (type png)
 <use images/ToF.png>
 Package pdftex.def Info: images/ToF.png  used on input line 4.
 (pdftex.def)             Requested size: 273.14923pt x 84.2216pt.
- [19 <./images/kinect.png>]
-<images/ToF_pulse_vs_cont.png, id=509, 2826.56pt x 1541.76pt>
+ [21 <./images/kinect.png>]
+<images/ToF_pulse_vs_cont.png, id=541, 2826.56pt x 1541.76pt>
 File: images/ToF_pulse_vs_cont.png Graphic file (type png)
 <use images/ToF_pulse_vs_cont.png>
 Package pdftex.def Info: images/ToF_pulse_vs_cont.png  used on input line 26.
 (pdftex.def)             Requested size: 227.62206pt x 124.14317pt.
- [20 <./images/ToF.png> <./images/ToF_pulse_vs_cont.png>]
-<images/ToF_1.jpg, id=518, 552.56438pt x 252.44313pt>
+ [22 <./images/ToF.png> <./images/ToF_pulse_vs_cont.png>]
+<images/ToF_1.jpg, id=550, 552.56438pt x 252.44313pt>
 File: images/ToF_1.jpg Graphic file (type jpg)
 <use images/ToF_1.jpg>
 Package pdftex.def Info: images/ToF_1.jpg  used on input line 46.
 (pdftex.def)             Requested size: 227.62206pt x 103.98769pt.
-) [21
+) [23
 
  <./images/ToF_1.jpg>]
-<images/sdk.png, id=526, 786.7794pt x 534.3162pt>
+<images/sdk.png, id=558, 786.7794pt x 534.3162pt>
 File: images/sdk.png Graphic file (type png)
 <use images/sdk.png>
 Package pdftex.def Info: images/sdk.png  used on input line 95.
 (pdftex.def)             Requested size: 227.62206pt x 154.58084pt.
-) [22 <./images/sdk.png>] (Chapters/Chapter_3/2_Site2.tex
-<images/Site2_breadloaf.jpg, id=537, 1284.8pt x 722.7pt>
+) [24 <./images/sdk.png>] (Chapters/Chapter_3/2_Site2.tex
+<images/Site2_breadloaf.jpg, id=569, 1284.8pt x 722.7pt>
 File: images/Site2_breadloaf.jpg Graphic file (type jpg)
 <use images/Site2_breadloaf.jpg>
 Package pdftex.def Info: images/Site2_breadloaf.jpg  used on input line 18.
 (pdftex.def)             Requested size: 295.90588pt x 166.43805pt.
- [23 <./images/Site2_breadloaf.jpg>] [24]) (Chapters/Chapter_3/1.3_Raspberry_Pi_5.tex) (Chapters/Chapter_3/1.4_Raspberry_Pi_Camera_Wide.tex) (Chapters/Chapter_3/2.2_PiCamera.tex)) (Chapters/Chapter_4/0_chapter_4.tex [25] [26
+ [25 <./images/Site2_breadloaf.jpg>] [26]) (Chapters/Chapter_3/1.3_Raspberry_Pi_5.tex) (Chapters/Chapter_3/1.4_Raspberry_Pi_Camera_Wide.tex) (Chapters/Chapter_3/2.2_PiCamera.tex)) (Chapters/Chapter_4/0_chapter_4.tex [27] [28
 
 ]
 Chapter 4.
-(Chapters/Chapter_4/4_opencv.tex)) (Chapters/Chapter_5/0_chapter_5.tex [27] [28
+(Chapters/Chapter_4/4_opencv.tex)) (Chapters/Chapter_5/0_chapter_5.tex [29] [30
 
 ]
 Chapter 5.
-) (Chapters/Chapter_6/0_chapter_6.tex [29] [30
+) (Chapters/Chapter_6/0_chapter_6.tex [31] [32
 
 ]
 Chapter 6.
-) [31] [32
+) [33] [34
 
 
 ] (tesi.bbl
@@ -1162,7 +1180,7 @@ LaTeX Font Warning: Font shape `OMS/ntxtlf/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
 (Font)              for symbol `textbar' on input line 19.
 
-) [33
+) [35
 
 ] (tesi.aux)
  ***********
@@ -1173,27 +1191,21 @@ L3 programming layer <2020/03/25>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `tesi.out' has not changed.
-(rerunfilecheck)             Checksum: 6BF0A30D11FD2EC11AE3B0B94DC55E0B;7640.
+(rerunfilecheck)             Checksum: D94E2665A809651145BC1D9D3B467A28;7795.
  ) 
 Here is how much of TeX's memory you used:
- 21470 strings out of 467867
- 353095 string characters out of 5418334
- 843771 words of memory out of 5000000
- 49670 multiletter control sequences out of 15000+600000
+ 21523 strings out of 467867
+ 354662 string characters out of 5418334
+ 844235 words of memory out of 5000000
+ 49706 multiletter control sequences out of 15000+600000
  688873 words of font info for 158 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 85i,12n,85p,858b,712s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 85i,12n,85p,934b,712s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/giuse/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/NewTXMI.pfb><C:/Users/giuse/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/NewTXMI7.pfb><C:/Users/giuse/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/giuse/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvr.pfb><C:/Users/giuse/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qtmr.pfb><C:/Users/giuse/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txexs.pfb><C:/Users/giuse/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txmiaX.pfb><C:/Users/giuse/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txsys.pfb><C:/Users/giuse/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txtt.pfb><C:/Users/giuse/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/ztmb.pfb><C:/Users/giuse/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/ztmr.pfb><C:/Users/giuse/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/ztmri.pfb>
-Output written on tesi.pdf (45 pages, 20760908 bytes).
+Output written on tesi.pdf (47 pages, 21940771 bytes).
 PDF statistics:
- 688 PDF objects out of 1000 (max. 8388607)
- 149 named destinations out of 1000 (max. 500000)
- 487 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 722 PDF objects out of 1000 (max. 8388607)
+ 160 named destinations out of 1000 (max. 500000)
+ 510 words of extra memory for PDF output out of 10000 (max. 10000000)
 

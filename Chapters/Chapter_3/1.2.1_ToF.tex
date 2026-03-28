@@ -16,7 +16,7 @@ where:
 \begin{itemize}
     \item $c$ is the speed of light in air,
     \item $\Delta t$ is the round-trip travel time of the emitted optical signal.
-    \item The division by two accounts for the two-way propagation path (sensor-to-object and object-to-sensor). 
+    \item The division by two accounts for the two-way propagation path (sensor-to-object and object-to-sensor).
 \end{itemize}
 
 Direct measurement of $\Delta t$ requires extremely high temporal resolution, as light travels approximately 30~cm in 1~ns. For this reason, most modern ToF cameras, including the Azure Kinect, employ a \textit{continuous-wave modulation} approach rather than direct pulsed time measurement.
@@ -25,7 +25,7 @@ Direct measurement of $\Delta t$ requires extremely high temporal resolution, as
     \centering
     \includegraphics[width=0.5\linewidth]{images/ToF_pulse_vs_cont.png}
     \caption{Different ToF approaches}
-    \label{fig:ToF}
+    \label{fig:ToF_1}
 \end{figure}
 
 \clearpage
@@ -45,7 +45,7 @@ where:
     \centering
     \includegraphics[width=0.5\linewidth]{images/ToF_1.jpg}
     \caption{Time of flight equations derivation}
-    \label{fig:ToF}
+    \label{fig:ToF_2}
 \end{figure}
 
 By estimating the phase shift at each pixel, the sensor generates a dense depth map, enabling per-pixel 3D reconstruction of the observed scene.

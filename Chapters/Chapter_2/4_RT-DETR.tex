@@ -1,0 +1,18 @@
+RT-DETR (Real-Time Detection Transformer) represents a significant step forward in bringing Transformer-based object detection closer to real-time applicability. While the original DETR formulation introduced a clean and elegant approach to object detection—casting it as a set prediction problem—it also suffered from slow convergence and high computational cost.
+
+RT-DETR addresses these limitations through a series of architectural refinements aimed at improving both efficiency and accuracy. The overall structure follows the typical DETR pipeline, consisting of a backbone for feature extraction, an encoder-decoder Transformer architecture, and prediction heads for classification and bounding box regression.
+
+One of the key innovations lies in the design of the encoder. Instead of relying solely on global self-attention, RT-DETR introduces a hybrid approach that combines local attention mechanisms with convolutional operations. This allows the model to preserve spatial information more effectively while significantly reducing computational overhead.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.15]{images/RT-DETR.png}
+    \caption{RT-DETR architecture.}
+    \label{fig:RT-DETR_architecture}
+\end{figure}
+
+Another important component is the query selection strategy. Rather than processing a large number of queries indiscriminately, RT-DETR selects the most relevant ones based on criteria such as Intersection over Union (IoU) and spatial proximity to ground truth objects. This reduces redundancy and focuses the model on more meaningful candidate regions.
+
+In addition, RT-DETR retains the one-to-one matching paradigm based on the Hungarian algorithm, ensuring that each predicted object corresponds to a single ground truth instance. This formulation simplifies the detection pipeline by removing the need for post-processing steps such as Non-Maximum Suppression (NMS).
+
+As discussed in the reference material RT-DETR achieves a favorable balance between detection accuracy and computational efficiency. These characteristics make it particularly suitable for real-time applications and edge deployment scenarios, where both latency and resource usage are critical constraints. Its design has also paved the way for more advanced models, such as DEIMv2, which further build upon this foundation by integrating stronger feature extractors and additional optimization strategies.

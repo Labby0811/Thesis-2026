@@ -5,17 +5,20 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces In the image, the detected objects are enclosed by bounding boxes and annotated with their corresponding class labels}}{7}{figure.caption.12}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Different types of image segmentation}}{9}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Receptive field comparison between CNNs and ViTs. While CNNs have a local receptive field that grows with depth, ViTs can capture global context from the very first layer due to their self-attention mechanism.}}{11}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Vision Transformer architecture.}}{12}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces RT-DETR architecture.}}{12}{figure.caption.16}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Overview of site 1 and close-up of machine output}}{14}{figure.caption.15}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces NVIDIA Jetson Nano 2GB Developer Kit connectivity.}}{16}{figure.caption.19}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Microsoft Azure Kinect DK}}{18}{figure.caption.21}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Available depth sensor fields of view (NFOV and WFOV).}}{18}{figure.caption.22}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Microsoft Azure Kinect DK hardware and connectivity.}}{19}{figure.caption.25}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Different depth estimation approaches}}{20}{figure.caption.27}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Different ToF approaches}}{20}{figure.caption.28}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Time of flight equations derivation}}{21}{figure.caption.29}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Example of SDK transformation from depth image to color camera FOV and viceversa}}{22}{figure.caption.31}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Point of view of the Raspberry Pi Camera Module 3 Wide during the manual extraction phase, showing operators removing baked bread loaves from the trays under real production conditions}}{23}{figure.caption.33}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Overview of site 1 and close-up of machine output}}{16}{figure.caption.18}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces NVIDIA Jetson Nano 2GB Developer Kit connectivity.}}{18}{figure.caption.22}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Microsoft Azure Kinect DK}}{20}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Available depth sensor fields of view (NFOV and WFOV).}}{20}{figure.caption.25}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Microsoft Azure Kinect DK hardware and connectivity.}}{21}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Different depth estimation approaches}}{22}{figure.caption.30}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Different ToF approaches}}{22}{figure.caption.31}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Time of flight equations derivation}}{23}{figure.caption.32}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Example of SDK transformation from depth image to color camera FOV and viceversa}}{24}{figure.caption.34}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Point of view of the Raspberry Pi Camera Module 3 Wide during the manual extraction phase, showing operators removing baked bread loaves from the trays under real production conditions}}{25}{figure.caption.36}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
