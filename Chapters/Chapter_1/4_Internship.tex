@@ -1,21 +1,44 @@
-The thesis project was carried out during an internship period at \textbf{Flexsight Srl}.\\
-During this period, responsibility for the \textbf{SMACT-related project} was assigned to the undersigned, and the project was developed primarily in an autonomous manner, with periodic collaboration and technical support from colleagues when required.\\\\
-A key aspect of the work involved \textbf{on-site interactions at the production facility} to gather requirements and clarify technical specifications. This included structured discussions with project supervisors to better understand objectives, resolve ambiguities, and address feasibility constraints. Moreover, coordination with factory operators was essential to determine which activities could be performed without interfering with production, to identify operational limitations, and to adapt specific production procedures in order to enable proper data acquisition.\\
-Extensive \textbf{information exchange} between supervisors, operators, and the project team significantly contributed to the design of the processing pipeline and to the final outcome of the project. The planning phase, combined with careful coordination of operator activities, ensured that data could be collected accurately, safely, and efficiently.\\
+The thesis project was carried out during an internship at \textbf{FlexSight Srl} \cite{flexsight_home_2026}. During this period, the author was assigned responsibility for the \textbf{SMACT-related project} \cite{smact_official_2026}, which was developed largely independently, with periodic collaboration and technical support from colleagues, when required.
+
+A key aspect of the work involved \textbf{on-site interactions at the production facility} to gather requirements and clarify technical specifications. This included structured discussions with project supervisors to better understand project objectives, resolve ambiguities, and address feasibility constraints. Coordination with factory operators was also essential to determine which activities could be performed without interfering with production, to identify operational limitations, and to adapt specific procedures in order to enable proper data acquisition.
+
+Extensive \textbf{information exchange} between supervisors, operators, and the project team significantly contributed to the design of the data acquisition and processing pipeline, as well as to the final outcome of the project. The planning phase, combined with careful coordination of operator activities, ensured that data could be collected accurately, safely, and efficiently.
 
 \subsection{Pipeline summary}
-Following the planning phase, the \textbf{installation of the cameras and computing units} was carried out, together with the configuration of the acquisition parameters required to initiate the first operational stage: the Motion Detection phase. 
-\\The project is, in fact, structured into three main components:
+Following the planning phase, the installation of the cameras and computing units was carried out to initiate the first operational stage: the \textbf{data acquisition phase}.
+To collect data, a motion detection algorithm based on background subtraction on RGB images was developed. The algorithm was designed to be highly configurable, with parameters controlling the ROI (Region of Interest), motion threshold, pixel-value threshold, exposure, and other acquisition settings. This design choice was motivated by the need to install and calibrate the devices directly on site, where storing all configuration parameters in a \textit{.yaml} file made the setup procedure significantly faster and more practical.
+
+Moreover, the two sites differed in terms of production line layout, lighting conditions, and camera placement. For this reason, a flexible algorithm with externally configurable parameters was required in order to adapt the acquisition pipeline to the specific conditions of each environment.
+
+The project was structured into three main components:
 \begin{itemize}
-  \item \textbf{Motion detection algorithm}:\\
-  This module was designed to acquire and collect data by continuously monitoring the workstation areas (Figure \ref{fig:sites12}).
-  This phase consisted of an automated and fully autonomous data collection process conducted over a period of two weeks. During this interval, the system operated without human intervention, continuously analyzing the scene and capturing relevant frames based on motion-triggered events.
-  \\Cameras were oriented toward the production lines and configured to acquire images only when a product passed beneath them, triggering image acquisition. By defining appropriate motion thresholds and a Region of Interest (ROI), the dataset was built efficiently while minimizing redundant frames. 
-  
-  \item \textbf{Object detection}:\\
-  For this component, a \textbf{DEIMv2} \cite{huang_real-time_2026} neural network was trained to detect bread loaves and dough balls using the dataset acquired in the previous phase. To train the network, the dataset was automatically labeled using \textbf{Language Segment-Anything} \cite{medeiros_luca-medeiroslang-segment-anything_2026}, a pretrained zero-shot model based on SAM2 (Segment Anything Model 2) and the GroundingDINO detection model. This model generates object masks and bounding boxes given a textual prompt, enabling automatic annotation of the training images.
-  After training, the DEIMv2 network was able to produce bounding boxes identifying the spatial location of the products within the images.
-  
-  \item \textbf{Quality analysis}:\\
-  Given the detected bounding boxes, two different downstream analyses were performed. For dough balls, volume-related features were extracted and aggregated to compute statistical distributions. Dough volume was estimated by reconstructing the point cloud within each bounding box using RGB-D information acquired by the Kinect sensor \cite{microsoft_azure_nodate}. For baked loaves, instead of manually extracting color and shape descriptors, an anomaly detection network was applied to the detected loaf regions to identify non-conforming products and derive anomaly-score distributions over time.
+  \item \textbf{Data collection using a motion detection algorithm}: this module was designed to acquire data by continuously monitoring the workstation areas (Figure \ref{fig:sites12}). This phase consisted of an automated and fully autonomous data collection process conducted over a period of two weeks. During this interval, the system operated without human intervention, continuously analyzing the scene and capturing relevant frames based on motion-triggered events. The cameras were oriented toward the production lines and configured to acquire images only when a product passed beneath them. By defining appropriate motion thresholds and a Region of Interest (ROI), the dataset was built efficiently while minimizing redundant frames.
+  %%%%% TODO: inserire foto dei siti %%%%%
+  %  \begin{figure}[ht]
+  %   \centering
+  %   \begin{subfigure}[h]{0.48\textwidth}
+  %       \centering
+  %       \vspace{0pt}
+  %       \includegraphics[width=0.8\textwidth]{images/site_1_POV.jpg}
+  %       \caption{Site 1: point of view of the camera overlooking the blue table where the dough balls are collected}
+  %       \label{fig:site_1_POV}
+  %   \end{subfigure}
+  %   \begin{subfigure}[h]{0.48\textwidth}
+  %       \centering
+  %       \vspace{0pt}
+  %       \includegraphics[width=0.8\textwidth]{images/site_2_POV.jpg}
+  %       \caption{Site 2: point of view of the camera overlooking the area where the baked bread is removed from the tray}
+  %       \label{fig:site_2_POV}
+  % \end{figure}
+
+  \item \textbf{Object detection}: for this component, the \textbf{DEIMv2} \cite{huang_real-time_2026} neural network was trained to detect bread loaves and dough balls using the dataset acquired in the previous phase. To support training, the dataset was automatically labeled using \textbf{Language Segment-Anything} \cite{medeiros_luca-medeiroslang-segment-anything_2026}, an open-source tool built on top of SAM2 and GroundingDINO that generates object masks and bounding boxes from textual prompts. After training, the DEIMv2 network was able to localize and classify the products within the images.
+
+  \item \textbf{Quality analysis}: given the detected bounding boxes, two different downstream analyses were performed.
+  \begin{itemize}
+    \item For \textbf{dough balls}, volume-related features were extracted and aggregated to compute statistical distributions. Dough volume was estimated by reconstructing the point cloud within each detected region using RGB-D information acquired by the Kinect sensor \cite{microsoft_azure_nodate}. In order to isolate the dough from the surrounding background inside each bounding box, different segmentation strategies were explored, including SAM-based segmentation \cite{kirillov_segment_2023}, point-cloud clustering, and the removal of the supporting surface through a dedicated model of the output table in Figure\ref{fig:site1}. After segmentation, the point cloud was rotated around its principal axis, identified through \textbf{Principal Component Analysis (PCA)}, in order to generate an approximation of the portion of the object not directly visible to the camera. By exploiting this symmetry-based approximation and by assuming a cylindical shape of the dough, the reconstruction was extended from a 2.5D observation to a full 3D model. The volume was then estimated using either the convex hull or alpha-shape reconstruction. The resulting volume estimates were aggregated to compute statistical distributions, which were analyzed to monitor the consistency of the dough preparation process and to identify possible deviations in the production line.
+
+    \item For \textbf{baked loaves}, instead of manually extracting color and shape descriptors, an anomaly detection network was applied to the detected loaf regions to identify non-conforming products and derive anomaly-score distributions over time. Since the operators at Site 2 reported that no representative defective bread samples were available during data collection, the anomaly detection model was trained only on normal samples, following a one-class setting. During inference, the model assigned an anomaly score to each detected loaf according to its deviation from the learned distribution of normal bread images.
+
+    To perform anomaly detection, the \textbf{EfficientAD} \cite{batzner_efficientad_2024} model from anomalib \cite{akcay_anomalib_2022} was trained on the detected loaf regions. EfficientAD was selected for its efficiency, speed and effectiveness in visual anomaly detection tasks, making it suitable for industrial real-time quality assessment scenarios. To obtain an initial qualitative evaluation of the model behavior, a small auxiliary test set of defective bread images collected from online sources was manually reviewed and annotated. These samples were used only as an external test set to assess whether the model was able to assign higher anomaly scores to visibly non-conforming products.
+  \end{itemize}
 \end{itemize}

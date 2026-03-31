@@ -1,8 +1,8 @@
-Object detection \cite{ibm_what_nodate} aims to pinpoint where objects are in digital images. It melds two learning techniques:
+Object detection \cite{ibm_what_nodate} aims to localize and classify objects within digital images. In practice, it combines two complementary tasks:
 \begin{itemize}
     \item \textbf{Object localization} identifies the location of specific objects in an image by drawing bounding boxes around them.
     \item \textbf{Image classification} distinguishes the category to which objects belong.
-\end{itemize} 
+\end{itemize}
 \begin{figure}[h]
     \centering
     \includegraphics[scale=0.25]{images/object-detection.png}
@@ -10,21 +10,45 @@ Object detection \cite{ibm_what_nodate} aims to pinpoint where objects are in di
     \label{fig:object-detection}
 \end{figure}
 
-To evaluate object detection performance, the \textbf{Intersection over Union (IoU)} metric~\cite{ibm_what_2024} is commonly employed. IoU quantifies the overlap between a predicted bounding box and the corresponding ground-truth bounding box. It is defined as the ratio between the area of intersection and the area of union of the two bounding boxes:
+\subsubsection{IoU in object detection}
+One of the most widely used concepts in object detection is the \textbf{Intersection over Union (IoU)} metric~\cite{ibm_what_2024}. IoU quantifies the overlap between a predicted bounding box and the corresponding ground-truth bounding box. It is defined as the ratio between the area of intersection and the area of union of the two bounding boxes:
 
 \begin{equation}
 \mathrm{IoU} = \frac{\mathrm{Area}(B_p \cap B_{gt})}{\mathrm{Area}(B_p \cup B_{gt})}
 \end{equation}
 where $B_p$ denotes the predicted bounding box and $B_{gt}$ the ground-truth bounding box.
-IoU serves as a fundamental metric for assessing localization accuracy.
+In object detection, IoU is used both to assess localization quality and to determine whether a predicted box is sufficiently aligned with the corresponding annotation.
+The IoU metric ranges from 0 to 1, where 1 indicates perfect overlap between the predicted and ground-truth bounding boxes, while 0 indicates no overlap.
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[scale=0.25]{images/Intersection_over_Union.png}
+        \caption{Visualization of the Intersection over Union (IoU) metric, illustrating the areas of intersection and union between a predicted bounding box and a ground-truth bounding box. }
+        \label{fig:iou-formula}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[scale=0.25]{images/IoU.png}
+        \caption{The IoU metric quantifies the degree of overlap between the predicted bounding box (in green) and the ground-truth bounding box (in red).}
+        \label{fig:iou-visualization}
+    \end{subfigure}
+    \caption{The Intersection over Union (IoU) metric visualization}
+    \label{fig:iou}
+\end{figure}
 
+\subsubsection{Non-Maximum Suppression (NMS)}
 In addition to evaluation, IoU is also used during post-processing stages of object detection pipelines. Modern detection architectures often generate multiple bounding box proposals for a single object.
 To eliminate redundant detections and retain only the most reliable prediction per object, a post-processing technique known as \textbf{Non-Maximum Suppression (NMS)} is applied.
 NMS operates by first sorting all predicted bounding boxes according to their confidence scores in descending order. The bounding box with the highest confidence is selected as a valid detection, and all other boxes with an Intersection over Union (IoU) greater than a predefined threshold with respect to the selected box are suppressed. This process is repeated iteratively on the remaining boxes until no further candidates are available.
 Formally, given a set of predicted bounding boxes $B_i$ with associated confidence scores $s_i$, NMS retains a subset of boxes such that highly overlapping detections are removed while preserving the most confident predictions. The IoU threshold plays a crucial role in determining the strictness of suppression: lower thresholds lead to more aggressive filtering, whereas higher thresholds allow more overlapping detections to remain.\\
-NMS significantly improves the clarity and interpretability of detection results by ensuring that each object instance is represented by a single bounding box. 
-\\
+NMS significantly improves the clarity and interpretability of detection results by ensuring that each object instance is represented by a single bounding box.
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.3]{images/NMS1.png}
+    \caption{Non-Maximum Suppression (NMS) is a post-processing technique used in object detection to eliminate redundant bounding boxes and retain only the most confident prediction for each detected object.}
+    \label{fig:nms}
+\end{figure}
 
-In conclusion, object detection provides a coarse yet computationally efficient form of localization, making it particularly suitable for \textbf{real-time applications} and scenarios in which precise object boundaries are not strictly required, as is the case in the present work.\\
-This approach is generally designed to balance accuracy and computational efficiency, enabling their deployment in industrial environments characterized by constrained hardware resources.
+Overall, object detection provides a coarse yet computationally efficient form of localization, making it particularly suitable for \textbf{real-time applications} and scenarios in which precise object boundaries are not strictly required. This balance between accuracy and computational cost makes it especially attractive for industrial environments characterized by constrained hardware resources.
 

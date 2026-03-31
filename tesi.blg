@@ -5,44 +5,47 @@ Reallocating 'name_of_file' (item size: 1) to 19 items.
 The style file: model/biblio_style.bst
 Reallocating 'name_of_file' (item size: 1) to 20 items.
 Database file #1: start-end/reference.bib
-You've used 25 entries,
+Warning--I'm ignoring akcay_anomalib_2022's extra "doi" field
+--line 252 of file start-end/reference.bib
+You've used 33 entries,
             2191 wiz_defined-function locations,
-            651 strings with 9265 characters,
-and the built_in function-call counts, 8134 in all, are:
-= -- 689
-> -- 535
-< -- 1
-+ -- 216
-- -- 190
-* -- 527
-:= -- 1328
-add.period$ -- 75
-call.type$ -- 25
-change.case$ -- 170
+            705 strings with 11426 characters,
+and the built_in function-call counts, 11145 in all, are:
+= -- 962
+> -- 720
+< -- 2
++ -- 291
+- -- 256
+* -- 747
+:= -- 1820
+add.period$ -- 98
+call.type$ -- 33
+change.case$ -- 227
 chr.to.int$ -- 0
-cite$ -- 25
-duplicate$ -- 197
-empty$ -- 684
-format.name$ -- 190
-if$ -- 1751
+cite$ -- 33
+duplicate$ -- 281
+empty$ -- 915
+format.name$ -- 256
+if$ -- 2380
 int.to.chr$ -- 0
-int.to.str$ -- 25
-missing$ -- 2
-newline$ -- 128
-num.names$ -- 50
-pop$ -- 278
+int.to.str$ -- 33
+missing$ -- 6
+newline$ -- 167
+num.names$ -- 66
+pop$ -- 352
 preamble$ -- 1
-purify$ -- 145
+purify$ -- 194
 quote$ -- 0
-skip$ -- 249
+skip$ -- 327
 stack$ -- 0
-substring$ -- 185
-swap$ -- 37
-text.length$ -- 1
+substring$ -- 345
+swap$ -- 55
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 100
+type$ -- 132
 warning$ -- 0
-while$ -- 54
-width$ -- 27
-write$ -- 249
+while$ -- 78
+width$ -- 35
+write$ -- 331
+(There was 1 warning)

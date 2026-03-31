@@ -1,4 +1,4 @@
-Image segmentation is a more precise, pixel-level version of object detection. It partitions a digital image into discrete groups of pixels known as image segments, then labels pixels according to their class or instance. \cite{ibm_what_nodate}
+Image segmentation is the task of partitioning a digital image into meaningful regions at pixel level, so that each pixel is assigned to a class or to a specific object instance.\cite{ibm_what_nodate} \\
 Depending on the task formulation, segmentation can be divided into:
 \begin{itemize}
     \item \textbf{Semantic segmentation}: assigns each pixel in the image to a predefined category, without distinguishing between different object instances belonging to the same class.
@@ -7,32 +7,16 @@ Depending on the task formulation, segmentation can be divided into:
 
     \item \textbf{Panoptic segmentation}: unifies semantic and instance segmentation by providing a complete scene understanding, where both individual object instances (\emph{things}) and uncountable background regions (\emph{stuff}) are segmented in a consistent and non-overlapping manner.\cite{ibm_what_2023}
 \end{itemize}
-This fine-grained representation allows for an accurate description of object shapes and boundaries but comes at the cost of higher computational complexity and increased sensitivity to noise and illumination variations.
 \begin{figure}[h]
     \centering
     \includegraphics[scale=0.1]{images/segmentation.png}
     \caption{Different types of image segmentation}
     \label{fig:image-segmentation}
 \end{figure}
+This fine-grained representation allows for a more accurate description of object shapes and boundaries than object detection, but it comes at the cost of higher computational complexity and increased sensitivity to noise, texture variability, and illumination changes.
 
-Similarly to object detection, where the Intersection over Union (IoU) metric is widely adopted to evaluate the overlap between predicted and ground-truth bounding boxes, image segmentation relies on pixel-level overlap metrics.
+Image segmentation can be addressed through both learning-based and classical image-processing approaches. Among the latter, clustering methods and background-subtraction techniques are often used to isolate regions on the basis of visual or geometric differences with respect to the surrounding scene.\cite{mittal_comprehensive_2022,opencv_background_subtraction_2026}
 
-The most commonly used metric is the \textbf{Intersection over Union (IoU)}, also referred to as the \emph{Jaccard Index}. For a given class, IoU can be defined in set-theoretic form as:
+From an evaluation perspective, segmentation is typically assessed through pixel-level overlap metrics. The most common ones include \textbf{Intersection over Union (IoU)}, the \textbf{Dice coefficient}, and task-specific extensions such as \textbf{mean IoU (mIoU)} for semantic segmentation, mask-based \textbf{Average Precision (AP)} for instance segmentation, and \textbf{Panoptic Quality (PQ)} for panoptic segmentation.
 
-\begin{equation}
-IoU = \frac{|A \cap B|}{|A \cup B|}
-\end{equation}
-
-where $A$ denotes the set of pixels predicted as belonging to the class and $B$ denotes the set of ground-truth pixels for that class.
-
-An equivalent formulation in terms of classification outcomes is:
-
-\begin{equation}
-IoU = \frac{TP}{TP + FP + FN}
-\end{equation}
-where:
-\begin{itemize}
-    \item $TP$ (True Positives) represents the number of correctly predicted pixels belonging to a given class,
-    \item $FP$ (False Positives) represents the number of pixels incorrectly assigned to that class,
-    \item $FN$ (False Negatives) represents the number of pixels belonging to the class that were not correctly predicted.
-\end{itemize}
+These metrics are discussed in more detail in the evaluation metrics section, where the criteria adopted for object detection and segmentation are presented in a unified way.
