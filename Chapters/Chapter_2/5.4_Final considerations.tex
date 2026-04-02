@@ -7,3 +7,19 @@ Within this framework, DEIMv2 emerged as the most suitable solution. Compared wi
 The comparison with EoMT requires a different interpretation, because EoMT addresses image segmentation rather than object detection. For this reason, the decisive argument was not that DEIMv2 is universally superior on a common benchmark, but that it is better aligned with the objective of the thesis. In the proposed pipeline, the essential requirement is to localize each dough ball or loaf quickly and reliably, so that subsequent modules can estimate geometric or appearance-based quantities. A full segmentation model would produce richer output, but at the cost of denser prediction, greater architectural complexity, and weaker compatibility with low-latency embedded deployment. Moreover, the advantages of EoMT are most evident when large pretrained ViTs and high-performance hardware are available, whereas the thesis prioritizes an efficient real-time detector that can be deployed in practical industrial settings \cite{kerssies_your_2025}.
 
 For these reasons, DEIMv2 was selected as the detection model adopted in this thesis. It combines state-of-the-art real-time detection performance, strong scalability across model sizes, and a transformer-based design that remains compatible with the broader evolution of modern vision architectures. At the same time, the study of YOLOv12 and EoMT remained valuable: YOLOv12 highlighted the growing viability of attention-centric real-time detectors, while EoMT showed that large pretrained ViTs can increasingly absorb task-specific dense prediction components. Together, these works provided the conceptual background against which DEIMv2 was identified as the most appropriate choice for this thesis.
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}[h]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{images/DEIMvsYOLO1.png}
+        \caption[c]{Comparison of DEIMv2 and YOLOv12 across model scales, showing that DEIMv2 achieves higher detection accuracy with fewer parameters in corresponding regimes \cite{huang_real-time_2026,tian_yolov12_2025}.}
+        \label{fig:DEIMvsYOLO1}    
+    \end{subfigure}
+    \begin{subfigure}[h]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/DEIMvsYOLO2.png}
+        \caption[c]{Comparison of DEIMv2 and YOLOv12 across model scales, showing that DEIMv2 achieves higher detection accuracy with fewer lower computational cost in corresponding regimes \cite{huang_real-time_2026,tian_yolov12_2025}.}
+        \label{fig:DEIMvsYOLO2}
+    \end{subfigure}
+    \caption{Comparative performance of DEIMv2 and YOLOv12, illustrating the superior accuracy--cost trade-off of DEIMv2 across different model sizes \cite{huang_real-time_2026,tian_yolov12_2025}.}
+    \label{fig:DEIMvsYOLO}
+\end{figure}

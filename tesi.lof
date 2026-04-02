@@ -24,20 +24,21 @@
 \contentsline {figure}{\numberline {2.17}{\ignorespaces Hungarian matching in RT-DETR.\relax }}{21}{figure.caption.37}%
 \contentsline {figure}{\numberline {2.18}{\ignorespaces DEIMv2 architecture overview, illustrating the use of DINOv3 backbones and the Spatial Tuning Adapter (STA) to produce multi-scale features for detection \cite {huang_real-time_2026}.\relax }}{23}{figure.caption.38}%
 \contentsline {figure}{\numberline {2.19}{\ignorespaces Summary of DEIMv2 results across model scales, highlighting the balance between detection accuracy, latency, and parameter efficiency \cite {huang_real-time_2026}.\relax }}{23}{figure.caption.39}%
-\contentsline {figure}{\numberline {2.20}{\ignorespaces Different types of attentions.\relax }}{24}{figure.caption.40}%
-\contentsline {figure}{\numberline {2.21}{\ignorespaces YOLOv12 architecture overview, illustrating the integration of attention mechanisms into a real-time detection framework \cite {tian_yolov12_2025}.\relax }}{24}{figure.caption.41}%
-\contentsline {figure}{\numberline {2.22}{\ignorespaces \relax }}{24}{figure.caption.42}%
+\contentsline {figure}{\numberline {2.20}{\ignorespaces Area attention mechanism in YOLOv12 compared to traditional attention mechanisms.\relax }}{24}{figure.caption.40}%
+\contentsline {figure}{\numberline {2.21}{\ignorespaces YOLOv12 R-ELAN architecture overview, illustrating the skip connection mechanism to improve optimization stability in deeper attention-based models \cite {tian_yolov12_2025}.\relax }}{24}{figure.caption.41}%
+\contentsline {figure}{\numberline {2.22}{\ignorespaces Summary of YOLOv12 results on the COCO benchmark, highlighting its strong balance between detection accuracy and inference efficiency across model scales \cite {tian_yolov12_2025}.\relax }}{25}{figure.caption.42}%
+\contentsline {figure}{\numberline {2.23}{\ignorespaces Comparative performance of DEIMv2 and YOLOv12, illustrating the superior accuracy--cost trade-off of DEIMv2 across different model sizes \cite {huang_real-time_2026,tian_yolov12_2025}.\relax }}{27}{figure.caption.43}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Overview of site 1 and close-up of machine output\relax }}{28}{figure.caption.44}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces NVIDIA Jetson Nano 2GB Developer Kit connectivity.\relax }}{30}{figure.caption.48}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Microsoft Azure Kinect DK\relax }}{31}{figure.caption.50}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Available depth sensor fields of view (NFOV and WFOV).\relax }}{32}{figure.caption.51}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Microsoft Azure Kinect DK hardware and connectivity.\relax }}{33}{figure.caption.54}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Different depth estimation approaches\relax }}{33}{figure.caption.56}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Different ToF approaches\relax }}{34}{figure.caption.57}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Time of flight equations derivation\relax }}{35}{figure.caption.58}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Example of SDK transformation from depth image to color camera FOV and viceversa\relax }}{36}{figure.caption.60}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Point of view of the Raspberry Pi Camera Module 3 Wide during the manual extraction phase, showing operators removing baked bread loaves from the trays under real production conditions\relax }}{37}{figure.caption.62}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Overview of site 1 and close-up of machine output\relax }}{30}{figure.caption.45}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces NVIDIA Jetson Nano 2GB Developer Kit connectivity.\relax }}{32}{figure.caption.49}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Microsoft Azure Kinect DK\relax }}{33}{figure.caption.51}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Available depth sensor fields of view (NFOV and WFOV).\relax }}{34}{figure.caption.52}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Microsoft Azure Kinect DK hardware and connectivity.\relax }}{35}{figure.caption.55}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Different depth estimation approaches\relax }}{35}{figure.caption.57}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Different ToF approaches\relax }}{36}{figure.caption.58}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Time of flight equations derivation\relax }}{37}{figure.caption.59}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Example of SDK transformation from depth image to color camera FOV and viceversa\relax }}{38}{figure.caption.61}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Point of view of the Raspberry Pi Camera Module 3 Wide during the manual extraction phase, showing operators removing baked bread loaves from the trays under real production conditions\relax }}{39}{figure.caption.63}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

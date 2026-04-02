@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex tesi"] 1775167246 "tesi.aux" "tesi.bbl" "tesi" 1775167264
+["bibtex tesi"] 1775171055 "tesi.aux" "tesi.bbl" "tesi" 1775171156
   "./model/biblio_style.bst" 1775060173 20473 4c76dec0a47c7e3af5609c9edda382d8 ""
   "start-end/reference.bib" 1775127268 33612 dc1427a01b04622dc985d4e52d9a7ed1 ""
-  "tesi.aux" 1775167263 34753 a962b4ce035777d28d0a6da9b80b8074 "pdflatex"
+  "tesi.aux" 1775171155 37109 83a43f144c6ca720a6e86964022719ca "pdflatex"
   (generated)
   "tesi.bbl"
   "tesi.blg"
-["pdflatex"] 1775167246 "/home/giuseppe/Desktop/Thesis-2026/tesi.tex" "tesi.pdf" "tesi" 1775167264
+["pdflatex"] 1775171136 "/home/giuseppe/Desktop/Thesis-2026/tesi.tex" "tesi.pdf" "tesi" 1775171156
   "/etc/texmf/web2c/texmf.cnf" 1775062078 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/giuseppe/.texlive2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1775122963 1405644 8924f389b34223d9cef41422990b08d0 ""
   "/home/giuseppe/Desktop/Thesis-2026/tesi.tex" 1775060173 1769 7c571b8d2bd49a93262aa7d58681125b ""
@@ -204,10 +204,10 @@
   "Chapters/Chapter_2/2_Neural_Networks.tex" 1775142221 6877 15220777a06c0cd53e139eba2dbaa788 ""
   "Chapters/Chapter_2/3_ViT.tex" 1775143744 3822 164a68bca44a536c73941e4bf91a0cb6 ""
   "Chapters/Chapter_2/4_RT-DETR.tex" 1775152291 4449 adc3784477b46405937d9480f4404aa4 ""
-  "Chapters/Chapter_2/5.1_DEIMv2.tex" 1775155351 3243 88fbada01e1342eb2e95c9f4e46569db ""
-  "Chapters/Chapter_2/5.2_YOLO.tex" 1775167133 2893 b17ca721cc4dd65299f4239aa95a592a ""
+  "Chapters/Chapter_2/5.1_DEIMv2.tex" 1775169158 3310 8b49da26ff9c5945d9b5ffbcc773717b ""
+  "Chapters/Chapter_2/5.2_YOLO.tex" 1775170960 3697 c9a1ba0705f44fb753f8c49fd7eedf9c ""
   "Chapters/Chapter_2/5.3_Image segmentation.tex" 1775149261 2631 c2fc1db8effed2f48302b7fa291994b5 ""
-  "Chapters/Chapter_2/5.4_Final considerations.tex" 1775149303 2916 afb70c6da33964af0e6ae30e81c4ce9d ""
+  "Chapters/Chapter_2/5.4_Final considerations.tex" 1775171127 3992 73ca4e6bdedf6731b277c833a09c352a ""
   "Chapters/Chapter_2/5_Related_work.tex" 1775152678 753 b9401595bc501cc737a3a8ca4511a790 ""
   "Chapters/Chapter_2/6.1_EfficientAD.tex" 1775144573 0 d41d8cd98f00b204e9800998ecf8427e ""
   "Chapters/Chapter_2/6_Anomaly_Detection.tex" 1775144573 0 d41d8cd98f00b204e9800998ecf8427e ""
@@ -229,6 +229,8 @@
   "images/CNN.png" 1775127783 364510 28737ef6ae385a74c41e16be287c19a5 ""
   "images/DEIM_results.png" 1775154564 78902 4341853990726d5cab28bd3fa4f6a5b7 ""
   "images/DEIMv2.png" 1775060173 147431 0919cba8a35e556d4e7db3f3bfa98564 ""
+  "images/DEIMvsYOLO1.png" 1775149961 57241 052e0546e0a92f8d9310a94550c8aefa ""
+  "images/DEIMvsYOLO2.png" 1775149978 59040 882e29fb1f3053f6275ff1e724087120 ""
   "images/DETR.png" 1775060173 239458 f85f2b3569a5608287eccc6451da1ecf ""
   "images/DL.png" 1775127956 75378 a6d20857c2aa7ddcf458681078117b80 ""
   "images/Gradient_descent.png" 1775128470 200600 691841c5869f15870ced1c41d2f66599 ""
@@ -276,13 +278,13 @@
   "start-end/abstract.tex" 1775123289 1977 081071f77f9092f1192932d49c5bc3d3 ""
   "start-end/frontespizio.tex" 1775123289 1677 bc960fd766346cf51c15a4a7d7346a06 ""
   "start-end/thanks.tex" 1775123289 705 e4ef5238f80a33c8dddfd344e0cec333 ""
-  "tesi.aux" 1775167263 34753 a962b4ce035777d28d0a6da9b80b8074 "pdflatex"
-  "tesi.bbl" 1775167246 9782 823bb981d7f7a27ef214b2687e80b490 "bibtex tesi"
-  "tesi.lof" 1775167263 7334 05563131f8e273655fcb2dc639303bb5 "pdflatex"
-  "tesi.lot" 1775167263 568 ef5ce5dd89a2dcb9fbf890ed2173b682 "pdflatex"
-  "tesi.out" 1775167263 9951 1872c2e9a1fa108f283954f491e9970d "pdflatex"
+  "tesi.aux" 1775171155 37109 83a43f144c6ca720a6e86964022719ca "pdflatex"
+  "tesi.bbl" 1775171056 9782 823bb981d7f7a27ef214b2687e80b490 "bibtex tesi"
+  "tesi.lof" 1775171155 7866 afeeaddb2603884eac93c2022913af57 "pdflatex"
+  "tesi.lot" 1775171155 568 b377c65052c7cd156c9ed82e01bcac37 "pdflatex"
+  "tesi.out" 1775171155 9951 903c06ffd8c0b56c70ea700a9463e9c2 "pdflatex"
   "tesi.tex" 1775060173 1769 7c571b8d2bd49a93262aa7d58681125b ""
-  "tesi.toc" 1775167263 6855 339a70f43c671d121a7898f8bb533846 "pdflatex"
+  "tesi.toc" 1775171155 6854 c0b5a9cdb62239fdbf09113b9c1462a2 "pdflatex"
   (generated)
   "tesi.aux"
   "tesi.lof"
