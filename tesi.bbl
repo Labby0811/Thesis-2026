@@ -212,6 +212,19 @@ Maxime Oquab, Timothée Darcet, Théo Moutakanni, Huy Vo, Marc Szafraniec,
   {Supervision}, Feb. 2024.
 \newblock arXiv:2304.07193 [cs].
 
+\bibitem{tian_yolov12_2025}
+Yunjie Tian, Qixiang Ye, and David Doermann.
+\newblock {YOLOv12}: {Attention}-{Centric} {Real}-{Time} {Object} {Detectors},
+  Feb. 2025.
+\newblock arXiv:2502.12524 [cs].
+
+\bibitem{kerssies_your_2025}
+Tommie Kerssies, Niccolò Cavagnero, Alexander Hermans, Narges Norouzi,
+  Giuseppe Averta, Bastian Leibe, Gijs Dubbelman, and Daan~de Geus.
+\newblock Your {ViT} is {Secretly} an {Image} {Segmentation} {Model}, Mar.
+  2025.
+\newblock arXiv:2503.19108 [cs].
+
 \bibitem{moe_long_nvidia_nodate}
 {Moe Long}.
 \newblock {NVIDIA} {Jetson} {Nano} {2GB} {Developer} {Kit} {Review}.

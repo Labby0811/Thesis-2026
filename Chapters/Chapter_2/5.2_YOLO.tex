@@ -1,2 +1,23 @@
 % !TeX root = ../../tesi.tex
 
+YOLOv12 was selected as the main alternative detector because it represents a different and highly competitive design philosophy for real-time object detection \cite{tian_yolov12_2025}. Instead of building on the DETR lineage, YOLOv12 revisits the YOLO framework by introducing an \textbf{\emph{attention-centric}} architecture. Its core idea is to integrate the modeling strength of attention mechanisms into a real-time detector without sacrificing the low-latency behavior that has traditionally made YOLO models attractive in industrial settings. To do so, the paper introduces three key elements: \emph{Area Attention}, which reduces the cost of attention while retaining a large receptive field; \emph{R-ELAN}, which improves optimization stability in deeper attention-based models; and the use of \emph{FlashAttention} to reduce memory-access overhead during inference \cite{tian_yolov12_2025}.
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/YOLO1.png}
+    \caption{Different types of attentions.}
+    \label{YOLOv12_attention}
+\end{figure}
+The main appeal of YOLOv12 in the context of this thesis is its excellent latency--accuracy trade-off and its ability to achieve strong results without depending on additional large-scale pretraining tricks. This makes it an attractive candidate whenever extremely low inference time is the primary design criterion. In addition, YOLOv12 is conceptually important because it shows that attention mechanisms can be integrated effectively even within the traditionally convolution-centric YOLO family, thereby challenging the assumption that attention is necessarily too slow for real-time detection \cite{tian_yolov12_2025}.
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/YOLO2.png}
+    \caption{YOLOv12 architecture overview, illustrating the integration of attention mechanisms into a real-time detection framework \cite{tian_yolov12_2025}.}
+    \label{YOLOv12_achitecture}
+\end{figure}
+At the same time, YOLOv12 presents some practical limitations for the specific selection process carried out in this thesis. Its efficiency gains partly depend on hardware support for FlashAttention, which is not equally available across all deployment environments. Furthermore, according to the comparative evidence discussed in the DEIMv2 paper, DEIMv2 later surpassed YOLOv12 in the performance--cost trade-off, achieving higher detection accuracy with fewer parameters and lower computational cost in corresponding regimes \cite{huang_real-time_2026,tian_yolov12_2025}. For this reason, YOLOv12 was regarded as a strong benchmark and a valuable reference point, but not as the final choice for deployment.
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/YOLO_results.png}
+    \caption{}
+    \label{YOLOv12_Results}
+\end{figure}
