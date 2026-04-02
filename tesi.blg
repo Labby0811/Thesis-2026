@@ -1,51 +1,49 @@
-This is BibTeX, Version 0.99e
+This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: tesi.aux
-Reallocating 'name_of_file' (item size: 1) to 19 items.
 The style file: model/biblio_style.bst
-Reallocating 'name_of_file' (item size: 1) to 20 items.
 Database file #1: start-end/reference.bib
 Warning--I'm ignoring akcay_anomalib_2022's extra "doi" field
 --line 252 of file start-end/reference.bib
-You've used 33 entries,
+You've used 38 entries,
             2191 wiz_defined-function locations,
-            705 strings with 11426 characters,
-and the built_in function-call counts, 11145 in all, are:
-= -- 962
-> -- 720
-< -- 2
-+ -- 291
-- -- 256
-* -- 747
-:= -- 1820
-add.period$ -- 98
-call.type$ -- 33
-change.case$ -- 227
+            743 strings with 12308 characters,
+and the built_in function-call counts, 13092 in all, are:
+= -- 1156
+> -- 815
+< -- 3
++ -- 328
+- -- 288
+* -- 895
+:= -- 2132
+add.period$ -- 113
+call.type$ -- 38
+change.case$ -- 257
 chr.to.int$ -- 0
-cite$ -- 33
-duplicate$ -- 281
-empty$ -- 915
-format.name$ -- 256
-if$ -- 2380
+cite$ -- 38
+duplicate$ -- 351
+empty$ -- 1064
+format.name$ -- 288
+if$ -- 2788
 int.to.chr$ -- 0
-int.to.str$ -- 33
-missing$ -- 6
-newline$ -- 167
-num.names$ -- 66
-pop$ -- 352
+int.to.str$ -- 38
+missing$ -- 12
+newline$ -- 192
+num.names$ -- 76
+pop$ -- 383
 preamble$ -- 1
-purify$ -- 194
+purify$ -- 220
 quote$ -- 0
-skip$ -- 327
+skip$ -- 377
 stack$ -- 0
-substring$ -- 345
-swap$ -- 55
-text.length$ -- 2
+substring$ -- 491
+swap$ -- 72
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 132
+type$ -- 150
 warning$ -- 0
-while$ -- 78
-width$ -- 35
-write$ -- 331
+while$ -- 97
+width$ -- 40
+write$ -- 386
 (There was 1 warning)

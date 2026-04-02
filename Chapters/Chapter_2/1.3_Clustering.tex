@@ -1,3 +1,5 @@
+% !TeX root = ../../tesi.tex
+
 \subsubsection{Clustering}
 Clustering is a family of unsupervised methods aimed at grouping data samples according to \textbf{similarity} in a chosen feature space.\cite{mittal_comprehensive_2022} In image analysis, the samples typically correspond to pixels, superpixels, or local feature descriptors, while similarity may be defined in terms of color, intensity, texture, spatial position, or depth.\cite{mittal_comprehensive_2022}
 
@@ -21,4 +23,3 @@ In vision-based applications, this approach is commonly used with static cameras
 
 In the present work, this idea is relevant in two complementary ways. First, background subtraction is used in a non segmentation context in the RGB stream as part of the motion-detection module for dataset acquisition. Second, a conceptually similar foreground-background separation is exploited on depth information to isolate the dough from the supporting table before the subsequent geometric analysis.
 Since the background (table) is static and can be reliably estimated in depth, this approach provides a computationally efficient way to segment the dough units without relying on complex learning-based models, which may be unnecessary in this controlled setting.
-

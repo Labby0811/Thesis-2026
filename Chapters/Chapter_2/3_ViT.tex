@@ -1,4 +1,6 @@
-In recent years, \textbf{Vision Transformers (ViT)}\cite{dosovitskiy_image_2021}, introduced by Dosovitskiy et al., have progressively reshaped the landscape of computer vision, offering an alternative to the long-standing dominance of convolutional neural networks (CNNs).  \\ Unlike the latter, which rely on local inductive biases such as translation equivariance and locality through sliding kernels, ViTs leverage the self-attention mechanism to capture global dependencies across the entire image from the very first layer. Originally inspired by Transformer architectures in natural language processing, ViTs process images as sequences of patches rather than as continuous grids.
+% !TeX root = ../../tesi.tex
+
+In recent years, \textbf{Vision Transformers (ViT)}\cite{dosovitskiy_image_2021}, introduced by Dosovitskiy et al., have progressively reshaped the landscape of computer vision, offering an alternative to the long-standing dominance of convolutional neural networks (CNNs). Unlike the latter, which rely on local inductive biases such as translation equivariance and locality through sliding kernels, ViTs leverage the \textbf{self-attention mechanism} to capture global dependencies across the entire image from the very first layer. Originally inspired by Transformer architectures in natural language processing, ViTs process images as sequences of patches rather than as continuous grids.
 
 \begin{figure}[h]
     \centering
@@ -8,16 +10,22 @@ In recent years, \textbf{Vision Transformers (ViT)}\cite{dosovitskiy_image_2021}
 \end{figure}
 
 More specifically, an input image is divided into fixed-size patches, which are combined with the positional encodings to preserve the position information, then linearly projected into embedding vectors and treated as tokens. These tokens are processed through a Transformer encoder, where \textbf{self-attention mechanisms} allow the model to capture relationships and correlations between distant regions of the image. This ability to model \textbf{global context} is one of the main strengths of ViTs, especially when compared to CNNs, whose receptive field grows only progressively with depth.
-
-This architectural choice brings several advantages. When trained on large-scale datasets, ViTs can learn rich semantic representations and may outperform CNN-based approaches in high-capacity regimes
-\newline
-
-\begin{figure}[ht]
+\begin{figure}[h]
     \centering
-    \includegraphics[scale=0.15]{images/cnn_vs_ViT.png}
-    \caption{Vision Transformer architecture.}
-    \label{fig:vit-architecture}
+    \begin{subfigure}[c]{0.48\textwidth}
+        \centering
+        \includegraphics[scale=0.17]{images/cnn_vs_ViT1.png}
+        \label{fig:cnn-architecture1}
+    \end{subfigure}
+    \begin{subfigure}[c]{0.48\textwidth}
+        \centering
+        \includegraphics[scale=0.17]{images/cnn_vs_ViT2.png}
+        \label{fig:vit-architecture}
+    \end{subfigure}
+    \caption{Schematic comparison of CNN and ViT architectures. The CNN (a) processes the image through a hierarchy of convolutional layers with local receptive fields, while the ViT (b) treats the image as a sequence of patches and applies self-attention to capture global dependencies.}
+    \label{fig:cnn_vs_vit}
 \end{figure}
+This architectural choice brings several advantages. When trained on large-scale datasets, ViTs can learn rich semantic representations and may outperform CNN-based approaches in high-capacity regimes \cite{dosovitskiy_image_2021}. At the same time, because vanilla ViTs incorporate weaker built-in inductive biases than CNNs, they are generally less data-efficient and benefit substantially from large-scale pretraining before being transferred to downstream tasks \cite{dosovitskiy_image_2021}.
 
 However, these benefits come with non-negligible drawbacks. The self-attention operation has a \textbf{quadratic complexity} with respect to the number of tokens, which makes ViTs computationally demanding, especially for high-resolution inputs. This aspect has historically limited their use in real-time or resource-constrained environments.
 
