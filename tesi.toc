@@ -35,11 +35,11 @@
 \contentsline {subsection}{\numberline {2.5.2}YOLOv12}{23}{subsection.2.5.2}%
 \contentsline {subsection}{\numberline {2.5.3}EoMT}{25}{subsection.2.5.3}%
 \contentsline {subsection}{\numberline {2.5.4}Final considerations}{25}{subsection.2.5.4}%
-\contentsline {section}{\numberline {2.6}Anomaly Detection}{26}{section.2.6}%
-\contentsline {subsection}{\numberline {2.6.1}EfficientAD}{26}{subsection.2.6.1}%
-\contentsline {section}{\numberline {2.7}Training an AI}{26}{section.2.7}%
-\contentsline {subsection}{\numberline {2.7.1}Dataset-split}{26}{subsection.2.7.1}%
-\contentsline {subsection}{\numberline {2.7.2}Overfitting-Underfitting}{26}{subsection.2.7.2}%
+\contentsline {section}{\numberline {2.6}Anomaly Detection}{27}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}EfficientAD}{27}{subsection.2.6.1}%
+\contentsline {section}{\numberline {2.7}Training an AI}{27}{section.2.7}%
+\contentsline {subsection}{\numberline {2.7.1}Dataset-split}{27}{subsection.2.7.1}%
+\contentsline {subsection}{\numberline {2.7.2}Overfitting-Underfitting}{27}{subsection.2.7.2}%
 \contentsline {chapter}{\numberline {3}Data acquisition system}{29}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Site 1: dough ball production and data acquisition setup}{29}{section.3.1}%
 \contentsline {subsubsection}{Industrial Context and Process Description}{29}{section*.44}%

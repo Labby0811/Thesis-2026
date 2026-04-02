@@ -27,7 +27,7 @@
 \contentsline {figure}{\numberline {2.20}{\ignorespaces Area attention mechanism in YOLOv12 compared to traditional attention mechanisms.\relax }}{24}{figure.caption.40}%
 \contentsline {figure}{\numberline {2.21}{\ignorespaces YOLOv12 R-ELAN architecture overview, illustrating the skip connection mechanism to improve optimization stability in deeper attention-based models \cite {tian_yolov12_2025}.\relax }}{24}{figure.caption.41}%
 \contentsline {figure}{\numberline {2.22}{\ignorespaces Summary of YOLOv12 results on the COCO benchmark, highlighting its strong balance between detection accuracy and inference efficiency across model scales \cite {tian_yolov12_2025}.\relax }}{25}{figure.caption.42}%
-\contentsline {figure}{\numberline {2.23}{\ignorespaces Comparative performance of DEIMv2 and YOLOv12, illustrating the superior accuracy--cost trade-off of DEIMv2 across different model sizes \cite {huang_real-time_2026,tian_yolov12_2025}.\relax }}{27}{figure.caption.43}%
+\contentsline {figure}{\numberline {2.23}{\ignorespaces Comparison between DEIMv2 and YOLOv12 in terms of accuracy, parameter count, and computational cost, highlighting the stronger overall efficiency of DEIMv2 across the considered model scales \cite {huang_real-time_2026,tian_yolov12_2025}.\relax }}{26}{figure.caption.43}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Overview of site 1 and close-up of machine output\relax }}{30}{figure.caption.45}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces NVIDIA Jetson Nano 2GB Developer Kit connectivity.\relax }}{32}{figure.caption.49}%
