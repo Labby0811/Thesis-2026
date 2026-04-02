@@ -1,0 +1,83 @@
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{List of Figures}{v}{chapter*.2}%
+\contentsline {chapter}{List of Tables}{vii}{chapter*.3}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {paragraph}{Problem statement}{1}{section*.5}%
+\contentsline {section}{\numberline {1.1}Thesis goal}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Internship}{3}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Pipeline summary}{3}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Practical challenges and system robustness}{5}{subsection.1.2.2}%
+\contentsline {subsubsection}{Robustness to Power Interruptions}{5}{section*.7}%
+\contentsline {subsubsection}{Illumination Variability at Site 2}{6}{section*.8}%
+\contentsline {subsection}{\numberline {1.2.3}Companies}{7}{subsection.1.2.3}%
+\contentsline {subsubsection}{FlexSight}{7}{section*.10}%
+\contentsline {subsubsection}{SMACT}{8}{section*.12}%
+\contentsline {chapter}{\numberline {2}Background Material}{9}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Computer Vision}{9}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Object detection}{9}{subsection.2.1.1}%
+\contentsline {subsubsection}{IoU in object detection}{10}{section*.15}%
+\contentsline {subsubsection}{Non-Maximum Suppression (NMS)}{10}{section*.17}%
+\contentsline {subsection}{\numberline {2.1.2}Image segmentation}{11}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Classical segmentation methods}{12}{subsection.2.1.3}%
+\contentsline {subsubsection}{Clustering}{12}{section*.20}%
+\contentsline {subsubsection}{Background subtraction}{13}{section*.22}%
+\contentsline {subsection}{\numberline {2.1.4}Evaluation metrics}{13}{subsection.2.1.4}%
+\contentsline {subsubsection}{Metrics for object detection}{14}{section*.23}%
+\contentsline {subsubsection}{Metrics for image segmentation}{15}{section*.25}%
+\contentsline {subsubsection}{Metrics for instance and panoptic segmentation}{16}{section*.28}%
+\contentsline {section}{\numberline {2.2}Neural networks}{16}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Deep Learning}{17}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Convolutional Neural Networks}{18}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}Vision Transformers (ViT)}{19}{section.2.3}%
+\contentsline {section}{\numberline {2.4}RT-DETR}{20}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Related work}{22}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}DEIMv2}{22}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}YOLOv12}{23}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}EoMT}{24}{subsection.2.5.3}%
+\contentsline {subsection}{\numberline {2.5.4}Final considerations}{25}{subsection.2.5.4}%
+\contentsline {section}{\numberline {2.6}Anomaly Detection}{26}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}EfficientAD}{26}{subsection.2.6.1}%
+\contentsline {section}{\numberline {2.7}Training an AI}{26}{section.2.7}%
+\contentsline {subsection}{\numberline {2.7.1}Dataset-split}{26}{subsection.2.7.1}%
+\contentsline {subsection}{\numberline {2.7.2}Overfitting-Underfitting}{26}{subsection.2.7.2}%
+\contentsline {chapter}{\numberline {3}Data acquisition system}{27}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Site 1: dough ball production and data acquisition setup}{27}{section.3.1}%
+\contentsline {subsubsection}{Industrial Context and Process Description}{27}{section*.43}%
+\contentsline {subsubsection}{Offline Data Acquisition and Network Training}{27}{section*.45}%
+\contentsline {subsubsection}{Online Inference and 3D Volume Estimation}{29}{section*.46}%
+\contentsline {subsubsection}{System Objectives at Site 1}{29}{section*.47}%
+\contentsline {subsection}{\numberline {3.1.1}Nvidia Jetson Nano DK}{30}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Azure Microsoft Kinect DK}{31}{subsection.3.1.2}%
+\contentsline {subsubsection}{Time-of-Flight Depth Sensing Principle}{33}{section*.55}%
+\contentsline {subsubsection}{Azure Kinect Sensor SDK}{36}{section*.59}%
+\contentsline {subsubsection}{Python Wrapper: pyKinectAzure}{36}{section*.61}%
+\contentsline {section}{\numberline {3.2}Site 2: Baked Bread Dataset Acquisition and Color Analysis}{37}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Industrial Context and Monitoring Objectives}{37}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Hardware Configuration}{38}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Dataset Creation and Offline Training}{38}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Online Detection and Color Estimation}{38}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Role of Site 2 in the Overall Architecture}{39}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}Raspberry Pi 5}{39}{subsection.3.2.6}%
+\contentsline {subsection}{\numberline {3.2.7}Raspberry Pi Camera Module 3 Wide}{39}{subsection.3.2.7}%
+\contentsline {chapter}{\numberline {4}Multimodal quality inspection framework}{41}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Pipeline}{41}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Motion Detection}{41}{section.4.2}%
+\contentsline {section}{\numberline {4.3}DEIMv2 training}{41}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Site 1}{41}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Site 2}{41}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Feature extraction}{41}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Implementation}{41}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}OpenCV}{41}{subsection.4.5.1}%
+\contentsline {subsubsection}{Background subtraction for motion detection}{41}{section*.63}%
+\contentsline {subsection}{\numberline {4.5.2}Open3D}{41}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Torch}{41}{subsection.4.5.3}%
+\contentsline {subsection}{\numberline {4.5.4}Tensorboard}{41}{subsection.4.5.4}%
+\contentsline {chapter}{\numberline {5}Results}{43}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Site 1: dough-ball volume estimation}{43}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Quantitative results}{43}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Qualitative results}{43}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}Site 2: bread quality assessment}{43}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Quantitative results}{43}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Anomaly score heatmaps}{43}{subsection.5.2.2}%
+\contentsline {chapter}{\numberline {6}Conclusion and future works}{45}{chapter.6}%
+\contentsline {chapter}{References}{47}{chapter*.64}%

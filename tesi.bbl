@@ -5,6 +5,12 @@ Shihua Huang, Yongjie Hou, Longfei Liu, Xuanlong Yu, and Xi Shen.
 \newblock Real-{Time} {Object} {Detection} {Meets} {DINOv3}, Jan. 2026.
 \newblock arXiv:2509.20787 [cs].
 
+\bibitem{tian_yolov12_2025}
+Yunjie Tian, Qixiang Ye, and David Doermann.
+\newblock {YOLOv12}: {Attention}-{Centric} {Real}-{Time} {Object} {Detectors},
+  Feb. 2025.
+\newblock arXiv:2502.12524 [cs].
+
 \bibitem{zhao_detrs_2024}
 Yian Zhao, Wenyu Lv, Shangliang Xu, Jinman Wei, Guanzhong Wang, Qingqing Dang,
   Yi Liu, and Jie Chen.
@@ -211,12 +217,6 @@ Maxime Oquab, Timothée Darcet, Théo Moutakanni, Huy Vo, Marc Szafraniec,
 \newblock {DINOv2}: {Learning} {Robust} {Visual} {Features} without
   {Supervision}, Feb. 2024.
 \newblock arXiv:2304.07193 [cs].
-
-\bibitem{tian_yolov12_2025}
-Yunjie Tian, Qixiang Ye, and David Doermann.
-\newblock {YOLOv12}: {Attention}-{Centric} {Real}-{Time} {Object} {Detectors},
-  Feb. 2025.
-\newblock arXiv:2502.12524 [cs].
 
 \bibitem{kerssies_your_2025}
 Tommie Kerssies, Niccolò Cavagnero, Alexander Hermans, Narges Norouzi,

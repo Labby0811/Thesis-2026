@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex tesi"] 1775167003 "tesi.aux" "tesi.bbl" "tesi" 1775167022
+["bibtex tesi"] 1775167246 "tesi.aux" "tesi.bbl" "tesi" 1775167264
   "./model/biblio_style.bst" 1775060173 20473 4c76dec0a47c7e3af5609c9edda382d8 ""
   "start-end/reference.bib" 1775127268 33612 dc1427a01b04622dc985d4e52d9a7ed1 ""
-  "tesi.aux" 1775167021 33909 96552b0e5cf2393f2bf8650ad121393a "pdflatex"
+  "tesi.aux" 1775167263 34753 a962b4ce035777d28d0a6da9b80b8074 "pdflatex"
   (generated)
   "tesi.bbl"
   "tesi.blg"
-["pdflatex"] 1775167003 "/home/giuseppe/Desktop/Thesis-2026/tesi.tex" "tesi.pdf" "tesi" 1775167022
+["pdflatex"] 1775167246 "/home/giuseppe/Desktop/Thesis-2026/tesi.tex" "tesi.pdf" "tesi" 1775167264
   "/etc/texmf/web2c/texmf.cnf" 1775062078 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/giuseppe/.texlive2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1775122963 1405644 8924f389b34223d9cef41422990b08d0 ""
   "/home/giuseppe/Desktop/Thesis-2026/tesi.tex" 1775060173 1769 7c571b8d2bd49a93262aa7d58681125b ""
@@ -205,7 +205,7 @@
   "Chapters/Chapter_2/3_ViT.tex" 1775143744 3822 164a68bca44a536c73941e4bf91a0cb6 ""
   "Chapters/Chapter_2/4_RT-DETR.tex" 1775152291 4449 adc3784477b46405937d9480f4404aa4 ""
   "Chapters/Chapter_2/5.1_DEIMv2.tex" 1775155351 3243 88fbada01e1342eb2e95c9f4e46569db ""
-  "Chapters/Chapter_2/5.2_YOLO.tex" 1775166981 2418 77264e7ec271c4104c636ea000653f73 ""
+  "Chapters/Chapter_2/5.2_YOLO.tex" 1775167133 2893 b17ca721cc4dd65299f4239aa95a592a ""
   "Chapters/Chapter_2/5.3_Image segmentation.tex" 1775149261 2631 c2fc1db8effed2f48302b7fa291994b5 ""
   "Chapters/Chapter_2/5.4_Final considerations.tex" 1775149303 2916 afb70c6da33964af0e6ae30e81c4ce9d ""
   "Chapters/Chapter_2/5_Related_work.tex" 1775152678 753 b9401595bc501cc737a3a8ca4511a790 ""
@@ -249,7 +249,9 @@
   "images/ToF_1.jpg" 1775060173 61201 e2e1db0c0338ee8e603b4f9c945a1b60 ""
   "images/ToF_pulse_vs_cont.png" 1775060173 7787370 aaa94be4ff0b9bb69c9b034ebeb367fd ""
   "images/ViT_vs_CNN.jpg" 1775060173 9715 e91a2aa92df9504f9c769b54a1901054 ""
+  "images/YOLO1.png" 1775060173 479444 18ed382b01d2d1fc150dc5e31a1aff18 ""
   "images/YOLO2.png" 1775060173 94747 f149d938c9b4f360c5058ff2c88f9933 ""
+  "images/YOLO_results.png" 1775166827 34574 8a1526543e9cf2e134f8215ebe04df2a ""
   "images/auroc.png" 1775060173 3073520 76796c2a985b7f854881f491255bd443 ""
   "images/azure-kinect.jpg" 1775060173 52301 b087543ba7bb7ccf7bc9010c45cb63a6 ""
   "images/camera-fov.png" 1775060173 70934 f68de37ddfdf1ac3828d1ca9c9963188 ""
@@ -274,13 +276,13 @@
   "start-end/abstract.tex" 1775123289 1977 081071f77f9092f1192932d49c5bc3d3 ""
   "start-end/frontespizio.tex" 1775123289 1677 bc960fd766346cf51c15a4a7d7346a06 ""
   "start-end/thanks.tex" 1775123289 705 e4ef5238f80a33c8dddfd344e0cec333 ""
-  "tesi.aux" 1775167021 33909 96552b0e5cf2393f2bf8650ad121393a "pdflatex"
-  "tesi.bbl" 1775167003 9782 8dc919c19cf76def39442a55c833133b "bibtex tesi"
-  "tesi.lof" 1775167021 6977 aa35b2ca63b2291ad71ca8921b2e6e30 "pdflatex"
-  "tesi.lot" 1775167021 568 0fa4992b06222561d21b565d8e48bea4 "pdflatex"
-  "tesi.out" 1775167021 9951 a154dbd6088b17823de830a798f66b04 "pdflatex"
+  "tesi.aux" 1775167263 34753 a962b4ce035777d28d0a6da9b80b8074 "pdflatex"
+  "tesi.bbl" 1775167246 9782 823bb981d7f7a27ef214b2687e80b490 "bibtex tesi"
+  "tesi.lof" 1775167263 7334 05563131f8e273655fcb2dc639303bb5 "pdflatex"
+  "tesi.lot" 1775167263 568 ef5ce5dd89a2dcb9fbf890ed2173b682 "pdflatex"
+  "tesi.out" 1775167263 9951 1872c2e9a1fa108f283954f491e9970d "pdflatex"
   "tesi.tex" 1775060173 1769 7c571b8d2bd49a93262aa7d58681125b ""
-  "tesi.toc" 1775167021 6855 f93e8fd214539e10d6a11665639d6c58 "pdflatex"
+  "tesi.toc" 1775167263 6855 339a70f43c671d121a7898f8bb533846 "pdflatex"
   (generated)
   "tesi.aux"
   "tesi.lof"
