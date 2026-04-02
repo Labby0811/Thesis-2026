@@ -685,4 +685,290 @@ LaTeX Font Info:    ... okay on input line 3.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
-Package caption Info: End \At
+Package caption Info: End \AtBeginDocument code.
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count330
+\scratchdimen=\dimen177
+\scratchbox=\box59
+\nofMPsegments=\count331
+\nofMParguments=\count332
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count333
+\MPscratchDim=\dimen178
+\MPnumerator=\count334
+\makeMPintoPDFobject=\count335
+\everyMPtoPDFconversion=\toks41
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+Package hyperref Info: Link coloring OFF on input line 3.
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+ (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count336
+LaTeX Info: Redefining \Ref on input line 520.
+)
+LaTeX Info: Redefining \ref on input line 3.
+LaTeX Info: Redefining \pageref on input line 3.
+LaTeX Info: Redefining \nameref on input line 3.
+ (./tesi.out) (./tesi.out)
+\@outlinefile=\write3
+\openout3 = `tesi.out'.
+
+LaTeX Info: Redefining \Ref on input line 3.
+\c@mv@tabular=\count337
+\c@mv@boldtabular=\count338
+ (./start-end/frontespizio.tex
+<images/logo.png, id=253, 2309.62875pt x 1043.9pt>
+File: images/logo.png Graphic file (type png)
+<use images/logo.png>
+Package pdftex.def Info: images/logo.png  used on input line 9.
+(pdftex.def)             Requested size: 182.09486pt x 82.30313pt.
+<images/logo_dei.pdf, id=254, 98.3675pt x 63.23625pt>
+File: images/logo_dei.pdf Graphic file (type pdf)
+<use images/logo_dei.pdf>
+Package pdftex.def Info: images/logo_dei.pdf  used on input line 13.
+(pdftex.def)             Requested size: 113.81102pt x 73.164pt.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/sc' will be
+(Font)              scaled to size 12.0pt on input line 20.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/sc' will be
+(Font)              scaled to size 20.74pt on input line 20.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/sc' will be
+(Font)              scaled to size 14.4pt on input line 22.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 20.74pt on input line 28.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 20.74pt on input line 28.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
+(Font)              scaled to size 12.0pt on input line 31.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
+(Font)              scaled to size 14.4pt on input line 31.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 14.4pt on input line 38.
+ [1
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/logo.png> <./images/logo_dei.pdf>] [2
+
+]) (./start-end/thanks.tex
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/sl' will be
+(Font)              scaled to size 12.0pt on input line 25.
+) [1
+
+
+]
+LaTeX Font Info:    Trying to load font information for T1+qhv on input line 13.
+ (/usr/share/texmf/tex/latex/tex-gyre/t1qhv.fd
+File: t1qhv.fd 2009/09/25 v1.2 font definition file for T1/qhv
+)
+LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
+(Font)              scaled to size 11.28003pt on input line 13.
+ [2
+
+
+] (./start-end/abstract.tex
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 12.0pt on input line 13.
+) [3] [4
+
+
+]
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 24.88pt on input line 18.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 24.88pt on input line 18.
+ (./tesi.lof
+LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input line 3.
+ (/usr/share/texlive/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
+File: ot1ntxtlf.fd 2021/05/24 v1.0 font definition file for OT1/ntx/tlf
+)
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 12.0pt on input line 3.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 8.8pt on input line 3.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 6.6pt on input line 3.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 3.
+ (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 3.
+ (/usr/share/texlive/texmf-dist/tex/latex/newtx/untxmia.fd
+File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
+)
+LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 3.
+ (/usr/share/texlive/texmf-dist/tex/latex/newtx/untxsym.fd
+File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
+)
+LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 3.
+ (/usr/share/texlive/texmf-dist/tex/latex/newtx/untxsyc.fd
+File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
+)
+Underfull \vbox (badness 2753) has occurred while \output is active []
+
+ [5
+
+])
+\tf@lof=\write4
+\openout4 = `tesi.lof'.
+
+ [6] (./tesi.lot)
+\tf@lot=\write5
+\openout5 = `tesi.lot'.
+
+ [7
+
+] [8
+
+] (./tesi.toc [9])
+\tf@toc=\write6
+\openout6 = `tesi.toc'.
+
+ [10] (./Chapters/Chapter_1/0_chapter_1.tex
+Chapter 1.
+(./Chapters/Chapter_1/2_Problem statement.tex)
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 17.28pt on input line 9.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 17.28pt on input line 9.
+ (./Chapters/Chapter_1/3_Thesis goal.tex
+LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input line 8.
+ (/usr/share/texlive/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
+File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
+)
+LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
+(Font)              scaled to size 12.0pt on input line 8.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.13 \end{itemize}
+                   [1
+
+
+
+
+
+]
+<images/Site1.jpg, id=505, 4015.0pt x 3011.25pt>
+File: images/Site1.jpg Graphic file (type jpg)
+<use images/Site1.jpg>
+Package pdftex.def Info: images/Site1.jpg  used on input line 20.
+(pdftex.def)             Requested size: 281.07872pt x 210.80904pt.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 8.0pt on input line 21.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 8.0pt on input line 21.
+<images/sito2_giorno.jpeg, id=506, 1505.625pt x 2007.5pt>
+File: images/sito2_giorno.jpeg Graphic file (type jpg)
+<use images/sito2_giorno.jpeg>
+Package pdftex.def Info: images/sito2_giorno.jpeg  used on input line 27.
+(pdftex.def)             Requested size: 210.78606pt x 281.04808pt.
+
+
+LaTeX Warning: Reference `fig:3D_volume_rendering' on page 2 undefined on input line 44.
+
+
+LaTeX Warning: Reference `fig:Anomaly_map' on page 2 undefined on input line 44.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.45 
+      [2 <./images/Site1.jpg> <./images/sito2_giorno.jpeg>]) (./Chapters/Chapter_1/4_Internship.tex
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 14.4pt on input line 9.
+ [3] [4]) (./Chapters/Chapter_1/7_Problematic.tex
+LaTeX Font Info:    Trying to load font information for T1+ntxtt on input line 11.
+ (/usr/share/texlive/texmf-dist/tex/latex/newtx/t1ntxtt.fd
+File: t1ntxtt.fd 2012/04/20 v3.1
+)
+LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
+(Font)              scaled to size 12.0pt on input line 11.
+ [5]
+<images/faretto_sito_2(1).jpeg, id=548, 1505.625pt x 2007.5pt>
+File: images/faretto_sito_2(1).jpeg Graphic file (type jpg)
+<use images/faretto_sito_2(1).jpeg>
+Package pdftex.def Info: images/faretto_sito_2(1).jpeg  used on input line 61.
+(pdftex.def)             Requested size: 227.62206pt x 303.47067pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./Chapters/Chapter_1/5_Companies.tex [6]
+<images/flexsight_logo.png, id=558, 2055.68pt x 441.65pt>
+File: images/flexsight_logo.png Graphic file (type png)
+<use images/flexsight_logo.png>
+Package pdftex.def Info: images/flexsight_logo.png  used on input line 12.
+(pdftex.def)             Requested size: 273.14923pt x 58.68344pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/Smact-Logo.png, id=562, 770.88pt x 353.06906pt>
+File: images/Smact-Logo.png Graphic file (type png)
+<use images/Smact-Logo.png>
+Package pdftex.def Info: images/Smact-Logo.png  used on input line 22.
+(pdftex.def)             Requested size: 227.62206pt x 104.25143pt.
+)) (./Chapters/Chapter_2/0_chapter_2.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7 <./images/faretto_sito_2(1).jpeg>] [8 <./images/flexsight_logo.png> <./images/Smact-Logo.png>]
+Chapter 2.
+(./Chapters/Chapter_2/1_Computer vision.tex) (./Chapters/Chapter_2/1.1_Object_detection.tex
+<images/object-detection.png, id=580, 915.42pt x 596.2275pt>
+File: images/object-detection.png Graphic file (type png)
+<use images/object-detection.png>
+Package pdftex.def Info: images/object-detection.png  used on input line 10.
+(pdftex.def)             Requested size: 228.85443pt x 149.0565pt.
+ [9
+
+ <./images/object-detection.png>]
+<images/Intersection_over_Union.png, id=588, 602.25pt x 469.755pt>
+File: images/Intersection_over_Union.png Graphic file (type png)
+<use images/Intersection_over_Union.png>
+Package pdftex.def Info: images/Intersection_over_Union.png  used on input line 28.
+(pdftex.def)             Requested size: 150.56212pt x 117.43846pt.
+<images/IoU.png, id=589, 602.25pt x 248.93pt>
+File: images/IoU.png Graphic file (type png)
+<use images/IoU.png>
+Package pdftex.def Info: images/IoU.png  used on input line 34.
+(pdftex.def)             Requested size: 150.56212pt x 62.23235pt.
+<images/NMS1.png, id=590, 1027.84pt x 541.02126pt>
+File: images/NMS1.png Graphic file (type png)
+<use images/NMS1.png>
+Package pdftex.def Info: images/NMS1.png  used on input line 50.
+(pdftex.def)             Requested size: 308.35437pt x 162.30762pt.
+ [10 <./images/Intersection_over_Union.png> <./images/IoU.png>]) (./Chapters/Chapter_2/1.2_Image_segmentation.tex
+<images/segmentation.png, id=607, 2006.49625pt x 1702.36pt>
+File: images/segmentation.png Graphic file (type png)
+<use images/segmentation.png>
+Package pdftex.def Info: images/segmentation.png  used on input line 14.
+(pdftex.def)             Requested size: 200.66138pt x 170.24597pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[11 <./images/NMS1.png>]) (./Chapters/Chapter_2/1.3_Clustering.tex [12 <./images/segmentation.png>]
+<images/clustering.png, id=635, 586.1097pt x 333.1647pt>
+File: images/clustering.png Graphic file (type png)
+<use images/clustering.png>
+Package pdftex.def Info: images/clustering.png  used on input line 13.
+(pdftex.def)             Requested size: 234.43971pt x 133.2635pt.
+) (./Chapters/Chapter_2/1.4_Metrics.tex [13 <./images/clustering.png>]
+<images/Precisionrecall1.png, id=649, 877.2775pt x 1187.43625pt>
+File: images/Precisionrecall1.png Graphic file (type png)
+<use images/Precisionrecall1.png>
+Package pdftex.def Info: images/Precisionrecall1.png  used on input line 26.
+(pdftex.def)             Requested size: 159.33821pt x 215.66801pt.
+<images/Precisionrecall2.png, id=650, 814.04124pt x 580.1675pt>
+File: images/Precisionrecall2.png Graphic file (type png)
+<use images/Precisionrecall2.png>
+Package pdftex.def Info: images/Precisionrecall2.png  used on input li
