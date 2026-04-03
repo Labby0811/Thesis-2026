@@ -1,44 +1,54 @@
 \babel@toc {english}{}\relax 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Overview of Site 1 and Site 2\relax }}{2}{figure.caption.6}%
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Light source placed next to the Raspberry Pi Camera to illuminate the scene and keep lighting as constant as possible\relax }}{7}{figure.caption.9}%
-\contentsline {figure}{\numberline {1.3}{\ignorespaces FlexSight logo: an innovation-oriented company operating in the fields of computer vision, AI and robotics.\relax }}{8}{figure.caption.11}%
-\contentsline {figure}{\numberline {1.4}{\ignorespaces SMACT logo: one of the Italian Competence Centers for Industry 4.0, which provided the context for the internship project.\relax }}{8}{figure.caption.13}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Overview of Site 1 and Site 2}}{2}{figure.caption.6}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Light source placed next to the Raspberry Pi Camera to illuminate the scene and keep lighting as constant as possible}}{7}{figure.caption.9}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces FlexSight logo: an innovation-oriented company operating in the fields of computer vision, AI and robotics.}}{8}{figure.caption.11}%
+\contentsline {figure}{\numberline {1.4}{\ignorespaces SMACT logo: one of the Italian Competence Centers for Industry 4.0, which provided the context for the internship project.}}{8}{figure.caption.13}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces In the image, the detected objects are enclosed by bounding boxes and annotated with their corresponding class labels\relax }}{9}{figure.caption.14}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces The Intersection over Union (IoU) metric visualization\relax }}{10}{figure.caption.16}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Non-Maximum Suppression (NMS) is a post-processing technique used in object detection to eliminate redundant bounding boxes and retain only the most confident prediction for each detected object.\relax }}{11}{figure.caption.18}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Different types of image segmentation\relax }}{12}{figure.caption.19}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Visualization of k-means clustering applied to an image, where pixels are grouped into clusters based on their similarity and distance in the feature-space. Each cluster is represented by a different color, illustrating how the algorithm partitions the image into distinct regions.\relax }}{13}{figure.caption.21}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Precision and Recall visualization, illustrating the concepts of true positives, false positives, and false negatives predictions compared to ground-truth annotations.\relax }}{14}{figure.caption.24}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Visualization of the Intersection over Union (IoU) metric for image segmentation, illustrating the areas of true positives, false positives, and false negatives between a predicted segmentation mask and a ground-truth mask.\relax }}{15}{figure.caption.26}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Visualization of the Area Under the Receiver Operating Characteristic Curve (AUROC) metric for image segmentation.\relax }}{16}{figure.caption.27}%
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Schematic representation of a feedforward neural network with multiple hidden layers. Each layer applies a linear transformation followed by a non-linear activation, enabling progressively richer representations of the input.\relax }}{17}{figure.caption.29}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Illustration of gradient descent over a loss surface. At each iteration, the parameters are updated in the direction of the negative gradient so as to reduce the loss.\relax }}{17}{figure.caption.30}%
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Schematic representation of a deep neural network, where feature representations are learned across multiple layers of abstraction and not manually engineered.\relax }}{18}{figure.caption.31}%
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Typical convolutional neural network architecture for visual processing, in which convolutional and downsampling stages progressively extract hierarchical features from the input image.\relax }}{18}{figure.caption.32}%
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Receptive field comparison between CNNs and ViTs. While CNNs have a local receptive field that grows with depth, ViTs can capture global context from the very first layer due to their self-attention mechanism.\relax }}{19}{figure.caption.33}%
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Schematic comparison of CNN and ViT architectures. The CNN (a) processes the image through a hierarchy of convolutional layers with local receptive fields, while the ViT (b) treats the image as a sequence of patches and applies self-attention to capture global dependencies.\relax }}{19}{figure.caption.34}%
-\contentsline {figure}{\numberline {2.15}{\ignorespaces Original DETR architecture.\relax }}{20}{figure.caption.35}%
-\contentsline {figure}{\numberline {2.16}{\ignorespaces RT-DETR architecture.\relax }}{21}{figure.caption.36}%
-\contentsline {figure}{\numberline {2.17}{\ignorespaces Hungarian matching in RT-DETR.\relax }}{21}{figure.caption.37}%
-\contentsline {figure}{\numberline {2.18}{\ignorespaces DEIMv2 architecture overview, illustrating the use of DINOv3 backbones and the Spatial Tuning Adapter (STA) to produce multi-scale features for detection \cite {huang_real-time_2026}.\relax }}{23}{figure.caption.38}%
-\contentsline {figure}{\numberline {2.19}{\ignorespaces Summary of DEIMv2 results across model scales, highlighting the balance between detection accuracy, latency, and parameter efficiency \cite {huang_real-time_2026}.\relax }}{23}{figure.caption.39}%
-\contentsline {figure}{\numberline {2.20}{\ignorespaces Area attention mechanism in YOLOv12 compared to traditional attention mechanisms.\relax }}{24}{figure.caption.40}%
-\contentsline {figure}{\numberline {2.21}{\ignorespaces YOLOv12 R-ELAN architecture overview, illustrating the skip connection mechanism to improve optimization stability in deeper attention-based models \cite {tian_yolov12_2025}.\relax }}{24}{figure.caption.41}%
-\contentsline {figure}{\numberline {2.22}{\ignorespaces Summary of YOLOv12 results on the COCO benchmark, highlighting its strong balance between detection accuracy and inference efficiency across model scales \cite {tian_yolov12_2025}.\relax }}{25}{figure.caption.42}%
-\contentsline {figure}{\numberline {2.23}{\ignorespaces Comparison between DEIMv2 and YOLOv12 in terms of accuracy, parameter count, and computational cost, highlighting the stronger overall efficiency of DEIMv2 across the considered model scales \cite {huang_real-time_2026,tian_yolov12_2025}.\relax }}{26}{figure.caption.43}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces In the image, the detected objects are enclosed by bounding boxes and annotated with their corresponding class labels}}{9}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces The Intersection over Union (IoU) metric visualization}}{10}{figure.caption.16}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Non-Maximum Suppression (NMS) is a post-processing technique used in object detection to eliminate redundant bounding boxes and retain only the most confident prediction for each detected object.}}{11}{figure.caption.18}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Different types of image segmentation}}{12}{figure.caption.19}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Visualization of k-means clustering applied to an image, where pixels are grouped into clusters based on their similarity and distance in the feature-space. Each cluster is represented by a different color, illustrating how the algorithm partitions the image into distinct regions.}}{13}{figure.caption.21}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Precision and Recall visualization, illustrating the concepts of true positives, false positives, and false negatives predictions compared to ground-truth annotations.}}{14}{figure.caption.24}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Visualization of the Intersection over Union (IoU) metric for image segmentation, illustrating the areas of true positives, false positives, and false negatives between a predicted segmentation mask and a ground-truth mask.}}{15}{figure.caption.26}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Visualization of the Area Under the Receiver Operating Characteristic Curve (AUROC) metric for image segmentation.}}{16}{figure.caption.27}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Schematic representation of a feedforward neural network with multiple hidden layers. Each layer applies a linear transformation followed by a non-linear activation, enabling progressively richer representations of the input.}}{17}{figure.caption.29}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Illustration of gradient descent over a loss surface. At each iteration, the parameters are updated in the direction of the negative gradient so as to reduce the loss.}}{17}{figure.caption.30}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Schematic representation of a deep neural network, where feature representations are learned across multiple layers of abstraction and not manually engineered.}}{18}{figure.caption.31}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Typical convolutional neural network architecture for visual processing, in which convolutional and downsampling stages progressively extract hierarchical features from the input image.}}{18}{figure.caption.32}%
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Receptive field comparison between CNNs and ViTs. While CNNs have a local receptive field that grows with depth, ViTs can capture global context from the very first layer due to their self-attention mechanism.}}{19}{figure.caption.33}%
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Schematic comparison of CNN and ViT architectures. The CNN (a) processes the image through a hierarchy of convolutional layers with local receptive fields, while the ViT (b) treats the image as a sequence of patches and applies self-attention to capture global dependencies.}}{19}{figure.caption.34}%
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Original DETR architecture.}}{20}{figure.caption.35}%
+\contentsline {figure}{\numberline {2.16}{\ignorespaces RT-DETR architecture.}}{21}{figure.caption.36}%
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Hungarian matching in RT-DETR.}}{21}{figure.caption.37}%
+\contentsline {figure}{\numberline {2.18}{\ignorespaces DEIMv2 architecture overview, illustrating the use of DINOv3 backbones and the Spatial Tuning Adapter (STA) to produce multi-scale features for detection \cite {huang_real-time_2026}.}}{23}{figure.caption.38}%
+\contentsline {figure}{\numberline {2.19}{\ignorespaces Summary of DEIMv2 results across model scales, highlighting the balance between detection accuracy, latency, and parameter efficiency \cite {huang_real-time_2026}.}}{23}{figure.caption.39}%
+\contentsline {figure}{\numberline {2.20}{\ignorespaces Area attention mechanism in YOLOv12 compared to traditional attention mechanisms.}}{24}{figure.caption.40}%
+\contentsline {figure}{\numberline {2.21}{\ignorespaces YOLOv12 R-ELAN architecture overview, illustrating the skip connection mechanism to improve optimization stability in deeper attention-based models \cite {tian_yolov12_2025}.}}{24}{figure.caption.41}%
+\contentsline {figure}{\numberline {2.22}{\ignorespaces Summary of YOLOv12 results on the COCO benchmark, highlighting its strong balance between detection accuracy and inference efficiency across model scales \cite {tian_yolov12_2025}.}}{25}{figure.caption.42}%
+\contentsline {figure}{\numberline {2.23}{\ignorespaces c}}{25}{figure.caption.43}%
+\contentsline {figure}{\numberline {2.24}{\ignorespaces EoMT mask annealing strategy, which progressively removes masked attention during training.}}{26}{figure.caption.44}%
+\contentsline {figure}{\numberline {2.25}{\ignorespaces Progressive removal of task-specific segmentation components in EoMT \cite {kerssies_your_2025}.}}{26}{figure.caption.45}%
+\contentsline {figure}{\numberline {2.26}{\ignorespaces c}}{26}{figure.caption.45}%
+\contentsline {figure}{\numberline {2.27}{\ignorespaces Comparison between DEIMv2 and YOLOv12 in terms of accuracy, parameter count, and computational cost, highlighting the stronger overall efficiency of DEIMv2 across the considered model scales \cite {huang_real-time_2026,tian_yolov12_2025}.}}{27}{figure.caption.46}%
+\contentsline {figure}{\numberline {2.28}{\ignorespaces Overview of the main methodological families in industrial visual anomaly detection.\cite {li_survey_2025}}}{29}{figure.caption.47}%
+\contentsline {figure}{\numberline {2.29}{\ignorespaces EfficientAD architecture combining teacher--student feature comparison and an autoencoder branch to produce anomaly maps and an image-level anomaly score.\cite {batzner_efficientad_2024}}}{30}{figure.caption.48}%
+\contentsline {figure}{\numberline {2.30}{\ignorespaces Examples of EfficientAD anomaly maps. The anomalies are highlighted in red, while the normal regions are shown in blue. }}{30}{figure.caption.49}%
+\contentsline {figure}{\numberline {2.31}{\ignorespaces Illustration of the standard partition of a dataset into training, validation, and test subsets.}}{31}{figure.caption.50}%
+\contentsline {figure}{\numberline {2.32}{\ignorespaces Example of underfitting and overfitting in a regression task. The left plot shows an underfitting model that fails to capture the underlying trend, the middle plot shows a well-fitted model that generalizes well, and the right plot shows an overfitting model that captures noise in the training data.}}{32}{figure.caption.51}%
+\contentsline {figure}{\numberline {2.33}{\ignorespaces Typical training and validation behaviors in underfitting and overfitting regimes.}}{32}{figure.caption.52}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Overview of site 1 and close-up of machine output\relax }}{30}{figure.caption.45}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces NVIDIA Jetson Nano 2GB Developer Kit connectivity.\relax }}{32}{figure.caption.49}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Microsoft Azure Kinect DK\relax }}{33}{figure.caption.51}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Available depth sensor fields of view (NFOV and WFOV).\relax }}{34}{figure.caption.52}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Microsoft Azure Kinect DK hardware and connectivity.\relax }}{35}{figure.caption.55}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Different depth estimation approaches\relax }}{35}{figure.caption.57}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Different ToF approaches\relax }}{36}{figure.caption.58}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Time of flight equations derivation\relax }}{37}{figure.caption.59}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Example of SDK transformation from depth image to color camera FOV and viceversa\relax }}{38}{figure.caption.61}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Point of view of the Raspberry Pi Camera Module 3 Wide during the manual extraction phase, showing operators removing baked bread loaves from the trays under real production conditions\relax }}{39}{figure.caption.63}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Overview of site 1 and close-up of machine output}}{35}{figure.caption.53}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces NVIDIA Jetson Nano 2GB Developer Kit connectivity.}}{38}{figure.caption.58}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Microsoft Azure Kinect DK}}{39}{figure.caption.60}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Available depth sensor fields of view (NFOV and WFOV).}}{40}{figure.caption.61}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Microsoft Azure Kinect DK hardware and connectivity.}}{41}{figure.caption.64}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Different depth estimation approaches}}{41}{figure.caption.66}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Different ToF approaches}}{42}{figure.caption.67}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Time of flight equations derivation}}{42}{figure.caption.68}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Example of SDK transformation from depth image to color camera FOV and viceversa}}{44}{figure.caption.70}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Point of view of the Raspberry Pi Camera Module 3 Wide during the manual extraction phase, showing operators removing baked bread loaves from the trays under real production conditions}}{45}{figure.caption.72}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

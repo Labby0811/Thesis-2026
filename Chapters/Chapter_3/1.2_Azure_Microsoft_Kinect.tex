@@ -11,7 +11,7 @@ For the acquisition of RGB-D data at Site~1, the \textbf{Microsoft Azure Kinect 
 
 The Azure Kinect DK integrates a high-resolution RGB camera and a depth sensor based on Time-of-Flight (ToF) technology. The RGB camera provides up to 12~MP resolution (4096$\times$3072), while the depth sensor delivers depth maps with a maximum resolution of 1024$\times$1024 pixels.
 
-The depth sensing module operates using modulated infrared light to estimate per-pixel distance information, enabling accurate 3D scene reconstruction \cite{microsoft_about_nodate}. 
+The depth sensing module operates using modulated infrared light to estimate per-pixel distance information, enabling accurate 3D scene reconstruction \cite{microsoft_about_nodate}.
 
 The device supports multiple depth operating modes, including Narrow Field of View (NFOV) and Wide Field of View (WFOV), each configurable with binned and unbinned resolutions, as illustrated in Figure~\ref{fig:camera-fov} and in Table~\ref{tab:azure_depth_modes}. This flexibility allows adaptation to different working distances and spatial accuracy requirements. The depth measurement range typically varies between 0.25~m and 5.5~m, depending on the selected configuration and environmental conditions \cite{microsoft_about_nodate}.
 
@@ -63,7 +63,7 @@ Passive IR & 1024$\times$1024 & N/A & 0, 5, 15, 30 & N/A & 1.6 ms \\
 \caption{Depth camera operating modes and specifications.}
 \label{tab:azure_depth_modes}
 \end{table}
-
+\newpage
 From a hardware standpoint, the Azure Kinect DK includes:
 \begin{itemize}
     \item one 12~MP RGB camera,
@@ -87,7 +87,7 @@ The availability of synchronized RGB and depth streams enables the generation of
 
 \subsubsection{Azure Kinect Sensor SDK}
 
-The Azure Kinect DK is supported by the Azure Kinect Sensor SDK \cite{microsoft_azure-kinect-sensor-sdk_2026}, which provides low-level APIs for device control, stream acquisition, intrinsic and extrinsic calibration handling, depth-to-color transformation, and point cloud extraction \cite{microsoft_about_nodate}. 
+The Azure Kinect DK is supported by the Azure Kinect Sensor SDK \cite{microsoft_azure-kinect-sensor-sdk_2026}, which provides low-level APIs for device control, stream acquisition, intrinsic and extrinsic calibration handling, depth-to-color transformation, and point cloud extraction \cite{microsoft_about_nodate}.
 
 The SDK exposes calibrated camera parameters, including focal lengths, principal points, and distortion coefficients, enabling accurate geometric transformations between RGB and depth coordinate systems. Moreover, built-in functions allow real-time depth image rectification, coordinate mapping, and conversion of depth frames into 3D point clouds expressed in camera reference coordinates.
 

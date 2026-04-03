@@ -1,36 +1,33 @@
 % !TeX root = ../../tesi.tex
 
 Site 1 represents the first deployment environment of the proposed vision-based monitoring system. This site corresponds to the production stage where the dough exits the industrial forming machine in the shape of individual cylindrical dough balls. The objective at this stage is twofold: (i) to acquire a representative RGB-D dataset for training the object detection network in an offline setting, and (ii) to deploy online the trained DEIMv2 to detect the bounding boxes containing the dough for volumetric estimation of the produced dough balls.
-
-\subsubsection{Industrial Context and Process Description}
-
-At Site 1, the dough mixture is processed by an automated forming machine that portions and shapes the material into approximately spherical dough balls. These dough balls exit the machine sequentially and move along a conveyor belt. Variability in size and shape may occur due to fluctuations in the upstream mixing and forming processes. For quality control purposes, it is essential to monitor geometric properties such as diameter and volume in a non-contact and real-time manner.
-
-To address this requirement, a vision-based acquisition setup has been installed above the machine output (see Figure ~\ref{fig:Output}). 
-
 \begin{figure}[h]
     \centering
     \begin{subfigure}[h]{0.48\textwidth}
         \centering
         %\vspace{0pt}% allinea in alto
-        \includegraphics[scale=0.07, angle=-90, trim={0 120 120 40}, clip]{images/sito1(1).jpg}
+        \includegraphics[scale=0.06, angle=-90, trim={0 120 120 40}, clip]{images/sito1(1).jpg}
         \caption{Site 1: Automated machine pipeline}
         \label{fig:site1(1)}
     \end{subfigure}\hfill
     \begin{subfigure}[h]{0.48\textwidth}
         \centering
         %\vspace{0pt}% allinea in alto
-        \includegraphics[scale=0.2, trim={0 280 0 400}, clip]{images/Output1-2.jpg}
+        \includegraphics[scale=0.19, trim={0 280 0 400}, clip]{images/Output1-2.jpg}
         \caption{Output table where the dough balls arrive}
         \label{fig:Output}
     \end{subfigure}
     \caption{Overview of site 1 and close-up of machine output}
     \label{fig:sites}
 \end{figure}
-The hardware configuration consists of an \emph{NVIDIA Jetson Nano 2GB Developer Kit} for edge computation and an \emph{Azure Microsoft Kinect} RGB-D sensor for synchronized color and depth acquisition. The Kinect is based on Time-of-Flight (ToF) technology, which enables dense depth estimation by measuring the phase shift of modulated infrared light \cite{microsoft_azure_nodate}.
+
+\subsubsection{Industrial Context and Process Description}
+At Site 1, the dough mixture is processed by an automated forming machine that portions and shapes the material into approximately cylindrical dough balls. These dough balls exit the machine sequentially and move along a conveyor belt, until they reach the output table (Figure \ref{fig:Output}). Variability in size and shape may occur due to fluctuations in the upstream mixing and forming processes. For quality control purposes, it is essential to monitor geometric properties such as volume in a non-contact manner.
+
+To address this requirement, a vision-based acquisition setup has been installed above the machine output (see Figure ~\ref{fig:site1}).
+The hardware configuration consists of an \emph{NVIDIA Jetson Nano 2GB Developer Kit} \cite{nvidia_corporation_jetson_nodate} for edge computation and an \emph{Azure Microsoft Kinect} RGB-D sensor \cite{microsoft_azure_nodate} for synchronized color and depth acquisition. The Kinect is based on Time-of-Flight (ToF) technology, which enables dense depth estimation by measuring the phase shift of modulated infrared light \cite{microsoft_azure_nodate}.
 
 \subsubsection{Offline Data Acquisition and Network Training}
-
 During the offline phase, the system operates in data acquisition mode. In this configuration, the Azure Kinect continuously captures synchronized RGB and depth frames. A motion detection algorithm is executed on the Jetson Nano to identify temporal variations in the scene corresponding to the passage of dough balls under the camera.
 
 The motion detection module serves exclusively as a trigger mechanism for dataset collection. When motion is detected within a predefined and configurable region of interest (ROI), the corresponding RGB-D frame is stored. In this case, the chosen ROI completely coincided with the machine output. \\
@@ -41,9 +38,9 @@ This approach ensures that:
     \item The dataset remains balanced and computationally manageable.
 \end{itemize}
 
-The collected dataset is subsequently annotated using the Language Segment-Anything framework \cite{medeiros_luca-medeiroslang-segment-anything_2026}. This pretrained open-source model integrates instance segmentation capabilities with text-based prompts, enabling the generation of object-specific segmentation masks directly from natural language descriptions. 
+The collected dataset is subsequently annotated using the Language Segment-Anything framework \cite{medeiros_luca-medeiroslang-segment-anything_2026}. This pretrained open-source model integrates instance segmentation capabilities with text-based prompts, enabling the generation of object-specific segmentation masks directly from natural language descriptions.
 
-In the proposed pipeline, a textual prompt describing the dough balls is provided to automatically obtain pixel-level masks for each instance present in the image. The generated masks are then converted into corresponding bounding boxes, which are used as ground-truth annotations for training the DEIMv2\cite{huang_real-time_2026} object detection network in an offline environment. 
+In the proposed pipeline, a textual prompt describing the dough balls is provided to automatically obtain pixel-level masks for each instance present in the image. The generated masks are then converted into corresponding bounding boxes, which are used as ground-truth annotations for training the DEIMv2\cite{huang_real-time_2026} object detection network in an offline environment.
 
 This semi-automatic annotation strategy significantly reduces manual labeling effort while preserving annotation consistency across the dataset.\\
 Lastly, the training phase is performed on a separate workstation equipped with higher computational resources.
