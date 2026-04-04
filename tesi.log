@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.3.26)  3 APR 2026 17:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.3.26)  4 APR 2026 19:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -756,12 +756,12 @@ LaTeX Info: Command `\ddddot' is already robust on input line 3.
 \c@mv@tabular=\count361
 \c@mv@boldtabular=\count362
  (start-end/frontespizio.tex
-<images/logo.png, id=251, 2309.62875pt x 1043.9pt>
+<images/logo.png, id=235, 2309.62875pt x 1043.9pt>
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
 Package pdftex.def Info: images/logo.png  used on input line 9.
 (pdftex.def)             Requested size: 182.09486pt x 82.30313pt.
-<images/logo_dei.pdf, id=252, 98.3675pt x 63.23625pt>
+<images/logo_dei.pdf, id=236, 98.3675pt x 63.23625pt>
 File: images/logo_dei.pdf Graphic file (type pdf)
 <use images/logo_dei.pdf>
 Package pdftex.def Info: images/logo_dei.pdf  used on input line 13.
@@ -883,27 +883,29 @@ LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
 (Font)              scaled to size 8.8pt on input line 3.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
 (Font)              scaled to size 6.6pt on input line 3.
-
-Underfull \vbox (badness 2753) has occurred while \output is active []
-
  [5
 
 ]
-Overfull \hbox (0.80223pt too wide) in paragraph at lines 28--28
+Overfull \hbox (0.80223pt too wide) in paragraph at lines 29--29
  [][] [][]\OT1/minntx/m/n/12 YOLOv12 R-ELAN ar-chi-tec-ture overview, il-lus-trat-ing the skip con-nec-tion mech- 
  []
 
-[6])
+[6]
+Overfull \hbox (7.16197pt too wide) in paragraph at lines 45--45
+ [][] [][]\OT1/minntx/m/n/12 Example of a con-fig-urable re-gion of in-ter-est (ROI) su-per-im-posed on a background- 
+ []
+
+)
 \tf@lof=\write4
 \openout4 = `tesi.lof'.
 
- [7] [8
-
-] (tesi.lot)
+ [7] [8] (tesi.lot)
 \tf@lot=\write5
 \openout5 = `tesi.lot'.
 
- [9] [10
+ [9
+
+] [10
 
 ] (tesi.toc [11])
 \tf@toc=\write6
@@ -935,7 +937,7 @@ l.13 \end{itemize}
 
 
 {C:/Users/giuse/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ts1.enc}]
-<images/Site1.jpg, id=560, 4015.0pt x 3011.25pt>
+<images/Site1.jpg, id=569, 4015.0pt x 3011.25pt>
 File: images/Site1.jpg Graphic file (type jpg)
 <use images/Site1.jpg>
 Package pdftex.def Info: images/Site1.jpg  used on input line 20.
@@ -944,7 +946,7 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 8.0pt on input line 21.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 (Font)              scaled to size 8.0pt on input line 21.
-<images/sito2_giorno.jpeg, id=561, 1505.625pt x 2007.5pt>
+<images/sito2_giorno.jpeg, id=570, 1505.625pt x 2007.5pt>
 File: images/sito2_giorno.jpeg Graphic file (type jpg)
 <use images/sito2_giorno.jpeg>
 Package pdftex.def Info: images/sito2_giorno.jpeg  used on input line 27.
@@ -961,10 +963,10 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has b
 <to be read again> 
                    \relax 
 l.45 
-      [2 <./images/Site1.jpg> <./images/sito2_giorno.jpeg>]) (Chapters/Chapter_1/4_Internship.tex
+      [2 <./images/Site1.jpg> <./images/sito2_giorno.jpeg>]) (Chapters/Chapter_1/4_Internship.tex [3]
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 (Font)              scaled to size 14.4pt on input line 9.
- [3] [4]) (Chapters/Chapter_1/7_Problematic.tex
+ [4]) (Chapters/Chapter_1/7_Problematic.tex
 LaTeX Font Info:    Trying to load font information for OT1+ntxtt on input line 11.
  (C:\Users\giuse\AppData\Local\Programs\MiKTeX\tex/latex/newtx\ot1ntxtt.fd
 File: ot1ntxtt.fd 2012/04/20 v3.1
@@ -972,37 +974,30 @@ File: ot1ntxtt.fd 2012/04/20 v3.1
 LaTeX Font Info:    Font shape `OT1/ntxtt/m/n' will be
 (Font)              scaled to size 12.0pt on input line 11.
  [5]
-<images/faretto_sito_2(1).jpeg, id=603, 1505.625pt x 2007.5pt>
-File: images/faretto_sito_2(1).jpeg Graphic file (type jpg)
-<use images/faretto_sito_2(1).jpeg>
-Package pdftex.def Info: images/faretto_sito_2(1).jpeg  used on input line 61.
-(pdftex.def)             Requested size: 227.62206pt x 303.47067pt.
+<images/faretto_sito_2.JPG, id=609, 1755.55875pt x 718.685pt>
+File: images/faretto_sito_2.JPG Graphic file (type jpg)
+<use images/faretto_sito_2.JPG>
+Package pdftex.def Info: images/faretto_sito_2.JPG  used on input line 61.
+(pdftex.def)             Requested size: 364.19667pt x 149.08597pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 ) (Chapters/Chapter_1/5_Companies.tex [6]
-<images/flexsight_logo.png, id=613, 2055.68pt x 441.65pt>
+<images/flexsight_logo.png, id=619, 2055.68pt x 441.65pt>
 File: images/flexsight_logo.png Graphic file (type png)
 <use images/flexsight_logo.png>
 Package pdftex.def Info: images/flexsight_logo.png  used on input line 12.
 (pdftex.def)             Requested size: 273.14923pt x 58.68344pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<images/Smact-Logo.png, id=617, 770.88pt x 353.06906pt>
+<images/Smact-Logo.png, id=623, 770.88pt x 353.06906pt>
 File: images/Smact-Logo.png Graphic file (type png)
 <use images/Smact-Logo.png>
 Package pdftex.def Info: images/Smact-Logo.png  used on input line 22.
 (pdftex.def)             Requested size: 227.62206pt x 104.25143pt.
-)) (Chapters/Chapter_2/0_chapter_2.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7 <./images/faretto_sito_2(1).jpeg>] [8 <./images/flexsight_logo.png> <./images/Smact-Logo.png>]
+)) (Chapters/Chapter_2/0_chapter_2.tex [7 <./images/faretto_sito_2.JPG> <./images/flexsight_logo.png>] [8 <./images/Smact-Logo.png>]
 Chapter 2.
 (Chapters/Chapter_2/1_Computer vision.tex) (Chapters/Chapter_2/1.1_Object_detection.tex
-<images/object-detection.png, id=634, 915.42pt x 596.2275pt>
+<images/object-detection.png, id=640, 915.42pt x 596.2275pt>
 File: images/object-detection.png Graphic file (type png)
 <use images/object-detection.png>
 Package pdftex.def Info: images/object-detection.png  used on input line 10.
@@ -1010,23 +1005,23 @@ Package pdftex.def Info: images/object-detection.png  used on input line 10.
  [9
 
  <./images/object-detection.png>]
-<images/Intersection_over_Union.png, id=642, 602.25pt x 469.755pt>
+<images/Intersection_over_Union.png, id=648, 602.25pt x 469.755pt>
 File: images/Intersection_over_Union.png Graphic file (type png)
 <use images/Intersection_over_Union.png>
 Package pdftex.def Info: images/Intersection_over_Union.png  used on input line 28.
 (pdftex.def)             Requested size: 150.56212pt x 117.43846pt.
-<images/IoU.png, id=643, 602.25pt x 248.93pt>
+<images/IoU.png, id=649, 602.25pt x 248.93pt>
 File: images/IoU.png Graphic file (type png)
 <use images/IoU.png>
 Package pdftex.def Info: images/IoU.png  used on input line 34.
 (pdftex.def)             Requested size: 150.56212pt x 62.23235pt.
-<images/NMS1.png, id=644, 1027.84pt x 541.02126pt>
+<images/NMS1.png, id=650, 1027.84pt x 541.02126pt>
 File: images/NMS1.png Graphic file (type png)
 <use images/NMS1.png>
 Package pdftex.def Info: images/NMS1.png  used on input line 50.
 (pdftex.def)             Requested size: 308.35437pt x 162.30762pt.
  [10 <./images/Intersection_over_Union.png> <./images/IoU.png>]) (Chapters/Chapter_2/1.2_Image_segmentation.tex
-<images/segmentation.png, id=660, 2006.49625pt x 1702.36pt>
+<images/segmentation.png, id=666, 2006.49625pt x 1702.36pt>
 File: images/segmentation.png Graphic file (type png)
 <use images/segmentation.png>
 Package pdftex.def Info: images/segmentation.png  used on input line 14.
@@ -1036,92 +1031,96 @@ Package pdftex.def Info: images/segmentation.png  used on input line 14.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [11 <./images/NMS1.png>]) (Chapters/Chapter_2/1.3_Clustering.tex [12 <./images/segmentation.png>]
-<images/clustering.png, id=688, 586.1097pt x 333.1647pt>
+<images/clustering.png, id=694, 586.1097pt x 333.1647pt>
 File: images/clustering.png Graphic file (type png)
 <use images/clustering.png>
 Package pdftex.def Info: images/clustering.png  used on input line 13.
 (pdftex.def)             Requested size: 234.43971pt x 133.2635pt.
-) (Chapters/Chapter_2/1.4_Metrics.tex [13 <./images/clustering.png>]
-<images/Precisionrecall1.png, id=701, 877.2775pt x 1187.43625pt>
-File: images/Precisionrecall1.png Graphic file (type png)
-<use images/Precisionrecall1.png>
-Package pdftex.def Info: images/Precisionrecall1.png  used on input line 26.
-(pdftex.def)             Requested size: 159.33821pt x 215.66801pt.
-<images/Precisionrecall2.png, id=702, 814.04124pt x 580.1675pt>
-File: images/Precisionrecall2.png Graphic file (type png)
-<use images/Precisionrecall2.png>
-Package pdftex.def Info: images/Precisionrecall2.png  used on input line 30.
-(pdftex.def)             Requested size: 204.85846pt x 145.99759pt.
- [14 <./images/Precisionrecall1.png> <./images/Precisionrecall2.png>]
-<images/segmentation-iou.jpg, id=718, 1027.84pt x 297.11pt>
-File: images/segmentation-iou.jpg Graphic file (type jpg)
-<use images/segmentation-iou.jpg>
-Package pdftex.def Info: images/segmentation-iou.jpg  used on input line 52.
-(pdftex.def)             Requested size: 411.12872pt x 118.84189pt.
-<images/auroc.png, id=723, 1875.005pt x 1383.1675pt>
-File: images/auroc.png Graphic file (type png)
-<use images/auroc.png>
-Package pdftex.def Info: images/auroc.png  used on input line 66.
-(pdftex.def)             Requested size: 243.7592pt x 179.81808pt.
+<images/Background_subtraction.png, id=697, 1924.18875pt x 1015.54407pt>
+File: images/Background_subtraction.png Graphic file (type png)
+<use images/Background_subtraction.png>
+Package pdftex.def Info: images/Background_subtraction.png  used on input line 25.
+(pdftex.def)             Requested size: 273.14923pt x 144.15868pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[15 <./images/segmentation-iou.jpg>]) (Chapters/Chapter_2/2_Neural_Networks.tex
-<images/NN.png, id=742, 853.1875pt x 499.8675pt>
+) (Chapters/Chapter_2/1.4_Metrics.tex [13 <./images/clustering.png>]
+<images/Precisionrecall1.png, id=709, 877.2775pt x 1187.43625pt>
+File: images/Precisionrecall1.png Graphic file (type png)
+<use images/Precisionrecall1.png>
+Package pdftex.def Info: images/Precisionrecall1.png  used on input line 29.
+(pdftex.def)             Requested size: 163.88739pt x 221.8284pt.
+<images/Precisionrecall2.png, id=710, 814.04124pt x 580.1675pt>
+File: images/Precisionrecall2.png Graphic file (type png)
+<use images/Precisionrecall2.png>
+Package pdftex.def Info: images/Precisionrecall2.png  used on input line 33.
+(pdftex.def)             Requested size: 204.85846pt x 145.99759pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[14 <./images/Background_subtraction.png>]
+<images/segmentation-iou.jpg, id=724, 1027.84pt x 297.11pt>
+File: images/segmentation-iou.jpg Graphic file (type jpg)
+<use images/segmentation-iou.jpg>
+Package pdftex.def Info: images/segmentation-iou.jpg  used on input line 54.
+(pdftex.def)             Requested size: 359.74939pt x 103.99005pt.
+ [15 <./images/Precisionrecall1.png> <./images/Precisionrecall2.png> <./images/segmentation-iou.jpg>]
+<images/auroc.png, id=740, 1875.005pt x 1383.1675pt>
+File: images/auroc.png Graphic file (type png)
+<use images/auroc.png>
+Package pdftex.def Info: images/auroc.png  used on input line 68.
+(pdftex.def)             Requested size: 281.23862pt x 207.46617pt.
+ [16 <./images/auroc.png>]) (Chapters/Chapter_2/2_Neural_Networks.tex
+<images/NN.png, id=757, 853.1875pt x 499.8675pt>
 File: images/NN.png Graphic file (type png)
 <use images/NN.png>
 Package pdftex.def Info: images/NN.png  used on input line 7.
 (pdftex.def)             Requested size: 227.62206pt x 133.35664pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<images/Gradient_descent.png, id=745, 705.63625pt x 367.3725pt>
+<images/Gradient_descent.png, id=760, 705.63625pt x 367.3725pt>
 File: images/Gradient_descent.png Graphic file (type png)
 <use images/Gradient_descent.png>
 Package pdftex.def Info: images/Gradient_descent.png  used on input line 15.
 (pdftex.def)             Requested size: 227.62206pt x 118.50334pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \vbox (badness 2564) has occurred while \output is active []
 
-[16 <./images/auroc.png>]
-<images/DL.png, id=761, 510.90875pt x 249.93375pt>
+ [17 <./images/NN.png> <./images/Gradient_descent.png (PNG copy)>]
+<images/DL.png, id=775, 510.90875pt x 249.93375pt>
 File: images/DL.png Graphic file (type png)
 <use images/DL.png>
 Package pdftex.def Info: images/DL.png  used on input line 25.
-(pdftex.def)             Requested size: 227.62206pt x 111.34792pt.
+(pdftex.def)             Requested size: 295.90588pt x 144.75574pt.
+ [18 <./images/DL.png>]
+<images/CNN.png, id=791, 1535.7375pt x 717.68124pt>
+File: images/CNN.png Graphic file (type png)
+<use images/CNN.png>
+Package pdftex.def Info: images/CNN.png  used on input line 36.
+(pdftex.def)             Requested size: 386.96027pt x 180.83253pt.
+) (Chapters/Chapter_2/3_ViT.tex
+<images/ViT_vs_CNN.png, id=795, 876.27374pt x 542.025pt>
+File: images/ViT_vs_CNN.png Graphic file (type png)
+<use images/ViT_vs_CNN.png>
+Package pdftex.def Info: images/ViT_vs_CNN.png  used on input line 7.
+(pdftex.def)             Requested size: 219.06789pt x 135.5059pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [17 <./images/NN.png> <./images/Gradient_descent.png (PNG copy)>]
-<images/CNN.png, id=777, 1535.7375pt x 717.68124pt>
-File: images/CNN.png Graphic file (type png)
-<use images/CNN.png>
-Package pdftex.def Info: images/CNN.png  used on input line 36.
-(pdftex.def)             Requested size: 236.72888pt x 110.62619pt.
-) [18 <./images/DL.png> <./images/CNN.png>] (Chapters/Chapter_2/3_ViT.tex
-<images/ViT_vs_CNN.jpg, id=788, 286.06876pt x 177.66376pt>
-File: images/ViT_vs_CNN.jpg Graphic file (type jpg)
-<use images/ViT_vs_CNN.jpg>
-Package pdftex.def Info: images/ViT_vs_CNN.jpg  used on input line 7.
-(pdftex.def)             Requested size: 200.24675pt x 124.36377pt.
-<images/cnn_vs_ViT1.png, id=789, 1204.5pt x 446.66875pt>
+[19 <./images/CNN.png>]
+<images/cnn_vs_ViT1.png, id=802, 1204.5pt x 446.66875pt>
 File: images/cnn_vs_ViT1.png Graphic file (type png)
 <use images/cnn_vs_ViT1.png>
-Package pdftex.def Info: images/cnn_vs_ViT1.png  used on input line 17.
-(pdftex.def)             Requested size: 204.76228pt x 75.93268pt.
-<images/cnn_vs_ViT2.png, id=790, 1203.49625pt x 598.235pt>
+Package pdftex.def Info: images/cnn_vs_ViT1.png  used on input line 15.
+(pdftex.def)             Requested size: 318.66948pt x 118.17581pt.
+<images/cnn_vs_ViT2.png, id=803, 1203.49625pt x 598.235pt>
 File: images/cnn_vs_ViT2.png Graphic file (type png)
 <use images/cnn_vs_ViT2.png>
-Package pdftex.def Info: images/cnn_vs_ViT2.png  used on input line 22.
-(pdftex.def)             Requested size: 204.59166pt x 101.6986pt.
- [19 <./images/ViT_vs_CNN.jpg> <./images/cnn_vs_ViT1.png> <./images/cnn_vs_ViT2.png>]) (Chapters/Chapter_2/4_RT-DETR.tex
-<images/DETR.png, id=802, 483.7272pt x 162.8484pt>
+Package pdftex.def Info: images/cnn_vs_ViT2.png  used on input line 20.
+(pdftex.def)             Requested size: 318.66948pt x 158.40372pt.
+ [20 <./images/ViT_vs_CNN.png> <./images/cnn_vs_ViT1.png> <./images/cnn_vs_ViT2.png>]) (Chapters/Chapter_2/4_RT-DETR.tex
+<images/DETR.png, id=816, 483.7272pt x 162.8484pt>
 File: images/DETR.png Graphic file (type png)
 <use images/DETR.png>
 Package pdftex.def Info: images/DETR.png  used on input line 6.
@@ -1131,21 +1130,21 @@ Overfull \hbox (3.307pt too wide) in paragraph at lines 11--12
 []\OT1/minntx/m/n/12 From an ar-chi-tec-tural per-spec-tive, RT-DETR re-tains the stan-dard backbone--encoder--decoder
  []
 
-[20 <./images/DETR.png>]
-<images/RT-DETR.png, id=810, 2830.575pt x 933.4875pt>
+<images/RT-DETR.png, id=818, 2830.575pt x 933.4875pt>
 File: images/RT-DETR.png Graphic file (type png)
 <use images/RT-DETR.png>
 Package pdftex.def Info: images/RT-DETR.png  used on input line 15.
 (pdftex.def)             Requested size: 424.56793pt x 140.01707pt.
-<images/Hungarian_match.png, id=813, 1372.37718pt x 588.69937pt>
+[21 <./images/DETR.png>]
+<images/Hungarian_match.png, id=828, 1372.37718pt x 588.69937pt>
 File: images/Hungarian_match.png Graphic file (type png)
 <use images/Hungarian_match.png>
 Package pdftex.def Info: images/Hungarian_match.png  used on input line 27.
-(pdftex.def)             Requested size: 274.47057pt x 117.73778pt.
-) [21 <./images/RT-DETR.png (PNG copy)> <./images/Hungarian_match.png>] (Chapters/Chapter_2/5_Related_work.tex) (Chapters/Chapter_2/5.1_DEIMv2.tex
+(pdftex.def)             Requested size: 301.92392pt x 129.51425pt.
+ [22 <./images/RT-DETR.png (PNG copy)> <./images/Hungarian_match.png>]) (Chapters/Chapter_2/5_Related_work.tex) (Chapters/Chapter_2/5.1_DEIMv2.tex
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/it' will be
 (Font)              scaled to size 12.0pt on input line 6.
-<images/DEIMv2.png, id=822, 483.7272pt x 152.7306pt>
+<images/DEIMv2.png, id=837, 483.7272pt x 152.7306pt>
 File: images/DEIMv2.png Graphic file (type png)
 <use images/DEIMv2.png>
 Package pdftex.def Info: images/DEIMv2.png  used on input line 12.
@@ -1154,106 +1153,79 @@ Package pdftex.def Info: images/DEIMv2.png  used on input line 12.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/DEIM_results.png, id=826, 1555.8125pt x 379.4175pt>
+[23]
+<images/DEIM_results.png, id=847, 1555.8125pt x 379.4175pt>
 File: images/DEIM_results.png Graphic file (type png)
 <use images/DEIM_results.png>
 Package pdftex.def Info: images/DEIM_results.png  used on input line 20.
 (pdftex.def)             Requested size: 409.71692pt x 99.91411pt.
-[22]) (Chapters/Chapter_2/5.2_YOLO.tex
-<images/YOLO1.png, id=839, 824.32968pt x 173.89969pt>
+) (Chapters/Chapter_2/5.2_YOLO.tex [24 <./images/DEIMv2.png> <./images/DEIM_results.png>]
+<images/YOLO1.png, id=861, 824.32968pt x 173.89969pt>
 File: images/YOLO1.png Graphic file (type png)
 <use images/YOLO1.png>
 Package pdftex.def Info: images/YOLO1.png  used on input line 8.
 (pdftex.def)             Requested size: 409.71692pt x 86.43484pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<images/YOLO2.png, id=841, 835.62187pt x 242.40562pt>
+<images/YOLO2.png, id=863, 835.62187pt x 242.40562pt>
 File: images/YOLO2.png Graphic file (type png)
 <use images/YOLO2.png>
 Package pdftex.def Info: images/YOLO2.png  used on input line 15.
 (pdftex.def)             Requested size: 409.71692pt x 118.85745pt.
-[23 <./images/DEIMv2.png> <./images/DEIM_results.png>]
-<images/YOLO_results.png, id=855, 1147.28625pt x 204.765pt>
+<images/YOLO_results.png, id=870, 1147.28625pt x 204.765pt>
 File: images/YOLO_results.png Graphic file (type png)
 <use images/YOLO_results.png>
 Package pdftex.def Info: images/YOLO_results.png  used on input line 27.
 (pdftex.def)             Requested size: 409.71692pt x 73.1248pt.
-)
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-(Chapters/Chapter_2/5.3_Image segmentation.tex
-<images/EoMT1.png, id=860, 1083.04625pt x 555.07375pt>
+) [25 <./images/YOLO1.png> <./images/YOLO2.png>] (Chapters/Chapter_2/5.3_Image segmentation.tex
+<images/EoMT1.png, id=881, 1083.04625pt x 555.07375pt>
 File: images/EoMT1.png Graphic file (type png)
 <use images/EoMT1.png>
 Package pdftex.def Info: images/EoMT1.png  used on input line 6.
-(pdftex.def)             Requested size: 273.14923pt x 139.98773pt.
-
-Underfull \vbox (badness 1845) has occurred while \output is active []
-
- [24 <./images/YOLO1.png> <./images/YOLO2.png>]
-<images/EoMT_mask2.png, id=868, 575.14874pt x 324.46219pt>
+(pdftex.def)             Requested size: 204.85846pt x 104.9908pt.
+<images/EoMT_mask2.png, id=883, 575.14874pt x 324.46219pt>
 File: images/EoMT_mask2.png Graphic file (type png)
 <use images/EoMT_mask2.png>
 Package pdftex.def Info: images/EoMT_mask2.png  used on input line 14.
-(pdftex.def)             Requested size: 295.90588pt x 166.93402pt.
+(pdftex.def)             Requested size: 227.62206pt x 128.41116pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/EoMT2.png, id=870, 231.86626pt x 381.425pt>
+<images/EoMT2.png, id=885, 231.86626pt x 381.425pt>
 File: images/EoMT2.png Graphic file (type png)
 <use images/EoMT2.png>
 Package pdftex.def Info: images/EoMT2.png  used on input line 26.
 (pdftex.def)             Requested size: 86.47906pt x 142.25995pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--28
-[][]|\OT1/ntxtlf/m/n/8 Pro-gres-sive
+Underfull \hbox (badness 7631) in paragraph at lines 28--28
+\OT1/ntxtlf/m/n/8 task-specific seg-men-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--28
-\OT1/ntxtlf/m/n/8 re-moval of
+Underfull \hbox (badness 1715) in paragraph at lines 28--28
+\OT1/ntxtlf/m/n/8 ta-tion com-po-nents in
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 28--28
-\OT1/ntxtlf/m/n/8 task-specific
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 28--28
-\OT1/ntxtlf/m/n/8 seg-men-ta-tion
- []
-
-
-Underfull \hbox (badness 4556) in paragraph at lines 28--28
-\OT1/ntxtlf/m/n/8 com-po-nents in
- []
-
-<images/EoMT3.png, id=873, 680.5425pt x 703.12688pt>
+<images/EoMT3.png, id=888, 680.5425pt x 703.12688pt>
 File: images/EoMT3.png Graphic file (type png)
 <use images/EoMT3.png>
 Package pdftex.def Info: images/EoMT3.png  used on input line 37.
-(pdftex.def)             Requested size: 220.3014pt x 227.6123pt.
-[25 <./images/YOLO_results.png> <./images/EoMT1.png (PNG copy)>]) (Chapters/Chapter_2/5.4_Final considerations.tex
-Underfull \vbox (badness 1038) has occurred while \output is active []
+(pdftex.def)             Requested size: 192.76244pt x 199.15942pt.
+[26 <./images/YOLO_results.png> <./images/EoMT1.png (PNG copy)>]) (Chapters/Chapter_2/5.4_Final considerations.tex
+Underfull \vbox (badness 1629) has occurred while \output is active []
 
- [26 <./images/EoMT_mask2.png> <./images/EoMT2.png (PNG copy)> <./images/EoMT3.png>]
-<images/DEIMvsYOLO1.png, id=892, 712.6625pt x 498.86375pt>
+ [27 <./images/EoMT_mask2.png> <./images/EoMT2.png (PNG copy)> <./images/EoMT3.png>]
+<images/DEIMvsYOLO1.png, id=907, 712.6625pt x 498.86375pt>
 File: images/DEIMvsYOLO1.png Graphic file (type png)
 <use images/DEIMvsYOLO1.png>
 Package pdftex.def Info: images/DEIMvsYOLO1.png  used on input line 12.
 (pdftex.def)             Requested size: 218.51521pt x 152.95628pt.
-<images/DEIMvsYOLO2.png, id=897, 595.22375pt x 421.575pt>
+<images/DEIMvsYOLO2.png, id=912, 595.22375pt x 421.575pt>
 File: images/DEIMvsYOLO2.png Graphic file (type png)
 <use images/DEIMvsYOLO2.png>
 Package pdftex.def Info: images/DEIMvsYOLO2.png  used on input line 18.
 (pdftex.def)             Requested size: 218.51521pt x 154.76451pt.
- [27 <./images/DEIMvsYOLO1.png> <./images/DEIMvsYOLO2.png>]) (Chapters/Chapter_2/6_Anomaly_Detection.tex
-<images/Anomaly.png, id=917, 916.92563pt x 840.13875pt>
+ [28 <./images/DEIMvsYOLO1.png> <./images/DEIMvsYOLO2.png>]) (Chapters/Chapter_2/6_Anomaly_Detection.tex
+<images/Anomaly.png, id=932, 916.92563pt x 840.13875pt>
 File: images/Anomaly.png Graphic file (type png)
 <use images/Anomaly.png>
 Package pdftex.def Info: images/Anomaly.png  used on input line 11.
@@ -1265,8 +1237,8 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 ) (Chapters/Chapter_2/6.1_EfficientAD.tex
 Underfull \vbox (badness 5970) has occurred while \output is active []
 
- [28]
-<images/EfficientAD_structure.png, id=927, 1537.24312pt x 424.58624pt>
+ [29]
+<images/EfficientAD_structure.png, id=943, 1537.24312pt x 424.58624pt>
 File: images/EfficientAD_structure.png Graphic file (type png)
 <use images/EfficientAD_structure.png>
 Package pdftex.def Info: images/EfficientAD_structure.png  used on input line 7.
@@ -1275,193 +1247,243 @@ Package pdftex.def Info: images/EfficientAD_structure.png  used on input line 7.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[29 <./images/Anomaly.png>]
-<images/EfficientAD_examples.png, id=940, 707.64375pt x 674.52pt>
+[30 <./images/Anomaly.png>]
+<images/EfficientAD_examples.png, id=955, 707.64375pt x 674.52pt>
 File: images/EfficientAD_examples.png Graphic file (type png)
 <use images/EfficientAD_examples.png>
 Package pdftex.def Info: images/EfficientAD_examples.png  used on input line 17.
-(pdftex.def)             Requested size: 318.66948pt x 303.75763pt.
-) (Chapters/Chapter_2/7_Training_an_AI.tex
-Underfull \vbox (badness 1237) has occurred while \output is active []
-
- [30 <./images/EfficientAD_structure.png> <./images/EfficientAD_examples.png>]) (Chapters/Chapter_2/7.1_Dataset-split.tex
-<images/dataset_split.png, id=955, 815.045pt x 206.7725pt>
+(pdftex.def)             Requested size: 273.14923pt x 260.36514pt.
+) (Chapters/Chapter_2/7_Training_an_AI.tex [31 <./images/EfficientAD_structure.png> <./images/EfficientAD_examples.png>]) (Chapters/Chapter_2/7.1_Dataset-split.tex
+<images/dataset_split.png, id=970, 815.045pt x 206.7725pt>
 File: images/dataset_split.png Graphic file (type png)
 <use images/dataset_split.png>
 Package pdftex.def Info: images/dataset_split.png  used on input line 6.
 (pdftex.def)             Requested size: 386.96027pt x 98.17062pt.
 ) (Chapters/Chapter_2/7.2_Over-Unde.tex
-<images/under_over_example.png, id=958, 1129.21875pt x 392.46625pt>
+<images/under_over_example.png, id=973, 1129.21875pt x 392.46625pt>
 File: images/under_over_example.png Graphic file (type png)
 <use images/under_over_example.png>
 Package pdftex.def Info: images/under_over_example.png  used on input line 4.
 (pdftex.def)             Requested size: 341.43307pt x 118.66899pt.
- [31 <./images/dataset_split.png>]
-<images/under-overfitting.png, id=969, 570.933pt x 363.15675pt>
+ [32 <./images/dataset_split.png>]
+<images/under-overfitting.png, id=984, 570.933pt x 363.15675pt>
 File: images/under-overfitting.png Graphic file (type png)
 <use images/under-overfitting.png>
 Package pdftex.def Info: images/under-overfitting.png  used on input line 14.
 (pdftex.def)             Requested size: 273.14923pt x 173.74803pt.
-) [32 <./images/under_over_example.png (PNG copy)> <./images/under-overfitting.png>]) (Chapters/Chapter_3/0_chapter_3.tex [33] [34
-
-]
+) [33 <./images/under_over_example.png (PNG copy)> <./images/under-overfitting.png>]) (Chapters/Chapter_3/0_chapter_3.tex [34]
 Chapter 3.
 (Chapters/Chapter_3/1.0_Site1.tex
-<images/sito1(1).jpg, id=985, 4015.0pt x 3011.25pt>
+<images/sito1(1).jpg, id=996, 4015.0pt x 3011.25pt>
 File: images/sito1(1).jpg Graphic file (type jpg)
 <use images/sito1(1).jpg>
 Package pdftex.def Info: images/sito1(1).jpg  used on input line 9.
 (pdftex.def)             Requested size: 233.6629pt x 171.0316pt.
-<images/Output1-2.jpg, id=987, 1084.05pt x 1927.2pt>
+<images/Output1-2.jpg, id=998, 1084.05pt x 1927.2pt>
 File: images/Output1-2.jpg Graphic file (type jpg)
 <use images/Output1-2.jpg>
 Package pdftex.def Info: images/Output1-2.jpg  used on input line 16.
 (pdftex.def)             Requested size: 205.97163pt x 236.48564pt.
- [35 <./images/sito1(1).jpg> <./images/Output1-2.jpg>] [36]) (Chapters/Chapter_3/1.1_Nvidia_Jetson_Nano_DK.tex [37]
-<images/Jetson1.png, id=1024, 944.7797pt x 794.97pt>
+ [35
+
+ <./images/sito1(1).jpg> <./images/Output1-2.jpg>]
+<images/Jetson+Kinect.jpg, id=1012, 4015.0pt x 3011.25pt>
+File: images/Jetson+Kinect.jpg Graphic file (type jpg)
+<use images/Jetson+Kinect.jpg>
+Package pdftex.def Info: images/Jetson+Kinect.jpg  used on input line 34.
+(pdftex.def)             Requested size: 218.51521pt x 163.85027pt.
+<images/Kinect_on_site1.jpg, id=1013, 4015.0pt x 3011.25pt>
+File: images/Kinect_on_site1.jpg Graphic file (type jpg)
+<use images/Kinect_on_site1.jpg>
+Package pdftex.def Info: images/Kinect_on_site1.jpg  used on input line 40.
+(pdftex.def)             Requested size: 218.51521pt x 163.85027pt.
+ [36 <./images/Jetson+Kinect.jpg> <./images/Kinect_on_site1.jpg>]
+<images/ROI_example.jpg, id=1023, 1284.8pt x 722.7pt>
+File: images/ROI_example.jpg Graphic file (type jpg)
+<use images/ROI_example.jpg>
+Package pdftex.def Info: images/ROI_example.jpg  used on input line 60.
+(pdftex.def)             Requested size: 295.90588pt x 166.43805pt.
+<images/motion_detection.jpg, id=1027, 235.88126pt x 118.4425pt>
+File: images/motion_detection.jpg Graphic file (type jpg)
+<use images/motion_detection.jpg>
+Package pdftex.def Info: images/motion_detection.jpg  used on input line 68.
+(pdftex.def)             Requested size: 250.38564pt x 125.72736pt.
+ [37 <./images/ROI_example.jpg> <./images/motion_detection.jpg>]) (Chapters/Chapter_3/1.1_Nvidia_Jetson_Nano_DK.tex
+<images/Jetson1.png, id=1034, 944.7797pt x 794.97pt>
 File: images/Jetson1.png Graphic file (type png)
 <use images/Jetson1.png>
-Package pdftex.def Info: images/Jetson1.png  used on input line 13.
+Package pdftex.def Info: images/Jetson1.png  used on input line 7.
 (pdftex.def)             Requested size: 182.09486pt x 153.21718pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[38 <./images/Jetson1.png>]) (Chapters/Chapter_3/1.2_Azure_Microsoft_Kinect.tex
-<images/azure-kinect.jpg, id=1037, 1084.05pt x 610.28pt>
+ [38 <./images/Jetson1.png>] [39]) (Chapters/Chapter_3/1.2_Azure_Microsoft_Kinect.tex
+<images/azure-kinect.jpg, id=1054, 1084.05pt x 610.28pt>
 File: images/azure-kinect.jpg Graphic file (type jpg)
 <use images/azure-kinect.jpg>
 Package pdftex.def Info: images/azure-kinect.jpg  used on input line 7.
 (pdftex.def)             Requested size: 273.14923pt x 153.77087pt.
- [39 <./images/azure-kinect.jpg>]
-<images/camera-fov.png, id=1047, 624.83438pt x 327.47343pt>
+<images/camera-fov.png, id=1059, 624.83438pt x 327.47343pt>
 File: images/camera-fov.png Graphic file (type png)
 <use images/camera-fov.png>
 Package pdftex.def Info: images/camera-fov.png  used on input line 20.
-(pdftex.def)             Requested size: 295.90588pt x 155.08679pt.
+(pdftex.def)             Requested size: 318.66948pt x 167.01424pt.
+ [40 <./images/azure-kinect.jpg> <./images/camera-fov.png>]
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.95pt on input line 50.
+(Font)              scaled to size 10.95pt on input line 51.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 10.95pt on input line 52.
+(Font)              scaled to size 10.95pt on input line 53.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 8.0pt on input line 52.
+(Font)              scaled to size 8.0pt on input line 53.
 LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
-(Font)              scaled to size 6.1pt on input line 52.
+(Font)              scaled to size 6.1pt on input line 53.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 10.95pt on input line 52.
+(Font)              scaled to size 10.95pt on input line 53.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 8.0pt on input line 52.
+(Font)              scaled to size 8.0pt on input line 53.
 LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
-(Font)              scaled to size 6.1pt on input line 52.
+(Font)              scaled to size 6.1pt on input line 53.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 10.95pt on input line 52.
+(Font)              scaled to size 10.95pt on input line 53.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 8.0pt on input line 52.
+(Font)              scaled to size 8.0pt on input line 53.
 LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
-(Font)              scaled to size 6.1pt on input line 52.
+(Font)              scaled to size 6.1pt on input line 53.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 10.95pt on input line 52.
+(Font)              scaled to size 10.95pt on input line 53.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 8.0pt on input line 52.
+(Font)              scaled to size 8.0pt on input line 53.
 LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
-(Font)              scaled to size 6.1pt on input line 52.
+(Font)              scaled to size 6.1pt on input line 53.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 10.95pt on input line 52.
+(Font)              scaled to size 10.95pt on input line 53.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 8.0pt on input line 52.
+(Font)              scaled to size 8.0pt on input line 53.
 LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
-(Font)              scaled to size 6.1pt on input line 52.
+(Font)              scaled to size 6.1pt on input line 53.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 10.95pt on input line 52.
+(Font)              scaled to size 10.95pt on input line 53.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 8.0pt on input line 52.
+(Font)              scaled to size 8.0pt on input line 53.
 LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
-(Font)              scaled to size 6.1pt on input line 52.
+(Font)              scaled to size 6.1pt on input line 53.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 10.95pt on input line 52.
+(Font)              scaled to size 10.95pt on input line 53.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 8.0pt on input line 52.
+(Font)              scaled to size 8.0pt on input line 53.
 LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
-(Font)              scaled to size 6.1pt on input line 52.
+(Font)              scaled to size 6.1pt on input line 53.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 10.95pt on input line 52.
+(Font)              scaled to size 10.95pt on input line 53.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 8.0pt on input line 52.
+(Font)              scaled to size 8.0pt on input line 53.
 LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
-(Font)              scaled to size 6.1pt on input line 52.
+(Font)              scaled to size 6.1pt on input line 53.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.95pt on input line 54.
- [40 <./images/camera-fov.png>]
-<images/kinect.png, id=1054, 752.8125pt x 259.7203pt>
+(Font)              scaled to size 10.95pt on input line 55.
+<images/kinect.png, id=1067, 752.8125pt x 259.7203pt>
 File: images/kinect.png Graphic file (type png)
 <use images/kinect.png>
 Package pdftex.def Info: images/kinect.png  used on input line 78.
 (pdftex.def)             Requested size: 364.19667pt x 125.65111pt.
- (Chapters/Chapter_3/1.2.1_ToF.tex
-<images/ToF.png, id=1055, 361.35pt x 111.41624pt>
+ [41 <./images/kinect.png>] (Chapters/Chapter_3/1.2.1_ToF.tex
+<images/ToF.png, id=1073, 1920.42468pt x 590.95781pt>
 File: images/ToF.png Graphic file (type png)
 <use images/ToF.png>
 Package pdftex.def Info: images/ToF.png  used on input line 6.
-(pdftex.def)             Requested size: 273.14923pt x 84.2216pt.
- [41 <./images/kinect.png> <./images/ToF.png>]
-<images/ToF_pulse_vs_cont.png, id=1064, 2826.56pt x 1541.76pt>
+(pdftex.def)             Requested size: 318.66948pt x 98.05388pt.
+<images/ToF_pulse_vs_cont.png, id=1074, 2826.56pt x 1541.76pt>
 File: images/ToF_pulse_vs_cont.png Graphic file (type png)
 <use images/ToF_pulse_vs_cont.png>
 Package pdftex.def Info: images/ToF_pulse_vs_cont.png  used on input line 28.
 (pdftex.def)             Requested size: 227.62206pt x 124.14317pt.
-<images/ToF_1.jpg, id=1065, 552.56438pt x 252.44313pt>
+ [42 <./images/ToF.png> <./images/ToF_pulse_vs_cont.png>]
+<images/ToF_1.jpg, id=1083, 552.56438pt x 252.44313pt>
 File: images/ToF_1.jpg Graphic file (type jpg)
 <use images/ToF_1.jpg>
 Package pdftex.def Info: images/ToF_1.jpg  used on input line 47.
 (pdftex.def)             Requested size: 318.66948pt x 145.58508pt.
- [42 <./images/ToF_pulse_vs_cont.png> <./images/ToF_1.jpg>])
-<images/sdk.png, id=1074, 786.7794pt x 534.3162pt>
+) [43 <./images/ToF_1.jpg>]
+<images/sdk.png, id=1091, 786.7794pt x 534.3162pt>
 File: images/sdk.png Graphic file (type png)
 <use images/sdk.png>
 Package pdftex.def Info: images/sdk.png  used on input line 97.
 (pdftex.def)             Requested size: 227.62206pt x 154.58084pt.
+) [44 <./images/sdk.png>] (Chapters/Chapter_3/2_Site2.tex
+<images/Site2_breadloaf.jpg, id=1102, 1284.8pt x 722.7pt>
+File: images/Site2_breadloaf.jpg Graphic file (type jpg)
+<use images/Site2_breadloaf.jpg>
+Package pdftex.def Info: images/Site2_breadloaf.jpg  used on input line 19.
+(pdftex.def)             Requested size: 295.90588pt x 166.43805pt.
+ [45 <./images/Site2_breadloaf.jpg>]) [46] (Chapters/Chapter_3/1.3_Raspberry_Pi_5.tex
+<images/Raspberry.jpg, id=1120, 963.9393pt x 387.81506pt>
+File: images/Raspberry.jpg Graphic file (type jpg)
+<use images/Raspberry.jpg>
+Package pdftex.def Info: images/Raspberry.jpg  used on input line 7.
+(pdftex.def)             Requested size: 318.66948pt x 128.21014pt.
+ [47 <./images/Raspberry.jpg>]
+<images/Raspberry_sito2.jpg, id=1133, 4015.0pt x 3011.25pt>
+File: images/Raspberry_sito2.jpg Graphic file (type jpg)
+<use images/Raspberry_sito2.jpg>
+Package pdftex.def Info: images/Raspberry_sito2.jpg  used on input line 30.
+(pdftex.def)             Requested size: 273.14923pt x 204.8358pt.
+) (Chapters/Chapter_3/1.4_Raspberry_Pi_Camera_Wide.tex
+<images/Raspberry-Pi-Camera-Module-3-Wide.jpg, id=1137, 803.0pt x 803.0pt>
+File: images/Raspberry-Pi-Camera-Module-3-Wide.jpg Graphic file (type jpg)
+<use images/Raspberry-Pi-Camera-Module-3-Wide.jpg>
+Package pdftex.def Info: images/Raspberry-Pi-Camera-Module-3-Wide.jpg  used on input line 7.
+(pdftex.def)             Requested size: 136.57462pt x 136.56946pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[43]) (Chapters/Chapter_3/2_Site2.tex [44 <./images/sdk.png>]
-<images/Site2_breadloaf.jpg, id=1089, 1284.8pt x 722.7pt>
-File: images/Site2_breadloaf.jpg Graphic file (type jpg)
-<use images/Site2_breadloaf.jpg>
-Package pdftex.def Info: images/Site2_breadloaf.jpg  used on input line 20.
-(pdftex.def)             Requested size: 295.90588pt x 166.43805pt.
- [45 <./images/Site2_breadloaf.jpg>]) (Chapters/Chapter_3/1.3_Raspberry_Pi_5.tex) (Chapters/Chapter_3/1.4_Raspberry_Pi_Camera_Wide.tex)) (Chapters/Chapter_4/0_chapter_4.tex [46]
-Chapter 4.
-(Chapters/Chapter_4/4_opencv.tex)) (Chapters/Chapter_5/0_chapter_5.tex [47
+[48 <./images/Raspberry_sito2.jpg>]
+<images/Raspicam_3D-model.png, id=1147, 1052.43187pt x 949.29657pt>
+File: images/Raspicam_3D-model.png Graphic file (type png)
+<use images/Raspicam_3D-model.png>
+Package pdftex.def Info: images/Raspicam_3D-model.png  used on input line 18.
+(pdftex.def)             Requested size: 182.09486pt x 164.24632pt.
+<images/Raspberry_site2.jpg, id=1149, 4015.0pt x 3011.25pt>
+File: images/Raspberry_site2.jpg Graphic file (type jpg)
+<use images/Raspberry_site2.jpg>
+Package pdftex.def Info: images/Raspberry_site2.jpg  used on input line 27.
+(pdftex.def)             Requested size: 227.62206pt x 170.6965pt.
 
-] [48
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[49 <./images/Raspberry-Pi-Camera-Module-3-Wide.jpg> <./images/Raspicam_3D-model.png>] (Chapters/Chapter_3/2.2_PiCamera.tex [50 <./images/Raspberry_site2.jpg>]))) (Chapters/Chapter_4/0_chapter_4.tex [51] [52
 
 ]
+Chapter 4.
+(Chapters/Chapter_4/4_opencv.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [53]) [54] [55] [56] [57]) (Chapters/Chapter_5/0_chapter_5.tex [58]
 Chapter 5.
-) (Chapters/Chapter_6/0_chapter_6.tex [49] [50
+) (Chapters/Chapter_6/0_chapter_6.tex [59
+
+] [60
 
 ]
 Chapter 6.
-) [51] [52
+) [61] [62
 
 
 ] (tesi.bbl
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/it' will be
 (Font)              scaled to size 10.95pt on input line 24.
- [53
+ [63
 
 ]
-LaTeX Font Info:    Trying to load font information for OMS+ntxtlf on input line 114.
-LaTeX Font Info:    No file OMSntxtlf.fd. on input line 114.
+LaTeX Font Info:    Trying to load font information for OMS+ntxtlf on input line 107.
+LaTeX Font Info:    No file OMSntxtlf.fd. on input line 107.
 
 
 LaTeX Font Warning: Font shape `OMS/ntxtlf/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbar' on input line 114.
+(Font)              for symbol `textbar' on input line 107.
 
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 6.1pt on input line 141.
-[54]) [55] (tesi.aux)
+(Font)              scaled to size 6.1pt on input line 134.
+[64]) [65] [66] (tesi.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
@@ -1474,20 +1496,20 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `tesi.out' has not changed.
-(rerunfilecheck)             Checksum: EC6BA40672808B37BD4D4C736C9EDCD8;10184.
+(rerunfilecheck)             Checksum: D887542AECBB7B355B7BC402599F7386;10066.
  ) 
 Here is how much of TeX's memory you used:
- 22012 strings out of 467867
- 367212 string characters out of 5418334
- 863586 words of memory out of 5000000
- 50070 multiletter control sequences out of 15000+600000
- 692506 words of font info for 164 fonts, out of 8000000 for 9000
+ 22119 strings out of 467867
+ 370696 string characters out of 5418334
+ 870290 words of memory out of 5000000
+ 50151 multiletter control sequences out of 15000+600000
+ 691336 words of font info for 161 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 85i,13n,85p,1623b,761s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/giuse/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/NewTXMI.pfb><C:/Users/giuse/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/NewTXMI7.pfb><C:/Users/giuse/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/giuse/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvr.pfb><C:/Users/giuse/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qtmr.pfb><C:/Users/giuse/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txexs.pfb><C:/Users/giuse/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txmiaX.pfb><C:/Users/giuse/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txsys.pfb><C:/Users/giuse/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txtt.pfb><C:/Users/giuse/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/ztmb.pfb><C:/Users/giuse/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/ztmbi.pfb><C:/Users/giuse/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/ztmr.pfb><C:/Users/giuse/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/ztmri.pfb>
-Output written on tesi.pdf (69 pages, 28876761 bytes).
+ 85i,13n,85p,1534b,738s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/giuse/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/NewTXMI.pfb><C:/Users/giuse/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/giuse/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qhvr.pfb><C:/Users/giuse/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qtmr.pfb><C:/Users/giuse/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txmiaX.pfb><C:/Users/giuse/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txsys.pfb><C:/Users/giuse/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txtt.pfb><C:/Users/giuse/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/ztmb.pfb><C:/Users/giuse/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/ztmbi.pfb><C:/Users/giuse/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/ztmr.pfb><C:/Users/giuse/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/ztmri.pfb>
+Output written on tesi.pdf (80 pages, 49301256 bytes).
 PDF statistics:
- 1302 PDF objects out of 1440 (max. 8388607)
- 261 named destinations out of 1000 (max. 500000)
- 784 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1451 PDF objects out of 1728 (max. 8388607)
+ 285 named destinations out of 1000 (max. 500000)
+ 802 words of extra memory for PDF output out of 10000 (max. 10000000)
 

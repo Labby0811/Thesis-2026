@@ -7,7 +7,7 @@ During the internship period and the initial deployment of the project, several 
 Throughout the design phase, it was observed that power interruptions occurred frequently within the production facility. Such events resulted in unexpected shutdowns of the embedded devices, interrupting the acquisition pipeline and compromising data continuity. Since the data acquisition process was required to operate autonomously for a two-week period without human intervention, this issue represented a critical risk to the success of the experimental campaign.
 
 To mitigate this problem, the entire software architecture was designed to be resilient to power outages. In particular, the acquisition pipeline was encapsulated within a system service configured to automatically restart upon system boot.\cite{systemd_service_2026}
-
+\\
 A \emph{system service} is a background process managed by the operating system's service manager (e.g., \texttt{systemd} in Linux-based systems). Services are designed to:
 
 \begin{itemize}
@@ -16,7 +16,7 @@ A \emph{system service} is a background process managed by the operating system'
     \item Run independently of user login sessions,
     \item Provide logging and monitoring capabilities.
 \end{itemize}
-
+\newpage
 At both sites, a user-level \texttt{systemd} service was implemented to execute the image acquisition script at startup. The service invokes a dedicated bash launcher script responsible for:
 
 \begin{itemize}
@@ -44,7 +44,7 @@ This configuration introduced significant illumination variability throughout th
 
 Since the primary objective at Site 2 is visual quality assessment of baked bread through an anomaly detection model, uncontrolled illumination variations could directly affect the reliability of model predictions. In particular, variations in brightness and color temperature may introduce systematic biases in RGB-based inference.\cite{hoang_image-based_2025,kuhlechner_object_2025}
 
-To ensure consistency and minimize illumination-related variability, a high-intensity artificial lighting source was installed above the acquisition area (as shown in Figure \ref{fig:faretto_sito2}).
+To ensure consistency and minimize illumination-related variability, a high-intensity artificial lighting source was installed above the acquisition area (as shown in Figure~\ref{fig:faretto_sito2}).
 \newline
 The artificial illumination:
 
@@ -58,7 +58,7 @@ By stabilizing the lighting conditions, the system achieves more reliable visual
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.5\linewidth, angle=90]{images/faretto_sito_2(1).jpeg}
+    \includegraphics[width=0.8\linewidth]{images/faretto_sito_2.JPG}
     \caption{Light source placed next to the Raspberry Pi Camera to illuminate the scene and keep lighting as constant as possible}
     \label{fig:faretto_sito2}
 \end{figure}

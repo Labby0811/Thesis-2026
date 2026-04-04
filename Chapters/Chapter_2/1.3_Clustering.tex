@@ -20,6 +20,12 @@ In the present work, clustering is relevant because dough segmentation can benef
 Background subtraction is another classical strategy for foreground extraction. The main idea is to maintain a model of the background and compare the current observation against it, so as to identify the regions that differ significantly from the static part of the scene.\cite{opencv_background_subtraction_2026}
 
 In vision-based applications, this approach is commonly used with static cameras to generate a foreground mask, that is, a binary image containing the pixels associated with the moving or changing objects in the scene.\cite{opencv_background_subtraction_2026} More generally, the same principle can be extended to cases in which the background is known or can be estimated in advance, and the goal is to isolate the objects of interest by removing the supporting surface or the stationary scene structure.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{images/Background_subtraction.png}
+    \caption{Background subtraction example scheme.}
+    \label{fig:background-subtraction}
+\end{figure}
 
 In the present work, this idea is relevant in two complementary ways. First, background subtraction is used in a non segmentation context in the RGB stream as part of the motion-detection module for dataset acquisition. Second, a conceptually similar foreground-background separation is exploited on depth information to isolate the dough from the supporting table before the subsequent geometric analysis.
 Since the background (table) is static and can be reliably estimated in depth, this approach provides a computationally efficient way to segment the dough units without relying on complex learning-based models, which may be unnecessary in this controlled setting.

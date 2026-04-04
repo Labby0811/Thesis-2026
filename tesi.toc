@@ -5,7 +5,7 @@
 \contentsline {paragraph}{Problem statement}{1}{section*.5}%
 \contentsline {section}{\numberline {1.1}Thesis goal}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Internship}{3}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Pipeline summary}{3}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.1}Pipeline summary}{4}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}Practical challenges and system robustness}{5}{subsection.1.2.2}%
 \contentsline {subsubsection}{Robustness to Power Interruptions}{5}{section*.7}%
 \contentsline {subsubsection}{Illumination Variability at Site 2}{6}{section*.8}%
@@ -21,63 +21,66 @@
 \contentsline {subsection}{\numberline {2.1.3}Classical segmentation methods}{12}{subsection.2.1.3}%
 \contentsline {subsubsection}{Clustering}{12}{section*.20}%
 \contentsline {subsubsection}{Background subtraction}{13}{section*.22}%
-\contentsline {subsection}{\numberline {2.1.4}Evaluation metrics}{13}{subsection.2.1.4}%
-\contentsline {subsubsection}{Metrics for object detection}{14}{section*.23}%
-\contentsline {subsubsection}{Metrics for image segmentation}{15}{section*.25}%
-\contentsline {subsubsection}{Metrics for instance and panoptic segmentation}{16}{section*.28}%
-\contentsline {section}{\numberline {2.2}Neural networks}{16}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Deep Learning}{17}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.1.4}Evaluation metrics}{14}{subsection.2.1.4}%
+\contentsline {subsubsection}{Metrics for object detection}{14}{section*.24}%
+\contentsline {subsubsection}{Metrics for image segmentation}{15}{section*.26}%
+\contentsline {subsubsection}{Metrics for instance and panoptic segmentation}{16}{section*.29}%
+\contentsline {section}{\numberline {2.2}Neural networks}{17}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Deep Learning}{18}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Convolutional Neural Networks}{18}{subsection.2.2.2}%
 \contentsline {section}{\numberline {2.3}Vision Transformers (ViT)}{19}{section.2.3}%
-\contentsline {section}{\numberline {2.4}RT-DETR}{20}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Related work}{22}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}DEIMv2}{22}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}YOLOv12}{23}{subsection.2.5.2}%
-\contentsline {subsection}{\numberline {2.5.3}EoMT}{25}{subsection.2.5.3}%
-\contentsline {subsection}{\numberline {2.5.4}Final considerations}{27}{subsection.2.5.4}%
-\contentsline {section}{\numberline {2.6}Anomaly Detection}{28}{section.2.6}%
-\contentsline {subsection}{\numberline {2.6.1}EfficientAD}{29}{subsection.2.6.1}%
-\contentsline {section}{\numberline {2.7}Training Deep Learning Models}{31}{section.2.7}%
-\contentsline {subsection}{\numberline {2.7.1}Dataset Partitioning}{31}{subsection.2.7.1}%
-\contentsline {subsection}{\numberline {2.7.2}Overfitting, Underfitting, and Early Stopping}{32}{subsection.2.7.2}%
+\contentsline {section}{\numberline {2.4}RT-DETR}{21}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Related work}{23}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}DEIMv2}{23}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}YOLOv12}{24}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}EoMT}{26}{subsection.2.5.3}%
+\contentsline {subsection}{\numberline {2.5.4}Final considerations}{28}{subsection.2.5.4}%
+\contentsline {section}{\numberline {2.6}Anomaly Detection}{29}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}EfficientAD}{30}{subsection.2.6.1}%
+\contentsline {section}{\numberline {2.7}Training Deep Learning Models}{32}{section.2.7}%
+\contentsline {subsection}{\numberline {2.7.1}Dataset Partitioning}{32}{subsection.2.7.1}%
+\contentsline {subsection}{\numberline {2.7.2}Overfitting, Underfitting, and Early Stopping}{33}{subsection.2.7.2}%
 \contentsline {chapter}{\numberline {3}Data acquisition system}{35}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Site 1: dough ball production and data acquisition setup}{35}{section.3.1}%
-\contentsline {subsubsection}{Industrial Context and Process Description}{35}{section*.54}%
-\contentsline {subsubsection}{Offline Data Acquisition and Network Training}{36}{section*.55}%
-\contentsline {subsubsection}{Online Inference and 3D Volume Estimation}{37}{section*.56}%
-\contentsline {subsubsection}{System Objectives at Site 1}{37}{section*.57}%
+\contentsline {subsubsection}{Industrial Context and Process Description}{36}{section*.56}%
+\contentsline {subsubsection}{Offline Data Acquisition}{36}{section*.58}%
+\contentsline {subsubsection}{Online Inference and Volume-Oriented Processing}{37}{section*.61}%
+\contentsline {subsubsection}{System Objectives at Site 1}{38}{section*.62}%
 \contentsline {subsection}{\numberline {3.1.1}Nvidia Jetson Nano DK}{38}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Azure Microsoft Kinect DK}{39}{subsection.3.1.2}%
-\contentsline {subsubsection}{Time-of-Flight Depth Sensing Principle}{41}{section*.65}%
-\contentsline {subsubsection}{Azure Kinect Sensor SDK}{43}{section*.69}%
-\contentsline {subsubsection}{Python Wrapper: pyKinectAzure}{43}{section*.71}%
-\contentsline {section}{\numberline {3.2}Site 2: Baked Bread Dataset Acquisition and Color Analysis}{44}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Industrial Context and Monitoring Objectives}{44}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Hardware Configuration}{45}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Dataset Creation and Offline Training}{45}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Online Detection and Color Estimation}{46}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.1.2}Azure Microsoft Kinect DK}{40}{subsection.3.1.2}%
+\contentsline {subsubsection}{Time-of-Flight Depth Sensing Principle}{42}{section*.70}%
+\contentsline {subsubsection}{Azure Kinect Sensor SDK}{44}{section*.74}%
+\contentsline {subsubsection}{Python Wrapper: pyKinectAzure}{44}{section*.76}%
+\contentsline {section}{\numberline {3.2}Site 2: Baked Bread Dataset Acquisition and Anomaly Detection}{45}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Industrial Context and Monitoring Objectives}{45}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Dataset Creation}{46}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Hardware Configuration}{46}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Online Detection and Downstream Analysis}{46}{subsection.3.2.4}%
 \contentsline {subsection}{\numberline {3.2.5}Role of Site 2 in the Overall Architecture}{46}{subsection.3.2.5}%
-\contentsline {subsection}{\numberline {3.2.6}Raspberry Pi 5}{46}{subsection.3.2.6}%
-\contentsline {subsection}{\numberline {3.2.7}Raspberry Pi Camera Module 3 Wide}{46}{subsection.3.2.7}%
-\contentsline {chapter}{\numberline {4}Multimodal quality inspection framework}{47}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Pipeline}{47}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Motion Detection}{47}{section.4.2}%
-\contentsline {section}{\numberline {4.3}DEIMv2 training}{47}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Site 1}{47}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Site 2}{47}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}Feature extraction}{47}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Implementation}{47}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}OpenCV}{47}{subsection.4.5.1}%
-\contentsline {subsubsection}{Background subtraction for motion detection}{47}{section*.73}%
-\contentsline {subsection}{\numberline {4.5.2}Open3D}{47}{subsection.4.5.2}%
-\contentsline {subsection}{\numberline {4.5.3}Torch}{47}{subsection.4.5.3}%
-\contentsline {subsection}{\numberline {4.5.4}Tensorboard}{47}{subsection.4.5.4}%
-\contentsline {chapter}{\numberline {5}Results}{49}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Site 1: dough-ball volume estimation}{49}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Quantitative results}{49}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Qualitative results}{49}{subsection.5.1.2}%
-\contentsline {section}{\numberline {5.2}Site 2: bread quality assessment}{49}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Quantitative results}{49}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Anomaly score heatmaps}{49}{subsection.5.2.2}%
-\contentsline {chapter}{\numberline {6}Conclusion and future works}{51}{chapter.6}%
-\contentsline {chapter}{References}{53}{chapter*.74}%
+\contentsline {subsection}{\numberline {3.2.6}Raspberry Pi 5}{47}{subsection.3.2.6}%
+\contentsline {subsection}{\numberline {3.2.7}Raspberry Pi Camera Module 3 Wide}{48}{subsection.3.2.7}%
+\contentsline {subsubsection}{Picamera2 Library}{50}{section*.83}%
+\contentsline {chapter}{\numberline {4}Multimodal quality inspection framework}{53}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Pipeline}{53}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Motion Detection}{54}{section.4.2}%
+\contentsline {subsubsection}{Background Subtraction for Motion Triggering}{54}{section*.84}%
+\contentsline {section}{\numberline {4.3}Automatic Labelling}{54}{section.4.3}%
+\contentsline {section}{\numberline {4.4}DEIMv2 Training}{55}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Feature Extraction and Quality Assessment}{55}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Site 1: Volume Estimation}{55}{subsection.4.5.1}%
+\contentsline {subsubsection}{Detection Filtering and Reference Table Modelling}{55}{section*.85}%
+\contentsline {subsubsection}{Foreground Extraction and Point-Cloud Generation}{56}{section*.86}%
+\contentsline {subsubsection}{3D Completion and Volume Estimation}{56}{section*.87}%
+\contentsline {subsection}{\numberline {4.5.2}Site 2: Anomaly Detection}{57}{subsection.4.5.2}%
+\contentsline {subsubsection}{Dataset Preparation from Loaf Crops}{57}{section*.88}%
+\contentsline {subsubsection}{EfficientAD Training}{57}{section*.89}%
+\contentsline {subsubsection}{Inference and Reporting}{58}{section*.90}%
+\contentsline {chapter}{\numberline {5}Results}{59}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Site 1: dough-ball volume estimation}{59}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Quantitative results}{59}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Qualitative results}{59}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}Site 2: bread quality assessment}{59}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Quantitative results}{59}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Anomaly score heatmaps}{59}{subsection.5.2.2}%
+\contentsline {chapter}{\numberline {6}Conclusion and future works}{61}{chapter.6}%
+\contentsline {chapter}{References}{63}{chapter*.91}%

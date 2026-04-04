@@ -3,7 +3,7 @@
 The third candidate direction explored in the literature study was not a detector, but a recent Vision-Transformer-based segmentation model, namely the Encoder-only Mask Transformer (EoMT), introduced in \emph{Your ViT is Secretly an Image Segmentation Model} \cite{kerssies_your_2025}. This work is particularly relevant because it addresses a dense prediction problem that is closely related to object localization, while doing so with a design philosophy aligned with the transformer-based trend discussed in the previous sections. The central idea of EoMT is that, given sufficiently large ViTs and sufficiently strong pretraining, many task-specific segmentation components become less necessary. For this reason, the model removes the convolutional adapter, the pixel decoder, and the separate transformer decoder typically used in ViT-based segmentation pipelines, and replaces them with a simpler encoder-only design augmented by learnable queries and a lightweight mask prediction module \cite{kerssies_your_2025}.
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.6\textwidth]{images/EoMT1.png}
+    \includegraphics[width=0.45\textwidth]{images/EoMT1.png}
     \caption[c]{Typical ViT-based segmentation pipeline}
     \label{fig:EoMT1}
 \end{figure}
@@ -11,14 +11,14 @@ The third candidate direction explored in the literature study was not a detecto
 This approach offers several attractive properties. First, it substantially simplifies the segmentation architecture while retaining competitive accuracy. Second, by progressively removing masked attention during training through a \emph{mask annealing} strategy, EoMT can enable faster inference than more complex ViT-based segmentation systems. Third, because it stays close to the plain ViT architecture, it can directly benefit from future improvements in large-scale pretraining and transformer optimization \cite{kerssies_your_2025}. From a research standpoint, EoMT was therefore an appealing candidate because it suggested a potentially elegant route toward precise object delineation.
 \begin{figure}[h]
     \centering
-   \includegraphics[width=0.65\textwidth]{images/EoMT_mask2.png}
+   \includegraphics[width=0.50\textwidth]{images/EoMT_mask2.png}
     \caption{EoMT mask annealing strategy, which progressively removes masked attention during training.}
 \end{figure}
 
 However, the comparative study also highlighted an important mismatch with the main requirements of this thesis. The proposed pipeline ultimately requires robust and efficient \emph{object localization} on embedded or edge-oriented hardware, including resource-constrained deployment targets such as Raspberry Pi and Jetson Nano platforms. By contrast, EoMT is designed for segmentation benchmarks and derives much of its strength from large pretrained ViTs and high-throughput inference settings \cite{kerssies_your_2025}. Although segmentation can provide richer pixel-level information, that additional output is not strictly necessary for the core deployment objective considered here, namely fast localization of dough balls and bread loaves prior to subsequent processing stages. Moreover, EoMT is more naturally suited to scenarios in which large ViTs and higher-performance hardware are available, whereas this thesis requires an efficient real-time detector that can be deployed in practical industrial edge environments with limited computational resources. Consequently, EoMT was considered highly interesting from a methodological perspective, but less aligned than DEIMv2 with the operational constraints, deployment targets, and output requirements of the thesis.
 \begin{figure}[h]
     \centering
-    \begin{minipage}[t]{0.30\textwidth}
+    \begin{minipage}[t]{0.35\textwidth}
         \vspace{0pt}
         \centering
         \begin{minipage}[c][7.5cm][c]{\linewidth}
@@ -34,7 +34,7 @@ However, the comparative study also highlighted an important mismatch with the m
         \centering
         \begin{minipage}[c][7.5cm][c]{\linewidth}
             \centering
-            \includegraphics[width=\linewidth,height=8.0cm,keepaspectratio]{images/EoMT3.png}
+            \includegraphics[width=\linewidth,height=7.0cm,keepaspectratio]{images/EoMT3.png}
         \end{minipage}
         \captionof{figure}[c]{EoMT architecture, which removes the convolutional adapter, pixel decoder, and separate transformer decoder, and replaces them with a simpler encoder-only design augmented by learnable queries and a lightweight mask prediction module \cite{kerssies_your_2025}}
         \label{fig:EoMT3}

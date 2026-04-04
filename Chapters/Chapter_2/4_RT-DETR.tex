@@ -24,9 +24,9 @@ This query selection mechanism should not be interpreted as a simple hand-crafte
 In addition, RT-DETR retains the one-to-one matching paradigm based on the \textbf{Hungarian algorithm}, ensuring that each predicted object is assigned to at most one ground-truth instance during training. This bipartite matching mechanism is central to DETR-style detectors because it removes duplicate assignments and enables an end-to-end detection pipeline without NMS \cite{zhao_detrs_2024}.
 \begin{figure}[h]
     \centering
-    \includegraphics[scale=0.2]{images/Hungarian_match.png}
+    \includegraphics[scale=0.22]{images/Hungarian_match.png}
     \caption{Hungarian matching in RT-DETR.}
     \label{fig:Hungarian_match}
 \end{figure}
-
+\newpage
 An additional practical advantage of RT-DETR is its \textbf{flexible speed tuning}: the inference speed can be adjusted by varying the number of decoder layers, allowing the model to adapt to different deployment constraints without retraining \cite{zhao_detrs_2024}. Overall, RT-DETR achieves a strong balance between detection accuracy and computational efficiency, making transformer-based object detection more compatible with real-time and resource-constrained applications. In the context of this thesis, RT-DETR is particularly relevant because it shows how transformer principles can be adapted from generic vision representation learning to an efficient end-to-end detector, while also providing the conceptual basis for subsequent models such as DEIMv2.
