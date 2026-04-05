@@ -7,4 +7,7 @@
 \contentsline {table}{\numberline {3.3}{\ignorespaces Depth camera operating modes and specifications.}}{41}{table.caption.68}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Volume statistics obtained with the depth-gap estimator. Volumes are expressed in liters.}}{67}{table.caption.101}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Volume statistics obtained with the rotated alpha-shape estimator. Volumes are expressed in liters.}}{68}{table.caption.102}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Volume statistics obtained with the rotated convex-hull estimator. Volumes are expressed in liters.}}{68}{table.caption.103}%
 \addvspace {10\p@ }

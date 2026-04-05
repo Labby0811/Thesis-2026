@@ -1,0 +1,55 @@
+% !TeX root = ../../tesi.tex
+
+\subsection{Site 1: Volume Estimation}
+The volume-estimation branch at Site~1 was developed through several increasingly refined workflows. A first baseline computes a convex-hull volume directly from the points contained in each detected bounding box. Since this bounding-box-only approximation was not sufficiently accurate because in the volume calculation also non dough elements were taken into account, subsequent variants introduced an explicit segmentation stage before volumetric reconstruction. SAM was first explored as a foreground-segmentation tool and produced very accurate masks, but its computational cost proved too high for the intended workflow, since the main aim of the thesis is to run the algorithms on on-the-edge machines. The final implementation therefore relies on a more efficient pipeline based on color clustering, refined through depth-based background subtraction and followed by axis-based 3D completion.\cite{labby_thesis_repo_2026}
+
+\subsubsection{Detection Filtering and Reference Table Modelling}
+Before volumetric processing, the detections are filtered so as to retain only the most reliable samples. In particular, a dedicated preprocessing stage builds a filtered detection cache by keeping only images containing a single valid dough-ball detection inside a predefined ROI polygon. This step reduces ambiguities caused by multiple simultaneous objects or spurious detections near the borders of the acquisition area.\cite{labby_thesis_repo_2026}
+
+The supporting table is modelled separately from a set of empty-scene acquisitions. These depth images are aggregated through a robust median operation in order to produce a reference depth background for the table. The resulting model is stored as a numerical depth map for subsequent computations and can also be exported as a point cloud or mesh for debugging and visualization purposes.\cite{labby_thesis_repo_2026} This reference surface is later used both to remove the support contribution from the dough point cloud and to define the geometric relation between the visible dough region and the table plane.
+
+\subsubsection{Foreground Extraction and Point-Cloud Generation}
+Once a dough-ball detection has been selected, the corresponding RGB bounding box is associated with the aligned depth image through the Kinect calibration and reprojection pipeline. The local 3D point cloud is then obtained from the aligned depth pixels by means of the standard pinhole camera model:
+
+\begin{equation}
+X = \frac{(u - c_x) \cdot Z}{f_x}, \quad
+Y = \frac{(v - c_y) \cdot Z}{f_y}, \quad
+Z = D(u,v)
+\end{equation}
+
+where $(u,v)$ are the pixel coordinates, $D(u,v)$ is the depth value, $(c_x, c_y)$ are the principal-point coordinates, and $f_x$ and $f_y$ are the focal lengths expressed in pixel units.
+
+The implementation supports different seed-mask construction modes, namely \texttt{sam}, \texttt{bbox}, and \texttt{color}.\cite{labby_thesis_repo_2026} In the workflow adopted for the main experiments, the foreground is initialized in \texttt{color} mode and then refined in depth (\texttt{color\_then\_depth}). More specifically, a central rectangular seed is first derived from each detection, and the clustering stage can also be extended by a configurable percentage beyond the predicted bounding box so as to remain robust even when the detector localization is not perfectly tight. The color-based stage suppresses the blue background, constrains the admissible lightness range, optionally performs adaptive clustering in the \textsc{Lab} color space, and can recover dark dough regions that would otherwise be missed by a purely brightness-based filter.\cite{labby_thesis_repo_2026} In an earlier version of the workflow, this clustering step was not yet present; it was introduced later because it produced a cleaner foreground estimate before depth refinement. The resulting mask is then projected onto the depth data and further refined through background subtraction against the precomputed table model, with additional morphological filtering to improve spatial coherence.\cite{labby_thesis_repo_2026}
+
+\subsubsection{3D Completion and Volume Estimation}
+After foreground extraction, the visible dough points provide only a 2.5D observation of the object. To estimate the hidden lower portion, the implementation supports several axis-construction strategies, including a PCA axis computed on the visible cloud and variants explicitly tied to the support surface. In the current workflow, the principal direction is estimated from the visible dough cloud, while the rotation axis is placed halfway between the foreground and the table support, corresponding to the \texttt{mid\_support\_pca} strategy documented in the codebase.\cite{labby_thesis_repo_2026}
+
+The observed geometry is then rotated around this axis, using Rodrigues-based rigid rotations, in order to synthesize an approximation of the non-visible part of the dough. Rotated points that are geometrically inconsistent with the support model are discarded, and the completed point cloud is finally passed to different geometric volume estimators. The implemented estimators include:
+\begin{itemize}
+    \item a raw convex hull computed from the visible cloud;
+    \item a convex hull computed after rotational completion;
+    \item an alpha-shape reconstruction computed after rotational completion;
+    \item a \emph{depth-gap} estimator based on the distance between the dough foreground and the reference table model.
+\end{itemize}
+
+The first three estimators rely on rotational completion of the visible geometry, whereas the \emph{depth-gap} method follows a different logic and directly fills the space between the segmented foreground and the reference background surface.\cite{labby_thesis_repo_2026} The full implementation therefore makes it possible to compare simple geometric baselines with progressively more structured reconstructions. In the comparative analysis reported in this thesis, the three main estimators considered over the entire test set are the rotated convex hull, the rotated alpha shape, and the depth-gap method. Their resulting volume distributions are then analyzed and compared in order to assess the consistency of the reconstructed dough volumes.
+
+\subsection{Site 2: Anomaly Detection}
+At Site~2, the downstream task is not geometric reconstruction but visual anomaly assessment of the final baked product. For this reason, the anomaly-detection branch operates on localized loaf crops rather than on full production-line frames. In the implemented framework, these crops are processed by EfficientAD through anomalib, so that each loaf can be assigned an image-level anomaly score together with spatial diagnostic outputs such as anomaly maps and predicted masks.\cite{batzner_efficientad_2024,akcay_anomalib_2022}
+
+\subsubsection{Dataset Preparation from Loaf Crops}
+The first step of the anomaly-detection branch consists of exporting bread-loaf crops from the detector annotations. A dedicated utility reads COCO-style bounding-box annotations, optionally enlarges the crop through configurable padding, discards excessively small detections, and organizes the resulting images into a structure compatible with anomaly-detection training.\cite{labby_thesis_repo_2026}
+
+Two complementary dataset-construction strategies are supported. The first is a simple automatic split, which partitions the crops into train, validation, and test sets according to a 0.8/0.1/0.1 ratio. The second is an interactive review tool, through which the user can inspect the exported crops and manually assign them to good or anomalous subsets before distributing them across the dataset folders. This second strategy is particularly useful when the anomalous samples are few, heterogeneous, or externally sourced.\cite{labby_thesis_repo_2026}
+
+In the experiments described in this thesis, the normal class is composed of \emph{good} bread images collected during the two-week acquisition campaign. Since no representative defective loaves were provided by the production site, a small auxiliary set of nine defective bread images collected from online sources was used only as an external qualitative reference. These images were not used to define the normal training distribution, but only as auxiliary anomalous examples for preliminary qualitative evaluation. They depict clearly non-conforming products, such as burnt or mouldy loaves, but they are not fully representative of either the bread type or the visual environment observed in the industrial setup.
+
+\subsubsection{EfficientAD Training}
+Once the loaf crops have been organized, EfficientAD is trained through anomalib.\cite{akcay_anomalib_2022} The method remains one-class: it learns the appearance of normal bread from the training set of good samples and later measures deviations from this learned normality at inference time.\cite{batzner_efficientad_2024}
+
+The training scripts are designed to be practical for real experimentation. They expose parameters such as image size, batch size, mixed-precision usage, and validation limits, thereby making it possible to adapt the training run to the available GPU memory.\cite{labby_thesis_repo_2026} The implementation also supports scenarios in which anomalous validation or test samples are absent, while still allowing external anomalous images to be included in the validation or test folders whenever a preliminary qualitative check is needed. In this way, the same codebase can be used both for strict one-class training and for exploratory validation of anomaly scores on externally sourced defect examples.
+
+\subsubsection{Inference and Reporting}
+After training, the best or most recent checkpoint is loaded for inference on batches of loaf crops. Because large inference sets may exceed memory or I/O limits if processed at once, the repository includes a chunked inference routine that iterates over the dataset in manageable groups and stores the predictions incrementally.\cite{labby_thesis_repo_2026}
+
+For each analyzed crop, the implemented pipeline produces an image-level anomaly score, a predicted class label, an anomaly map, and a binary mask. The outputs are then saved both in numerical form, through CSV and text summaries, and in visual form, through heatmaps, overlays, and dedicated debug folders containing the most anomalous examples.\cite{labby_thesis_repo_2026} In the context of this thesis, the most relevant quantity is the anomaly score itself, since it provides the scalar measure used to compare samples and to analyze the distribution of potentially problematic loaves over the inspected set.

@@ -1,0 +1,17 @@
+VOLUME STATISTICS (liters)
+original_count=17766
+count=15902
+discarded_outliers=1864
+outlier_min=0.500000
+outlier_max=2.600000
+mean=1.153842
+median=1.085705
+std=0.313228
+min=0.500858
+max=2.599818
+expected_min=1.380000
+expected_max=1.720000
+derived_min_from_weight_density=1.400000
+derived_max_from_weight_density=1.711111
+within_expected_range=874
+within_expected_range_pct=5.50

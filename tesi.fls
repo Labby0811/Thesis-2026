@@ -1058,16 +1058,192 @@ INPUT .\Chapters\Chapter_4\0_chapter_4.tex
 INPUT .\Chapters\Chapter_4\0_chapter_4.tex
 INPUT .\Chapters\Chapter_4\0_chapter_4.tex
 INPUT Chapters\Chapter_4\0_chapter_4.tex
-INPUT .\Chapters\Chapter_4\4_opencv.tex
-INPUT .\Chapters\Chapter_4\4_opencv.tex
-INPUT .\Chapters\Chapter_4\4_opencv.tex
-INPUT .\Chapters\Chapter_4\4_opencv.tex
-INPUT Chapters\Chapter_4\4_opencv.tex
+INPUT .\Chapters\Chapter_4\1_Pipeline.tex
+INPUT .\Chapters\Chapter_4\1_Pipeline.tex
+INPUT Chapters\Chapter_4\1_Pipeline.tex
+INPUT .\Chapters\Chapter_4\2_motion_detection.tex
+INPUT .\Chapters\Chapter_4\2_motion_detection.tex
+INPUT Chapters\Chapter_4\2_motion_detection.tex
+INPUT .\images\BGS.jpg
+INPUT .\images\BGS.jpg
+INPUT .\images\BGS.jpg
+INPUT .\images\BGS.jpg
+INPUT .\images\BGS.jpg
+INPUT .\images\BGS.jpg
+INPUT .\images\BGS.jpg
+INPUT .\images\YAML.png
+INPUT .\images\YAML.png
+INPUT .\images\YAML.png
+INPUT .\images\YAML.png
+INPUT .\images\YAML.png
+INPUT .\images\YAML.png
+INPUT .\images\YAML.png
+INPUT .\images\ssd.PNG
+INPUT .\images\ssd.PNG
+INPUT .\images\ssd.PNG
+INPUT .\images\ssd.PNG
+INPUT .\images\ssd.PNG
+INPUT .\images\ssd.PNG
+INPUT .\images\ssd.PNG
+INPUT .\Chapters\Chapter_4\3_automatic_labelling.tex
+INPUT .\Chapters\Chapter_4\3_automatic_labelling.tex
+INPUT Chapters\Chapter_4\3_automatic_labelling.tex
+INPUT .\images\Useful-photos\Screenshots\Screenshot from 2026-02-23 17-16-41.png
+INPUT .\images\Useful-photos\Screenshots\Screenshot from 2026-02-23 17-16-41.png
+INPUT .\images\Useful-photos\Screenshots\Screenshot from 2026-02-23 17-16-41.png
+INPUT .\images\Useful-photos\Screenshots\Screenshot from 2026-02-23 17-16-41.png
+INPUT .\images\Useful-photos\Screenshots\Screenshot from 2026-02-23 17-16-41.png
+INPUT .\images\Useful-photos\Screenshots\Screenshot from 2026-02-23 17-16-41.png
+INPUT .\images\Useful-photos\Screenshots\Screenshot from 2026-02-23 17-16-41.png
+INPUT .\Chapters\Chapter_4\4_DEIMv2_Training.tex
+INPUT .\Chapters\Chapter_4\4_DEIMv2_Training.tex
+INPUT Chapters\Chapter_4\4_DEIMv2_Training.tex
+INPUT .\Chapters\Chapter_4\5_Feature_Extraction_and_Quality_Assessment.tex
+INPUT .\Chapters\Chapter_4\5_Feature_Extraction_and_Quality_Assessment.tex
+INPUT Chapters\Chapter_4\5_Feature_Extraction_and_Quality_Assessment.tex
 INPUT .\Chapters\Chapter_5\0_chapter_5.tex
 INPUT .\Chapters\Chapter_5\0_chapter_5.tex
 INPUT .\Chapters\Chapter_5\0_chapter_5.tex
 INPUT .\Chapters\Chapter_5\0_chapter_5.tex
 INPUT Chapters\Chapter_5\0_chapter_5.tex
+INPUT .\Chapters\Chapter_5\01_Train.tex
+INPUT .\Chapters\Chapter_5\01_Train.tex
+INPUT Chapters\Chapter_5\01_Train.tex
+INPUT .\images\Tensor1_1.png
+INPUT .\images\Tensor1_1.png
+INPUT .\images\Tensor1_1.png
+INPUT .\images\Tensor1_1.png
+INPUT .\images\Tensor1_1.png
+INPUT .\images\Tensor1_1.png
+INPUT .\images\Tensor1_1.png
+INPUT .\images\Tensor1_2.png
+INPUT .\images\Tensor1_2.png
+INPUT .\images\Tensor1_2.png
+INPUT .\images\Tensor1_2.png
+INPUT .\images\Tensor1_2.png
+INPUT .\images\Tensor1_2.png
+INPUT .\images\Tensor1_2.png
+INPUT .\images\Tensor1_3.png
+INPUT .\images\Tensor1_3.png
+INPUT .\images\Tensor1_3.png
+INPUT .\images\Tensor1_3.png
+INPUT .\images\Tensor1_3.png
+INPUT .\images\Tensor1_3.png
+INPUT .\images\Tensor1_3.png
+INPUT .\images\Tensor1_4.png
+INPUT .\images\Tensor1_4.png
+INPUT .\images\Tensor1_4.png
+INPUT .\images\Tensor1_4.png
+INPUT .\images\Tensor1_4.png
+INPUT .\images\Tensor1_4.png
+INPUT .\images\Tensor1_4.png
+INPUT .\images\DEIMv2_Results1.png
+INPUT .\images\DEIMv2_Results1.png
+INPUT .\images\DEIMv2_Results1.png
+INPUT .\images\DEIMv2_Results1.png
+INPUT .\images\DEIMv2_Results1.png
+INPUT .\images\DEIMv2_Results1.png
+INPUT .\images\DEIMv2_Results1.png
+INPUT .\images\Tensor2_1.png
+INPUT .\images\Tensor2_1.png
+INPUT .\images\Tensor2_1.png
+INPUT .\images\Tensor2_1.png
+INPUT .\images\Tensor2_1.png
+INPUT .\images\Tensor2_1.png
+INPUT .\images\Tensor2_1.png
+INPUT .\images\Tensor2_2.png
+INPUT .\images\Tensor2_2.png
+INPUT .\images\Tensor2_2.png
+INPUT .\images\Tensor2_2.png
+INPUT .\images\Tensor2_2.png
+INPUT .\images\Tensor2_2.png
+INPUT .\images\Tensor2_2.png
+INPUT .\images\Tensor2_3.png
+INPUT .\images\Tensor2_3.png
+INPUT .\images\Tensor2_3.png
+INPUT .\images\Tensor2_3.png
+INPUT .\images\Tensor2_3.png
+INPUT .\images\Tensor2_3.png
+INPUT .\images\Tensor2_3.png
+INPUT .\images\Tensor2_4.png
+INPUT .\images\Tensor2_4.png
+INPUT .\images\Tensor2_4.png
+INPUT .\images\Tensor2_4.png
+INPUT .\images\Tensor2_4.png
+INPUT .\images\Tensor2_4.png
+INPUT .\images\Tensor2_4.png
+INPUT .\images\DEIMv2_Results2.png
+INPUT .\images\DEIMv2_Results2.png
+INPUT .\images\DEIMv2_Results2.png
+INPUT .\images\DEIMv2_Results2.png
+INPUT .\images\DEIMv2_Results2.png
+INPUT .\images\DEIMv2_Results2.png
+INPUT .\images\DEIMv2_Results2.png
+INPUT .\Chapters\Chapter_5\1_Site1_dough_ball_volume_estimation.tex
+INPUT .\Chapters\Chapter_5\1_Site1_dough_ball_volume_estimation.tex
+INPUT Chapters\Chapter_5\1_Site1_dough_ball_volume_estimation.tex
+INPUT C:\Users\giuse\AppData\Local\Programs\MiKTeX\fonts\vf\public\newtx\ntx-Regular-tlf-ot1.vf
+INPUT C:\Users\giuse\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\txmiaX.tfm
+INPUT C:\Users\giuse\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\ntx-Regular-tlf-ot1r.tfm
+INPUT .\images\RESULTS\Volume\volume_distribution_gap.png
+INPUT .\images\RESULTS\Volume\volume_distribution_gap.png
+INPUT .\images\RESULTS\Volume\volume_distribution_gap.png
+INPUT .\images\RESULTS\Volume\volume_distribution_gap.png
+INPUT .\images\RESULTS\Volume\volume_distribution_gap.png
+INPUT .\images\RESULTS\Volume\volume_distribution_gap.png
+INPUT .\images\RESULTS\Volume\volume_distribution_gap.png
+INPUT .\images\RESULTS\Volume\volume_distribution_rotated_alpha.png
+INPUT .\images\RESULTS\Volume\volume_distribution_rotated_alpha.png
+INPUT .\images\RESULTS\Volume\volume_distribution_rotated_alpha.png
+INPUT .\images\RESULTS\Volume\volume_distribution_rotated_alpha.png
+INPUT .\images\RESULTS\Volume\volume_distribution_rotated_alpha.png
+INPUT .\images\RESULTS\Volume\volume_distribution_rotated_alpha.png
+INPUT .\images\RESULTS\Volume\volume_distribution_rotated_alpha.png
+INPUT .\images\RESULTS\Volume\volume_distribution_rotated_hull.png
+INPUT .\images\RESULTS\Volume\volume_distribution_rotated_hull.png
+INPUT .\images\RESULTS\Volume\volume_distribution_rotated_hull.png
+INPUT .\images\RESULTS\Volume\volume_distribution_rotated_hull.png
+INPUT .\images\RESULTS\Volume\volume_distribution_rotated_hull.png
+INPUT .\images\RESULTS\Volume\volume_distribution_rotated_hull.png
+INPUT .\images\RESULTS\Volume\volume_distribution_rotated_hull.png
+INPUT .\images\RESULTS\Volume\volume_distribution_comparison.png
+INPUT .\images\RESULTS\Volume\volume_distribution_comparison.png
+INPUT .\images\RESULTS\Volume\volume_distribution_comparison.png
+INPUT .\images\RESULTS\Volume\volume_distribution_comparison.png
+INPUT .\images\RESULTS\Volume\volume_distribution_comparison.png
+INPUT .\images\RESULTS\Volume\volume_distribution_comparison.png
+INPUT .\images\RESULTS\Volume\volume_distribution_comparison.png
+INPUT .\images\Useful-photos\Screenshots\Screenshot from 2026-04-05 12-40-59.png
+INPUT .\images\Useful-photos\Screenshots\Screenshot from 2026-04-05 12-40-59.png
+INPUT .\images\Useful-photos\Screenshots\Screenshot from 2026-04-05 12-40-59.png
+INPUT .\images\Useful-photos\Screenshots\Screenshot from 2026-04-05 12-40-59.png
+INPUT .\images\Useful-photos\Screenshots\Screenshot from 2026-04-05 12-40-59.png
+INPUT .\images\Useful-photos\Screenshots\Screenshot from 2026-04-05 12-40-59.png
+INPUT .\images\Useful-photos\Screenshots\Screenshot from 2026-04-05 12-40-59.png
+INPUT .\Chapters\Chapter_5\2_Site2_bread_quality_assessment.tex
+INPUT .\Chapters\Chapter_5\2_Site2_bread_quality_assessment.tex
+INPUT Chapters\Chapter_5\2_Site2_bread_quality_assessment.tex
+INPUT .\images\RESULTS\Anomaly\good\scores_inference_graph.png
+INPUT .\images\RESULTS\Anomaly\good\scores_inference_graph.png
+INPUT .\images\RESULTS\Anomaly\good\scores_inference_graph.png
+INPUT .\images\RESULTS\Anomaly\good\scores_inference_graph.png
+INPUT .\images\RESULTS\Anomaly\good\scores_inference_graph.png
+INPUT .\images\RESULTS\Anomaly\good\scores_inference_graph.png
+INPUT .\images\RESULTS\Anomaly\good\scores_inference_graph.png
+INPUT .\images\RESULTS\Anomaly\Defect3\scores_inference_graph.png
+INPUT .\images\RESULTS\Anomaly\Defect3\scores_inference_graph.png
+INPUT .\images\RESULTS\Anomaly\Defect3\scores_inference_graph.png
+INPUT .\images\RESULTS\Anomaly\Defect3\scores_inference_graph.png
+INPUT .\images\RESULTS\Anomaly\Defect3\scores_inference_graph.png
+INPUT .\images\RESULTS\Anomaly\Defect3\scores_inference_graph.png
+INPUT .\images\RESULTS\Anomaly\Defect3\scores_inference_graph.png
+INPUT .\images\RESULTS\Anomaly\Defect3\000006_images (6).jpeg
+INPUT .\images\RESULTS\Anomaly\Defect3\000006_images (6).jpeg
+INPUT .\images\RESULTS\Anomaly\Defect3\000006_images (6).jpeg
+INPUT .\images\RESULTS\Anomaly\Defect3\000006_images (6).jpeg
+INPUT .\images\RESULTS\Anomaly\Defect3\000006_images (6).jpeg
+INPUT .\images\RESULTS\Anomaly\Defect3\000006_images (6).jpeg
+INPUT .\images\RESULTS\Anomaly\Defect3\000006_images (6).jpeg
 INPUT .\Chapters\Chapter_6\0_chapter_6.tex
 INPUT .\Chapters\Chapter_6\0_chapter_6.tex
 INPUT .\Chapters\Chapter_6\0_chapter_6.tex
