@@ -44,6 +44,119 @@ These notes summarize how the user prefers the assistant to review, revise, and 
 - If a section is revised and later the user says the revision feels too severe, the assistant should prefer a middle ground: keep the user's structure and emphasis, but still polish grammar, precision, coherence, and academic tone.
 - The user values collaborative behavior. The assistant should explain reasoning kindly, justify suggested changes clearly, and adapt to the user's preferred writing style over time instead of enforcing a rigid house style.
 
+## Additional Persistent Preferences Learned Later
+
+- The user usually discusses the work in Italian, but all thesis text to be written or revised must remain in academic English.
+- Before modifying thesis prose, the assistant should normally:
+  1. read the relevant file and nearby sections,
+  2. propose what should be changed and why,
+  3. wait for the user's approval,
+  4. only then edit the file.
+- Exception: if the user explicitly gives a direct go-ahead such as "vai", "procedi", or clearly asks for the text to be written immediately, the assistant may edit directly.
+- The assistant must preserve the user's intentional `\\` line breaks in LaTeX unless the user explicitly asks to remove them.
+- The assistant should not automatically download or insert external figures anymore. If figures are needed, the assistant should:
+  - suggest where a figure belongs,
+  - prepare the LaTeX `figure` block,
+  - propose caption and label,
+  - leave only the image filename as a placeholder for the user to fill.
+- If content is moved from one chapter to another for structural reasons, the assistant must make sure that no important detail is lost in the process.
+
+## Structural Decisions Already Agreed with the User
+
+- Chapter 3 should mainly describe:
+  - industrial context,
+  - site setup,
+  - hardware,
+  - acquisition logic,
+  - and only a high-level statement of how the data are later used.
+- Chapter 4 should contain:
+  - the actual implementation logic,
+  - the pipeline details,
+  - motion detection,
+  - automatic labelling,
+  - detector training,
+  - volume estimation for Site 1,
+  - anomaly detection for Site 2.
+- The generic idea of a broad `Implementation` section listing libraries such as OpenCV, Open3D, Torch, and TensorBoard was considered not very useful. Instead, implementation details should be integrated into the methodological sections where they are actually used.
+- A specific example of this rule is:
+  - background subtraction for frame triggering belongs under `Motion Detection`;
+  - background subtraction used to separate dough from the support table belongs under `Site 1: Volume Estimation`.
+- The Chapter 1 section `4_Internship.tex`, especially `Pipeline summary`, should remain a true summary and should not absorb detailed implementation material that belongs to Chapter 4.
+
+## Current State of Chapter 4
+
+As of the latest update in this chat, Chapter 4 has already been rewritten to align with the actual implementation and repositories.
+
+- Main file:
+  - `Chapters/Chapter_4/0_chapter_4.tex`
+- Motion-detection subsection file:
+  - `Chapters/Chapter_4/4_opencv.tex`
+
+The current Chapter 4 now covers:
+
+- shared offline/online pipeline across both sites;
+- motion-triggered acquisition;
+- automatic labelling with Lang-SAM;
+- DEIMv2 as the common detection layer;
+- Site 1 volume estimation with:
+  - filtered detection cache,
+  - empty-table depth background modelling,
+  - foreground extraction from color/depth,
+  - aligned RGB-D point-cloud generation,
+  - axis construction and rotational completion,
+  - multiple volume estimators including rotated hull, rotated alpha shape, and depth-gap;
+- Site 2 anomaly detection with:
+  - loaf-crop dataset preparation,
+  - automatic split and interactive review options,
+  - EfficientAD training through anomalib,
+  - one-class training on good samples,
+  - use of a small auxiliary defect set from online images,
+  - chunked inference and anomaly-score reporting.
+
+Future assistants should not overwrite this structure casually. If the repositories change, Chapter 4 should be updated accordingly, but always by re-reading the real code and README files first.
+
+## Repositories That Must Be Treated as Primary Sources for Chapter 4
+
+For implementation-related writing, especially Chapter 4, the assistant should use these repositories as primary sources and read both the README files and the code:
+
+- Main implementation repository:
+  - `https://github.com/Labby0811/thesis`
+- Motion-detection / acquisition repository:
+  - `https://github.com/Labby0811/Kinect_acquisition`
+
+These repositories were already used to rewrite Chapter 4, and the following bibliography entries were added for them:
+
+- `labby_thesis_repo_2026`
+- `labby_kinect_acquisition_2026`
+
+If the user later says the repositories were updated, the assistant should re-read them before touching Chapter 4.
+
+## Build and LaTeX Notes
+
+- The thesis root file is `tesi.tex`.
+- In this project, incremental `latexmk` runs can sometimes get confused by stale auxiliary files and produce misleading BibTeX errors such as missing `\bibdata` / `\bibstyle` or runaway `\citation` entries in `tesi.aux`.
+- When this happens, the reliable workflow is:
+  1. delete the generated auxiliary files (`tesi.aux`, `tesi.bbl`, `tesi.blg`, `tesi.fdb_latexmk`, `tesi.fls`, `tesi.lof`, `tesi.log`, `tesi.lot`, `tesi.out`, `tesi.toc`);
+  2. rerun `latexmk -pdf -interaction=nonstopmode -file-line-error tesi.tex`.
+- A clean build was successfully completed after the Chapter 4 rewrite.
+
+## Known Remaining Issues Not Caused by Chapter 4
+
+At the time of this handoff, the main remaining unresolved references are:
+
+- `fig:3D_volume_rendering`
+- `fig:Anomaly_map`
+
+These occur in `Chapters/Chapter_1/3_Thesis goal.tex` and were already present independently of the Chapter 4 work.
+
 ## Handoff Note
 
-Any future chat assisting with this thesis should read this file first and treat both the formal rules and the practical preferences above as active guidance.
+Any future chat assisting with this thesis should read this file first and treat:
+
+- the formal rules,
+- the practical preferences,
+- the structural decisions,
+- the repository notes,
+- and the build notes
+
+as active guidance for continuing the work consistently with the previous chat.
