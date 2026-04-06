@@ -30,7 +30,16 @@ The supporting table is modelled separately from a set of empty-scene acquisitio
 \end{figure}
 
 \subsubsection{Foreground Extraction and Point-Cloud Generation}
-Once a dough-ball detection has been selected, the corresponding RGB bounding box is associated with the aligned depth image through the Kinect calibration and reprojection pipeline. The local 3D point cloud is then obtained from the aligned depth pixels by means of the standard pinhole camera model:
+Once a dough-ball detection has been selected, the corresponding RGB bounding box is associated with the aligned depth image through the Kinect calibration and reprojection pipeline. Because the RGB and depth streams of the Azure Kinect have different intrinsic parameters, extrinsic relationships, and fields of view, a dedicated reprojection and alignment stage was implemented using the calibration data provided by the Azure Kinect SDK and accessed in Python through the \textit{pyKinectAzure} interface.\cite{microsoft_azure-kinect-sensor-sdk_2026,gorordo_fernandez_pykinectazure_2026} This stage makes it possible to map the RGB detections onto the corresponding depth coordinates and therefore to associate each RGB bounding box with the correct 3D measurements.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.80\textwidth]{images/Reprojection_param.png}
+    \caption{Kinect reprojection parameters. The figure shows the RGB and depth intrinsic parameters, as well as the extrinsic transformation between the two sensors, which are used to align the RGB detections with the depth data.}
+    \label{fig:reprojection_parameters}
+\end{figure}
+
+The local 3D point cloud is then obtained from the aligned depth pixels by means of the standard pinhole camera model:
 
 \begin{equation}
 X = \frac{(u - c_x) \cdot Z}{f_x}, \quad
@@ -39,18 +48,8 @@ Z = D(u,v)
 \end{equation}
 
 where $(u,v)$ are the pixel coordinates, $D(u,v)$ is the depth value, $(c_x, c_y)$ are the principal-point coordinates, and $f_x$ and $f_y$ are the focal lengths expressed in pixel units.
-
-Because the RGB and depth streams of the Azure Kinect have different intrinsic parameters, extrinsic relationships, and fields of view, a dedicated reprojection and alignment stage was implemented using the calibration data provided by the Azure Kinect SDK and accessed in Python through the \textit{pyKinectAzure} interface.\cite{microsoft_azure-kinect-sensor-sdk_2026,gorordo_fernandez_pykinectazure_2026} This stage makes it possible to map the RGB detections onto the corresponding depth coordinates and therefore to associate each RGB bounding box with the correct 3D measurements.
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.80\textwidth]{images/Reprojection_param.png}
-    \caption{Kinect reprojection parameters. The figure shows the RGB and depth intrinsic parameters, as well as the extrinsic transformation between the two sensors, which are used to align the RGB detections with the depth data.}
-    \label{fig:reprojection_parameters}
-\end{figure}
-\newpage
-
-The implementation supports different seed-mask construction modes, namely \texttt{sam}, \texttt{bbox}, and \texttt{color}.\cite{labby_thesis_repo_2026} These modes are configurable through the experiment configuration file, whereas the workflow adopted for the main experiments initializes the foreground in \texttt{color} mode and then refines it in depth (\texttt{color\_then\_depth}). More specifically, a central rectangular seed (shown in yellow in Figure~\ref{fig:color_segmentation}) is first derived from each detection, and the clustering stage can also be extended by a configurable percentage beyond the predicted bounding box so as to remain robust even when the detector localization is not perfectly tight. The color-based stage suppresses the blue background, constrains the admissible lightness range, optionally performs adaptive clustering in the \textsc{Lab} color space, and can recover dark dough regions that would otherwise be missed by a purely brightness-based filter.\cite{labby_thesis_repo_2026}
+\\
+The implementation supports different segmentation modes, namely \texttt{sam}, \texttt{bbox}, and \texttt{color}.\cite{labby_thesis_repo_2026} These modes are configurable through the experiment configuration file, whereas the workflow adopted for the main experiments initializes the foreground in \texttt{color} mode and then refines it in depth (\texttt{color\_then\_depth}). More specifically, a central rectangular seed (shown in yellow in Figure~\ref{fig:color_segmentation}) is first derived from each detection, and the clustering stage can also be extended by a configurable percentage beyond the predicted bounding box so as to remain robust even when the detector localization is not perfectly tight. The color-based stage suppresses the blue background, constrains the admissible lightness range, optionally performs adaptive clustering in the \textsc{Lab} color space, and can recover dark dough regions that would otherwise be missed by a purely brightness-based filter.\cite{labby_thesis_repo_2026}
 
 \begin{figure}[H]
     \centering
@@ -228,7 +227,7 @@ The observed geometry is then rotated around this axis, using Rodrigues-based ri
 \end{figure}
 
 Representative outputs of the three main estimators considered in this thesis are shown in Figures~\ref{fig:convex_hull_estimator}, \ref{fig:alpha_shape_estimator}, and \ref{fig:depth_gap_estimator}. The full implementation therefore makes it possible to compare simple geometric baselines with progressively more structured reconstructions. In the comparative analysis reported in this thesis, the three main estimators considered over the entire test set are the rotated convex hull, the rotated alpha shape, and the depth-gap method. Their resulting volume distributions are then analyzed and compared in order to assess the consistency of the reconstructed dough volumes, as discussed in Chapter~5.
-
+\newpage
 \subsection{Site 2: Anomaly Detection}
 At Site~2, the downstream task is not geometric reconstruction but visual anomaly assessment of the final baked product. For this reason, the anomaly-detection branch operates on localized loaf crops rather than on full production-line frames. In the implemented framework, these crops are processed by EfficientAD through anomalib, so that each loaf can be assigned an image-level anomaly score together with spatial diagnostic outputs such as anomaly maps and predicted masks.\cite{batzner_efficientad_2024,akcay_anomalib_2022}
 
@@ -237,7 +236,7 @@ The first step of the anomaly-detection branch consists of exporting bread-loaf 
 
 Two complementary dataset-construction strategies are supported. The first is a simple automatic split, which partitions the crops into train, validation, and test sets according to a 0.8/0.1/0.1 ratio. The second is an interactive review tool through which exported crops can be inspected and manually assigned to good or defective/anomalous subsets before being distributed across the dataset folders.\cite{labby_thesis_repo_2026} This strategy is particularly useful when anomalous samples are few, heterogeneous, externally sourced, or when a small but carefully controlled exploratory dataset is needed. In the present work, this tool was also used in a preliminary test on about 300 good samples, while crops partially occluded by a hand or by the tray were operationally assigned to the defect group. The aim of this test was not to define a representative taxonomy of industrial defects, but to verify whether the network could rapidly separate clearly non-good samples from the good dataset in the event that defective products became available during operation. Since the results of this preliminary test were promising, the model was then trained on the full collected dataset, which was subsequently partitioned into training, validation, and test subsets according to the adopted split.
 
-In the experiments described in this thesis, the normal class is composed of \emph{good} bread images collected during the two-week acquisition campaign. Since no representative defective loaves were provided either by the production site or by the SMACT \cite{smact_official_2026} operators, the collected on-site dataset was treated as entirely normal. To obtain an initial qualitative indication of the model behavior on clearly non-conforming products, a small auxiliary set of eighteen defective bread images collected from online sources was used as an external reference, with nine images assigned to the validation set and nine distinct images assigned to the test set. These images were not used to define the normal training distribution, but only as auxiliary anomalous examples for preliminary qualitative evaluation. They depict clearly non-conforming products, such as burnt or mouldy loaves, but they are not fully representative of either the bread type or the visual environment observed in the industrial setup.
+In the experiments described in this thesis, the normal class is composed of \emph{good} bread images collected during the two-week acquisition campaign. Since no representative defective loaves were provided either by the production site or by the SMACT \cite{smact_official_2026} operators, \textbf{the collected on-site dataset was treated as entirely normal}. To obtain an initial qualitative indication of the model behavior on clearly non-conforming products, a small auxiliary set of \textbf{18 defective bread images} collected \textbf{from online sources} was used as an external reference, with 9 images assigned to the validation set and 9 distinct images assigned to the test set. These images were not used to define the normal training distribution, but only as auxiliary anomalous examples for preliminary qualitative evaluation. They depict clearly non-conforming products, such as burnt or mouldy loaves, but they are not fully representative of either the bread type or the visual environment observed in the industrial setup.
 
 \begin{figure}[H]
     \centering
@@ -264,7 +263,7 @@ In the experiments described in this thesis, the normal class is composed of \em
     \label{fig:site2_external_defects}
 \end{figure}
 
-For this reason, they are not expected to provide a rigorous estimate of industrial anomaly-detection performance; rather, they offer a practical sanity check for the anomaly scores and maps produced by the trained model.\cite{labby_thesis_repo_2026} This choice remains consistent with the one-class training paradigm, which focuses on learning the normal class and then relies on anomaly scores to identify deviations from that normality, even when the specific nature of the anomalies is not known in advance.\cite{batzner_efficientad_2024}
+For this reason, they are not expected to provide a rigorous estimate of industrial anomaly-detection performance; rather, they offer a \textbf{practical sanity check} for the anomaly scores and maps produced by the trained model.\cite{labby_thesis_repo_2026} This choice remains consistent with the one-class training paradigm, which focuses on learning the normal class and then relies on anomaly scores to identify deviations from that normality, even when the specific nature of the anomalies is not known in advance.\cite{batzner_efficientad_2024}
 
 \subsubsection{EfficientAD Training}
 Once the loaf crops have been organized, EfficientAD is trained through anomalib.\cite{akcay_anomalib_2022} The method remains one-class: it learns the appearance of normal bread from the training set of good samples and later measures deviations from this learned normality at inference time.\cite{batzner_efficientad_2024} Accordingly, the actual training phase is based on the normal samples only, whereas any external anomalous examples are reserved for exploratory validation or qualitative inspection.

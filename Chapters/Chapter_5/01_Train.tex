@@ -3,9 +3,9 @@ The DEIMv2 training process was monitored for both site-specific datasets throug
 In both experiments, the detector was trained for 200 epochs and the final model was selected according to the lowest validation loss observed during training. This criterion provided a consistent model-selection rule across the two datasets and made it possible to retain the checkpoint corresponding to the most favorable validation regime within the fixed training schedule.
 
 \subsection{Site 1: Training on the Dough-Ball Dataset}
-The first training experiment was carried out on the dough-ball dataset collected at Site~1 and composed by 50k images splitted 80, 10, 10. Figure~\ref{fig:DEIMv2_training_curves1} summarizes the main TensorBoard plots recorded during training. Overall, the curves indicate a stable optimization process, with progressive convergence of the loss terms and a validation trend that supports the selected final checkpoint.
-%TODO: magari dividi le 4 figure in 2 e 2 perché se no va a capo nella pagina dopo con tutte e quattro e lascia un mega spazio bianco che non mi piace
-\begin{figure}[h]
+The first training experiment was carried out on the dough-ball dataset collected at Site~1, which consisted of approximately 50k images partitioned into training, validation, and test subsets with an 80/10/10 split. Figures~\ref{fig:DEIMv2_training_curves1a} and~\ref{fig:DEIMv2_training_curves1b} summarize the main TensorBoard plots recorded during training. Overall, the curves indicate a stable optimization process, with progressive convergence of the loss terms and a validation trend that supports the selected final checkpoint.
+
+\begin{figure}[H]
     \centering
     \begin{subfigure}[b]{0.48\textwidth}
         \centering
@@ -18,9 +18,12 @@ The first training experiment was carried out on the dough-ball dataset collecte
         \includegraphics[width=\linewidth]{images/Tensor1_2.png}
         \caption{Loss term 1}
     \end{subfigure}
+    \caption{First part of the TensorBoard monitoring for the DEIMv2 training on the Site~1 dough-ball dataset. The plots report the evolution of validation accuracy and of one main loss term over the 200-epoch training schedule.}
+    \label{fig:DEIMv2_training_curves1a}
+\end{figure}
 
-    \vspace{0.5em}
-
+\begin{figure}[H]
+    \centering
     \begin{subfigure}[b]{0.48\textwidth}
         \centering
         \includegraphics[width=\linewidth]{images/Tensor1_3.png}
@@ -32,23 +35,23 @@ The first training experiment was carried out on the dough-ball dataset collecte
         \includegraphics[width=\linewidth]{images/Tensor1_4.png}
         \caption{Loss term 3}
     \end{subfigure}
-    \caption{TensorBoard monitoring of the DEIMv2 training on the Site~1 dough-ball dataset. The plots report the evolution of validation accuracy and of the main loss terms over the 200-epoch training schedule.}
-    \label{fig:DEIMv2_training_curves1}
+    \caption{Second part of the TensorBoard monitoring for the DEIMv2 training on the Site~1 dough-ball dataset. The plots report the evolution of the remaining loss terms over the 200-epoch training schedule.}
+    \label{fig:DEIMv2_training_curves1b}
 \end{figure}
 
-The final detector achieved an Average Precision (AP) of 0.929 and an Average Recall (AR) of 0.953 on the evaluation split, indicating that the model was able to localize dough balls with high reliability despite the challenging visual configuration of the site.%TODO: come challenging con i dough balls che si toccano e si sovrappongono, magari aggiungi una frase del genere per spiegare meglio la difficoltà del dataset e giustificare il risultato leggermente inferiore rispetto a Site~2
+The final detector achieved an Average Precision (AP) of 0.929 and an Average Recall (AR) of 0.953 on the evaluation split, indicating that the model was able to localize dough balls with high reliability despite the challenging visual configuration of the site. The Site~1 dataset is more difficult than the one collected at Site~2, since dough balls may touch or partially overlap along the production flow, making instance separation and bounding-box assignment less straightforward.
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{images/DEIMv2_Results1.png}
     \caption{Quantitative DEIMv2 detection results obtained on the Site~1 dough-ball dataset.}
     \label{fig:DEIMv2_training_results1}
 \end{figure}
-\clearpage
-\subsection{Site 2: Training on the Bread-Loaf Dataset}
-The second training experiment was carried out on the bread-loaf dataset collected at Site~2, which consisted of 70k images, splitted 80, 10, 10. Also in this case, the TensorBoard plots in Figure~\ref{fig:DEIMv2_training_curves2} show a stable optimization process and support the checkpoint selected through the validation-loss criterion.
 
-\begin{figure}[h]
+\subsection{Site 2: Training on the Bread-Loaf Dataset}
+The second training experiment was carried out on the bread-loaf dataset collected at Site~2, which consisted of approximately 70k images partitioned into training, validation, and test subsets with an 80/10/10 split. Also in this case, the TensorBoard plots in Figures~\ref{fig:DEIMv2_training_curves2a} and~\ref{fig:DEIMv2_training_curves2b} show a stable optimization process and support the checkpoint selected through the validation-loss criterion.
+
+\begin{figure}[H]
     \centering
     \begin{subfigure}[b]{0.48\textwidth}
         \centering
@@ -61,9 +64,12 @@ The second training experiment was carried out on the bread-loaf dataset collect
         \includegraphics[width=\linewidth]{images/Tensor2_2.png}
         \caption{Loss term 1}
     \end{subfigure}
+    \caption{First part of the TensorBoard monitoring for the DEIMv2 training on the Site~2 bread-loaf dataset. The plots report the evolution of validation accuracy and of one main loss term over the 200-epoch training schedule.}
+    \label{fig:DEIMv2_training_curves2a}
+\end{figure}
 
-    \vspace{0.5em}
-
+\begin{figure}[H]
+    \centering
     \begin{subfigure}[b]{0.48\textwidth}
         \centering
         \includegraphics[width=\linewidth]{images/Tensor2_3.png}
@@ -75,13 +81,13 @@ The second training experiment was carried out on the bread-loaf dataset collect
         \includegraphics[width=\linewidth]{images/Tensor2_4.png}
         \caption{Loss term 3}
     \end{subfigure}
-    \caption{TensorBoard monitoring of the DEIMv2 training on the Site~2 bread-loaf dataset. The plots report the evolution of validation accuracy and of the main loss terms over the 200-epoch training schedule.}
-    \label{fig:DEIMv2_training_curves2}
+    \caption{Second part of the TensorBoard monitoring for the DEIMv2 training on the Site~2 bread-loaf dataset. The plots report the evolution of the remaining loss terms over the 200-epoch training schedule.}
+    \label{fig:DEIMv2_training_curves2b}
 \end{figure}
 
 The final detector achieved an outstanding Average Precision (AP) of 0.982 and an Average Recall (AR) of 0.994 on the evaluation split, confirming that the model was able to localize bread loaves very accurately in the Site~2 setting.
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{images/DEIMv2_Results2.png}
     \caption{Quantitative DEIMv2 detection results obtained on the Site~2 bread-loaf dataset.}

@@ -2,9 +2,10 @@
 
 \subsection{Quantitative results}
 The quantitative analysis of dough-ball volume was carried out on the three estimators introduced in Chapter~4: the depth-gap method, the rotated alpha-shape reconstruction, and the rotated convex-hull reconstruction. Tables~\ref{tab:volume_gap_stats}, \ref{tab:volume_rotated_alpha_stats}, and \ref{tab:volume_rotated_hull_stats} summarize the main descriptive statistics exported by the evaluation scripts.
-For ground truth comparison, the expected volume interval was derived from the nominal weight of the dough balls(1.54 kg) and the typical density of the dough (approximately from 0.9 to 1.1 g/cm\textsuperscript{3}), resulting in an expected volume range of [1.38, 1.72] liters. The percentage of samples falling within this expected range was calculated for each estimator, providing a measure of how well the estimated volumes align with the nominal target interval. The depth-gap method showed a significantly lower percentage of samples within the expected range, as it was constantly understimating the volume.The rotated alpha-shape and convex-hull methods, demonstrated a much higher agreement with the nominal target interval. This suggests that the geometric reconstruction approaches (alpha-shape and convex-hull) provide more accurate volume estimates for the dough balls compared to the depth-gap method.
-convex-hull estimator provides the highest percentage of samples inside the expected range, followed by the rotated alpha-shape estimator, while the depth-gap method yields a noticeably lower agreement with the nominal target interval.
-convex-hull even though is built from the same point cloud as the alpha-shape, has a higher volume estimate, which is more in line with the expected range. This could be due to the fact that the convex-hull method captures the overall shape of the dough ball more effectively, while the alpha-shape method may be more sensitive to local variations and noise in the point cloud, leading to a slightly lower volume estimate. The depth-gap method, on the other hand, relies on a simpler approach that may not capture the full 3D structure of the dough ball, resulting in a significant underestimation of the volume.
+
+For ground-truth comparison, the expected volume interval was derived from the nominal weight of the dough balls (1.54 kg) and the typical dough density (approximately 0.9-1.1 kg/dm\textsuperscript{3}), resulting in an expected volume range of [1.38, 1.72] liters. The percentage of samples falling within this expected range was then computed for each estimator, providing a direct indication of how well the reconstructed volumes align with the nominal target interval.
+
+The results show a clear difference among the three methods. The depth-gap estimator yields a significantly lower percentage of samples inside the expected interval, indicating a systematic tendency to underestimate the final volume. By contrast, both rotational estimators achieve a much higher agreement with the nominal target range, suggesting that the geometric completion stage provides a more plausible reconstruction of the dough shape. Among them, the rotated convex-hull estimator achieves the highest percentage of samples within the expected interval, followed by the rotated alpha-shape estimator. Although both methods are computed from the same completed point cloud, the convex hull provides a slightly larger enclosing geometry, which in this case results in volume estimates that are more consistent with the expected range.
 
 \begin{table}[h]
     \centering
@@ -81,30 +82,31 @@ convex-hull even though is built from the same point cloud as the alpha-shape, h
     \end{tabular}
 \end{table}
 \newpage
+
 The rotated convex-hull estimator provides the highest percentage of samples inside the expected range, followed by the rotated alpha-shape estimator, while the depth-gap method yields a noticeably lower agreement with the nominal target interval.
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{images/RESULTS/Volume/volume_distribution_gap.png}
     \caption{Volume distribution obtained with the depth-gap estimator.}
     \label{fig:volume_gap}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{images/RESULTS/Volume/volume_distribution_rotated_alpha.png}
     \caption{Volume distribution obtained with the rotated alpha-shape estimator.}
     \label{fig:volume_rotated_alpha}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{images/RESULTS/Volume/volume_distribution_rotated_hull.png}
     \caption{Volume distribution obtained with the rotated convex-hull estimator.}
     \label{fig:volume_rotated_hull}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{images/RESULTS/Volume/volume_distribution_comparison.png}
     \caption{Comparison of the volume distributions obtained with the three estimators.}
@@ -112,7 +114,7 @@ The rotated convex-hull estimator provides the highest percentage of samples ins
 \end{figure}
 
 \subsection{Qualitative results}
-% \begin{figure}[h]
+% \begin{figure}[H]
 %     \centering
 %     \includegraphics[width=\textwidth]{"images/Useful-photos/Screenshots/Screenshot from 2026-04-05 12-40-59.png"}
 %     \caption{Example of qualitative results for dough-ball volume estimation at Site~1. The figure shows the original RGB image with detected dough balls, the corresponding depth map, and the 3D point cloud representation used for volumetric analysis. The estimated volume for each dough ball is displayed alongside the visualizations.}
