@@ -1,11 +1,17 @@
 % !TeX root = ../../tesi.tex
 
 \subsection{Quantitative results}
-The quantitative analysis of dough-ball volume was carried out on the three estimators introduced in Chapter~4: the depth-gap method, the rotated alpha-shape reconstruction, and the rotated convex-hull reconstruction. Tables~\ref{tab:volume_gap_stats}, \ref{tab:volume_rotated_alpha_stats}, and \ref{tab:volume_rotated_hull_stats} summarize the main descriptive statistics exported by the evaluation scripts.
+The quantitative analysis of dough-ball volume was carried out on the three estimators introduced in Chapter~4: the depth-gap method, the rotated alpha-shape reconstruction, and the rotated convex-hull reconstruction. Figures~\ref{fig:volume_gap}, \ref{fig:volume_rotated_alpha}, and \ref{fig:volume_rotated_hull} provide visual representations of the corresponding volume distributions across the valid test samples, which are approximately 15,000 for each estimator after filtering, while Tables~\ref{tab:volume_gap_stats}, \ref{tab:volume_rotated_alpha_stats}, and \ref{tab:volume_rotated_hull_stats} summarize the main descriptive statistics exported by the evaluation scripts.
 
-For ground-truth comparison, the expected volume interval was derived from the nominal weight of the dough balls (1.54 kg) and the typical dough density (approximately 0.9-1.1 kg/dm\textsuperscript{3}), resulting in an expected volume range of [1.38, 1.72] liters. The percentage of samples falling within this expected range was then computed for each estimator, providing a direct indication of how well the reconstructed volumes align with the nominal target interval.
+For ground-truth comparison, the expected volume interval was derived from the nominal weight of the dough balls, reported by the SMACT \cite{smact_official_2026} operators as 1.54 kg, together with the typical dough density, approximately between \emph{0.9 kg/dm\textsuperscript{3}} and \emph{1.1 kg/dm\textsuperscript{3}}. This yields an expected volume range of \textbf{[1.38, 1.72] liters}. Before computing the descriptive statistics, non-plausible volume estimates, such as extremely small or extremely large values caused by reconstruction failures or borderline cases, were excluded from the analysis. For this reason, the tables report the number of valid samples retained for each estimator together with the mean, median, standard deviation, minimum and maximum valid volumes, and the percentage of samples falling inside this interval, so as to provide a complete picture of the reconstructed volume distributions and their consistency with the nominal product characteristics.
 
-The results show a clear difference among the three methods. The depth-gap estimator yields a significantly lower percentage of samples inside the expected interval, indicating a systematic tendency to underestimate the final volume. By contrast, both rotational estimators achieve a much higher agreement with the nominal target range, suggesting that the geometric completion stage provides a more plausible reconstruction of the dough shape. Among them, the rotated convex-hull estimator achieves the highest percentage of samples within the expected interval, followed by the rotated alpha-shape estimator. Although both methods are computed from the same completed point cloud, the convex hull provides a slightly larger enclosing geometry, which in this case results in volume estimates that are more consistent with the expected range.
+\subsubsection{Depth-gap estimator}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{images/RESULTS/Volume/volume_distribution_gap.png}
+    \caption{Volume distribution obtained with the depth-gap estimator.}
+    \label{fig:volume_gap}
+\end{figure}
 
 \begin{table}[h]
     \centering
@@ -18,19 +24,26 @@ The results show a clear difference among the three methods. The depth-gap estim
         Original samples & 17766 \\
         Valid samples after filtering & 15902 \\
         Discarded outliers & 1864 \\
-        Outlier interval & [0.500000, 2.600000] \\
         Mean volume & 1.153842 \\
         Median volume & 1.085705 \\
         Standard deviation & 0.313228 \\
         Minimum valid volume & 0.500858 \\
         Maximum valid volume & 2.599818 \\
         Expected interval & [1.380000, 1.720000] \\
-        Derived interval from weight and density & [1.400000, 1.711111] \\
         Samples within expected range & 874 \\
         Samples within expected range (\%) & 5.50 \\
         \hline
     \end{tabular}
 \end{table}
+
+\newpage
+\subsubsection{Alpha-shape estimator}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{images/RESULTS/Volume/volume_distribution_rotated_alpha.png}
+    \caption{Volume distribution obtained with the rotated alpha-shape estimator.}
+    \label{fig:volume_rotated_alpha}
+\end{figure}
 
 \begin{table}[h]
     \centering
@@ -43,19 +56,26 @@ The results show a clear difference among the three methods. The depth-gap estim
         Original samples & 17739 \\
         Valid samples after filtering & 15185 \\
         Discarded outliers & 2554 \\
-        Outlier interval & [0.700000, 2.600000] \\
         Mean volume & 1.523359 \\
         Median volume & 1.478649 \\
         Standard deviation & 0.286593 \\
         Minimum valid volume & 0.700107 \\
         Maximum valid volume & 2.599819 \\
         Expected interval & [1.380000, 1.720000] \\
-        Derived interval from weight and density & [1.400000, 1.711111] \\
         Samples within expected range & 8746 \\
         Samples within expected range (\%) & 57.60 \\
         \hline
     \end{tabular}
 \end{table}
+
+\newpage
+\subsubsection{Convex-hull estimator}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{images/RESULTS/Volume/volume_distribution_rotated_hull.png}
+    \caption{Volume distribution obtained with the rotated convex-hull estimator.}
+    \label{fig:volume_rotated_hull}
+\end{figure}
 
 \begin{table}[h]
     \centering
@@ -68,55 +88,28 @@ The results show a clear difference among the three methods. The depth-gap estim
         Original samples & 17740 \\
         Valid samples after filtering & 15261 \\
         Discarded outliers & 2479 \\
-        Outlier interval & [0.800000, 2.600000] \\
         Mean volume & 1.581481 \\
         Median volume & 1.544832 \\
         Standard deviation & 0.260279 \\
         Minimum valid volume & 0.800663 \\
         Maximum valid volume & 2.599514 \\
         Expected interval & [1.380000, 1.720000] \\
-        Derived interval from weight and density & [1.400000, 1.711111] \\
         Samples within expected range & 10338 \\
         Samples within expected range (\%) & 67.74 \\
         \hline
     \end{tabular}
 \end{table}
-\newpage
 
-The rotated convex-hull estimator provides the highest percentage of samples inside the expected range, followed by the rotated alpha-shape estimator, while the depth-gap method yields a noticeably lower agreement with the nominal target interval.
+\subsubsection{Discussion}
+The results show a clear difference among the three methods. The depth-gap estimator yields a significantly lower percentage of samples inside the expected interval, indicating a systematic tendency to underestimate the final volume. By contrast, both rotational estimators achieve a much higher agreement with the nominal target range, suggesting that the geometric completion stage provides a more plausible reconstruction of the dough shape. Among them, the \textbf{rotated convex-hull estimator} achieves the highest percentage of samples within the expected interval (67.74\%), followed by the rotated alpha-shape estimator (57.60\%). Although both methods are computed from the same completed point cloud, the convex hull provides a slightly larger enclosing geometry, which in this case results in volume estimates that are more consistent with the expected range.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=\textwidth]{images/RESULTS/Volume/volume_distribution_gap.png}
-    \caption{Volume distribution obtained with the depth-gap estimator.}
-    \label{fig:volume_gap}
-\end{figure}
+Figure~\ref{fig:volume_comparison} provides a visual comparison of the volume distributions obtained with the three estimators, highlighting the differences in their central tendencies and variabilities. The depth-gap method shows a distribution that is skewed towards lower volumes, while the rotational methods exhibit distributions that are more centered around the expected interval, with the convex-hull method showing a tighter concentration of values within the target range. Overall, these results suggest that geometric completion and reconstruction techniques play a crucial role in improving the accuracy of dough-ball volume estimation, and that the choice of reconstruction method can have a significant impact on the final estimates. The depth-gap method, while simpler and computationally less intensive, does not capture the full three-dimensional geometry of the dough ball and therefore tends to produce systematically lower volume estimates. In contrast, the rotational methods, by providing a more complete reconstruction of the dough shape, are able to produce volume estimates that are more aligned with the expected values based on the nominal weight and density of the product.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=\textwidth]{images/RESULTS/Volume/volume_distribution_rotated_alpha.png}
-    \caption{Volume distribution obtained with the rotated alpha-shape estimator.}
-    \label{fig:volume_rotated_alpha}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=\textwidth]{images/RESULTS/Volume/volume_distribution_rotated_hull.png}
-    \caption{Volume distribution obtained with the rotated convex-hull estimator.}
-    \label{fig:volume_rotated_hull}
-\end{figure}
-
-\begin{figure}[H]
+\begin{figure}[h]
     \centering
     \includegraphics[width=\textwidth]{images/RESULTS/Volume/volume_distribution_comparison.png}
     \caption{Comparison of the volume distributions obtained with the three estimators.}
     \label{fig:volume_comparison}
 \end{figure}
 
-\subsection{Qualitative results}
-% \begin{figure}[H]
-%     \centering
-%     \includegraphics[width=\textwidth]{"images/Useful-photos/Screenshots/Screenshot from 2026-04-05 12-40-59.png"}
-%     \caption{Example of qualitative results for dough-ball volume estimation at Site~1. The figure shows the original RGB image with detected dough balls, the corresponding depth map, and the 3D point cloud representation used for volumetric analysis. The estimated volume for each dough ball is displayed alongside the visualizations.}
-%     \label{fig:3D_volume_rendering}
-% \end{figure}
+The reconstruction-based methods, particularly the convex-hull estimator, demonstrate a significant improvement in volume-estimation accuracy, making them more suitable for practical applications in the industrial context of dough-ball quality assessment. Despite the limited resources available for this study and the fact that the expected reference volume is itself derived indirectly from nominal weight and estimated density rather than from direct volumetric measurements, the obtained agreement is already very promising. It should also be considered that the rotational methods approximate the dough geometry through a surface generated around the estimated axis, thus producing an idealized cylinder-like completion, whereas the real dough ball may deviate from that regular shape. For this reason, some discrepancy between estimated and expected volume is natural even if the reference were measured more directly. Nevertheless, the fact that a large portion of the samples reconstructed with the geometric methods falls within the expected interval suggests that these approaches are able to capture the overall shape of the dough ball effectively and to provide estimates that remain coherent with the nominal product characteristics. In this sense, the results represent a substantial improvement over the simpler depth-gap baseline and provide encouraging evidence for the practical applicability of the proposed geometric-reconstruction approach in a real industrial setting. A more precise calibration of the expected reference volume, for example through direct measurements on representative samples, could further improve the reliability of the final comparison; this point will be discussed again in Chapter~6.
