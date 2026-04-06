@@ -1,6 +1,15 @@
 % !TeX root = ../../tesi.tex
 \subsection{Quantitative results}
-The bread-quality branch produces image-level anomaly scores together with localization-oriented visual outputs. Since the anomalous reference set used in this work is small and externally sourced, the quantitative discussion is presented mainly in terms of anomaly-score trends rather than as a consolidated benchmark. Figures~\ref{fig:Anomaly_scores_good} and~\ref{fig:Anomaly_scores_defect3} report representative score plots for normal bread samples and for external defective samples, respectively.
+The bread-quality branch produces image-level anomaly scores together with localization-oriented visual outputs. Under the adopted evaluation protocol, in which the normal test subset is contrasted with the nine external defective images reserved for testing, the anomaly-detection model achieved a near-perfect \textbf{image-level AUROC of 0.9999585747718811} and a \textbf{image F1-score of 0.7368420958518982}. This result must be interpreted with care, since the anomalous reference set is small and externally sourced, and therefore does not constitute a consolidated industrial benchmark. Nevertheless, it provides a strong preliminary indication that the learned normality model is able to separate the collected \emph{good} bread distribution from clearly non-conforming products.
+
+The score values are also consistent with this interpretation. On the inspected \emph{good} set, the anomaly scores remain extremely low, with an average value of approximately \textbf{0.00068}, and more than \textbf{99.3\%} of the samples receiving an exact zero response. By contrast, the nine external defective samples produce substantially higher scores, ranging from approximately \textbf{0.453} to \textbf{0.751}, with an average of about \textbf{0.574}. Figures~\ref{fig:Anomaly_scores_good} and~\ref{fig:Anomaly_scores_defect3} report representative score plots for normal bread samples and for external defective samples, respectively.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{"images/Anomaly_results.png"}
+    \caption{Results of the anomaly-detection branch on the test set.}
+    \label{fig:Anomaly_results}
+\end{figure}
 
 \begin{figure}[h]
     \centering
@@ -16,7 +25,7 @@ The bread-quality branch produces image-level anomaly scores together with local
     \label{fig:Anomaly_scores_defect3}
 \end{figure}
 
-Although these defective examples are not fully representative of the industrial domain, the score separation provides a useful preliminary indication that the model reacts coherently to strong visual deviations such as burnt or mouldy surfaces.
+Although these defective examples are not fully representative of the industrial domain, the observed score separation provides a useful preliminary indication that the model reacts coherently to strong visual deviations such as burnt or mouldy surfaces.
 
 \subsection{Qualitative results}
 Representative qualitative outputs are shown in Figures~\ref{fig:Anomaly_map} and~\ref{fig:Anomaly_map_extra}. In the detailed visualization of Figure~\ref{fig:Anomaly_map}, the left image shows the input loaf crop, the middle image reports the predicted anomaly heatmap, and the right image shows the mask overlay used to highlight the regions that most strongly contributed to the final score. Figure~\ref{fig:Anomaly_map_extra} reports the same kind of evidence through the compact visualization format directly exported by the inference pipeline.
@@ -143,4 +152,9 @@ Representative qualitative outputs are shown in Figures~\ref{fig:Anomaly_map} an
     \label{fig:Anomaly_map_extra}
 \end{figure}
 
-\subsubsection{Result discussion}
+\subsubsection{Discussion}
+Taken together, the quantitative and qualitative results indicate that the anomaly-detection branch behaves consistently with the intended one-class formulation. Normal bread samples remain concentrated in a very low-score regime, whereas clearly non-conforming loaves generate substantially higher responses. In this sense, the obtained AUROC and the score distributions reported above confirm that the model has learned a stable representation of the normal baked-bread appearance within the monitored industrial scenario.
+
+The qualitative outputs further support this interpretation. In the anomalous examples shown in Figures~\ref{fig:Anomaly_map} and~\ref{fig:Anomaly_map_extra}, the heatmaps and mask overlays highlight the visually irregular regions that motivate the final anomaly score, such as burnt or mouldy areas. This makes the results easier to inspect and potentially more useful for operator-oriented monitoring, since the system not only assigns a scalar anomaly response but also provides a spatial indication of the most suspicious image regions.
+
+At the same time, the present evaluation should still be considered preliminary. The anomalous samples used in this thesis were collected from external online sources and therefore differ from the real industrial domain in terms of product appearance, acquisition conditions, and defect distribution. For this reason, the current results should not yet be interpreted as a definitive estimate of production-line anomaly-detection performance. Rather, they show that the proposed pipeline is capable of learning the normal bread appearance effectively and of reacting coherently when strong deviations are introduced. A broader evaluation on representative defective samples collected directly from the production environment would be the natural next step to consolidate these findings.

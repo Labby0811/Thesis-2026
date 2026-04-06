@@ -2,24 +2,21 @@
 
 %definisco il layout dell'abstract
 \def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
-\let\endchangemargin=\endlist 
+\let\endchangemargin=\endlist
 
 %Genero l'ambiente per l'abstract
 \newcommand\summaryname{Abstract}
 \newenvironment{Abstract}%
     {\begin{center}%
     \bfseries{\summaryname} \end{center}}
-    
+
 \begin{Abstract}
     \begin{changemargin}{1cm}{1cm}
-        This thesis presents the development of an embedded computer vision system for the real-time acquisition, detection, and analysis of bakery products, operating in an edge environment without network connectivity.\\
-        The system is based on NVIDIA Jetson Nano DK and Raspberry Pi 5 platforms and integrates an RGB-D Microsoft Kinect sensor and a Raspberry Pi Camera Module 3 Wide deployed at two acquisition sites, enabling the collection of both two-dimensional and three-dimensional data.
-        
-        The acquired images are processed by a real-time detection model for the automatic identification of bread products. Following the detection stage, descriptive features are extracted at different phases of the production process: during the dough stage, through point cloud analysis for volume estimation and geometric characterization; during the finished product stage, through the evaluation of anomalies using an anomaly detection model trained on baked bread.
-        
-        The extracted features are aggregated into a structured dataset and used to model the statistical distributions of product characteristics, enabling a quantitative description of the variations observed throughout the production process.
-        
-        The proposed approach demonstrates the effectiveness of integrating computer vision, deep learning, and 3D acquisition techniques within embedded systems for monitoring and data-driven analysis in industrial environments. 
+        This thesis presents an embedded multimodal computer-vision framework for quality monitoring in an industrial bread-production process, designed to operate in an edge environment without network connectivity. The system was deployed at two acquisition sites characterized by different sensing modalities and inspection objectives. At Site~1, an NVIDIA Jetson Nano DK coupled with an Azure Kinect acquires RGB-D data at the output of the dough-processing stage. At Site~2, a Raspberry Pi 5 equipped with a Raspberry Pi Camera Module~3 Wide acquires RGB images of baked bread during the final handling stage.
+
+        In both sites, product localization is performed through a DEIMv2-based object-detection pipeline trained from automatically labelled data. The downstream analysis then differs according to the production stage. At Site~1, the detected dough balls are segmented and converted into local 3D point clouds in order to estimate product volume through different geometric reconstruction strategies. At Site~2, the detected bread loaves are cropped and analyzed with an anomaly-detection model to assess the quality of the final baked product.
+
+        The experimental results confirm the effectiveness of the proposed framework in both scenarios. For dough-ball inspection, the rotated convex-hull method provides the highest agreement with the expected reference interval among the evaluated estimators. For baked bread inspection, the anomaly-detection branch achieved a near-perfect image-level AUROC of 0.999958 under the adopted evaluation protocol, while also yielding very low anomaly scores on normal samples and meaningful responses on anomalous examples. The corresponding anomaly maps localize the most relevant irregular regions. Overall, the thesis shows that computer vision, deep learning, and 3D sensing can be effectively integrated into embedded systems to support data-driven quality monitoring in industrial food-production environments.
         % changemargin %levalo per far tornare i margini alla dimensione corretta
     \end{changemargin}
 \end{Abstract}
