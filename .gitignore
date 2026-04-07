@@ -13,6 +13,7 @@
 *.synctex.gz
 *.toc
 *.xmpi
+compressed-images/
 
 # Generated PDFs in the project root
 

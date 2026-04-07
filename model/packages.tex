@@ -41,6 +41,28 @@
 
 %Inclusione immagini
 \usepackage{graphicx}
+\ExplSyntaxOn
+\cs_new_eq:NN \thesis_orig_includegraphics \includegraphics
+\cs_new_protected:Npn \thesis_includegraphics_resolve:nn #1#2
+  {
+    \tl_set:Nn \l_tmpa_tl {#2}
+    \bool_set_false:N \l_tmpa_bool
+    \regex_match:nnT { \A \s* " .* " \s* \Z } {#2}
+      { \bool_set_true:N \l_tmpa_bool }
+    \regex_replace_once:nnN { \A \s* " } {} \l_tmpa_tl
+    \regex_replace_once:nnN { " \s* \Z } {} \l_tmpa_tl
+    \tl_set:Nx \l_tmpb_tl { compressed-images/\tl_use:N \l_tmpa_tl }
+    \file_if_exist:nTF { \tl_use:N \l_tmpb_tl }
+      {
+        \bool_if:NTF \l_tmpa_bool
+          { \use:e { \thesis_orig_includegraphics[#1]{"\l_tmpb_tl"} } }
+          { \use:e { \thesis_orig_includegraphics[#1]{\l_tmpb_tl} } }
+      }
+      { \thesis_orig_includegraphics[#1]{#2} }
+  }
+\RenewDocumentCommand{\includegraphics}{O{} m}
+  { \thesis_includegraphics_resolve:nn {#1} {#2} }
+\ExplSyntaxOff
 
 %Impostazioni note a piè pagina
 \usepackage[stable]{footmisc}
