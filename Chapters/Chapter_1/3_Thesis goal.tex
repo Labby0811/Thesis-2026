@@ -1,6 +1,6 @@
 % !TeX root = ../../tesi.tex
 
-The objective of this thesis is to collect and analyse production data in order to evaluate the performance of the bread manufacturing process, with particular emphasis on its two main stages: dough-ball production and final bread baking.
+The objective of this thesis is to collect and analyse real production data in order to evaluate the performance of the bread manufacturing process, with particular emphasis on its two main stages: dough-ball production and final bread baking.
 To assess product quality, the proposed pipeline must first determine the position of dough units and loaves at the different stages of the process.
 To this end, \textbf{DEIMv2} \cite{huang_real-time_2026}, a state-of-the-art real-time deep learning model based on the \textbf{DETR (DEtection TRansformer)} architecture \cite{zhao_detrs_2024}, is employed for object detection.
 Once the bounding boxes have been identified, downstream analysis is carried out differently at the two acquisition sites.
@@ -17,14 +17,14 @@ Once the bounding boxes have been identified, downstream analysis is carried out
     \begin{subfigure}[t]{0.48\textwidth}
         \centering
         \vspace{0pt}
-        \includegraphics[scale=0.07, angle=-90]{images/Site1.jpg}
+        \includegraphics[width=\textwidth]{images/Site1.jpg}
         \caption{Site 1: output area where dough balls are released and collected on the blue table}
         \label{fig:site1}
     \end{subfigure}\hfill
     \begin{subfigure}[t]{0.48\textwidth}
         \centering
         \vspace{0pt}
-        \includegraphics[scale=0.14]{images/sito2_giorno.jpeg}
+        \includegraphics[width=\textwidth]{images/sito2_giorno.jpeg}
         \caption{Site 2: area in which the baked bread is removed from the tray}
         \label{fig:site2}
     \end{subfigure}

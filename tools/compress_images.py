@@ -27,6 +27,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--max-side", type=int, default=1800)
     parser.add_argument("--jpg-quality", type=int, default=80)
     parser.add_argument("--png-colors", type=int, default=256)
+    parser.add_argument(
+        "--compress-pngs",
+        action="store_true",
+        help="Allow PNG recompression. Off by default to preserve charts/plots.",
+    )
     parser.add_argument("--force", action="store_true")
     return parser.parse_args()
 
@@ -85,6 +90,10 @@ def save_best_jpeg(img: Image.Image, dst: Path, quality: int) -> int:
 def compress_image(src: Path, dst: Path, args: argparse.Namespace) -> tuple[int, int, bool]:
     original_size = src.stat().st_size
     dst.parent.mkdir(parents=True, exist_ok=True)
+
+    if src.suffix.lower() == ".png" and not args.compress_pngs:
+        shutil.copy2(src, dst)
+        return original_size, original_size, False
 
     try:
         with Image.open(src) as opened:

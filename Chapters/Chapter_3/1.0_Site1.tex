@@ -6,7 +6,7 @@ Site 1 represents the first deployment environment of the proposed vision-based 
     \begin{subfigure}[h]{0.48\textwidth}
         \centering
         %\vspace{0pt}% allinea in alto
-        \includegraphics[scale=0.06, angle=-90, trim={0 120 120 40}, clip]{images/sito1(1).jpg}
+        \includegraphics[width=\textwidth, trim={0 120 120 40}, clip]{images/sito1(1).jpg}
         \caption{Automated machine pipeline at Site 1}
         \label{fig:site1_machine}
     \end{subfigure}\hfill
@@ -28,16 +28,16 @@ To address this requirement, a vision-based acquisition setup was installed abov
 
 \begin{figure}[h]
     \centering
-    \begin{subfigure}[h]{0.48\textwidth}
+    \begin{subfigure}[h]{0.40\textwidth}
         \centering
         %\vspace{0pt}% allinea in alto
-        \includegraphics[width=\textwidth, angle=-90]{images/Jetson+Kinect.jpg}
+        \includegraphics[width=\textwidth]{images/Jetson+Kinect.jpg}
         \caption{Jetson Nano and Azure Kinect used in the Site 1 setup}
-    \end{subfigure}
-    \begin{subfigure}[h]{0.48\textwidth}
+    \end{subfigure}\hfill
+    \begin{subfigure}[h]{0.40\textwidth}
         \centering
         %\vspace{0pt}% allinea in alto
-        \includegraphics[width=\textwidth, angle=-90]{images/Kinect_on_site1.jpg}
+        \includegraphics[width=\textwidth]{images/Kinect_on_site1.jpg}
         \caption{Azure Kinect mounted above the machine output area}
     \end{subfigure}
     \caption{Hardware configuration at Site 1, showing the Jetson Nano and the Azure Kinect mounted above the machine output area for RGB-D acquisition of the dough balls shown in Figure~\ref{fig:site1_output}}
@@ -48,7 +48,7 @@ To address this requirement, a vision-based acquisition setup was installed abov
 During the offline phase, the system operates in data acquisition mode. In this configuration, the Azure Kinect continuously captures synchronized RGB and depth frames. A motion detection algorithm is executed on the Jetson Nano to identify pixel variations in the scene corresponding to the passage of dough balls under the camera.
 
 The motion detection module serves exclusively as a trigger mechanism for dataset collection. When motion is detected within a predefined and configurable region of interest (ROI), the corresponding RGB-D frame is stored. In this setup, the ROI was defined so as to cover the entire machine output area (shown in Figure~\ref{fig:site1_output}).
-\newpage
+
 This approach ensures that:
 \begin{itemize}
     \item only relevant frames containing dough balls are acquired;
