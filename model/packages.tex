@@ -6,6 +6,7 @@
 
 %Codifica
 \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 
 %Lingua, sostituire italian con english nel caso in cui la tesi sia scritta in inglese
 \usepackage[english]{babel}
@@ -52,8 +53,16 @@
 \usepackage{xcolor}
 \usepackage{colortbl}
 
-%Crea link ipertestuali
-\usepackage[hidelinks]{hyperref}
+% PDF/A metadata and unicode maps for searchable/copyable text.
+% pdfx automatically picks up metadata from tesi.xmpdata.
+\input{glyphtounicode}
+\pdfgentounicode=1
+\usepackage[a-2u]{pdfx}
+\hypersetup{
+  hidelinks,
+  pdfdisplaydoctitle=true,
+  pdflang={en-US}
+}
 
 %Formattazione url
 \usepackage{url}

@@ -12,6 +12,7 @@
 *.run.xml
 *.synctex.gz
 *.toc
+*.xmpi
 
 # Generated PDFs in the project root
 
