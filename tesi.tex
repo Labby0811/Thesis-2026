@@ -7,9 +7,9 @@
 %%%%%%%%%%%%%%%% FRONTESPIZIO
 \input{start-end/frontespizio}
 
-%%%%%%%%%%%%%%%% RINGRAZIAMENTI
+%%%%%%%%%%%%%%%% CITAZIONE
 \clearpage{\pagestyle{plain}\cleardoublepage}
-\input{start-end/thanks}
+\input{start-end/quote}
 
 %%%%%%%%%%%%%%%% ABSTRACT
 \clearpage{\pagestyle{plain}\cleardoublepage}
@@ -42,11 +42,18 @@
 
 
 
+%%%%%%%%%%%%%%%% RINGRAZIAMENTI
+\clearpage{\pagestyle{plain}\cleardoublepage}
+\begingroup
+\pagestyle{plain}
+\input{start-end/thanks}
+
 %%%%%%%%%%%%%%%% BIBLIOGRAFIA
 \clearpage{\pagestyle{plain}\cleardoublepage}
 {\small
 \bibliographystyle{model/biblio_style}
 \bibliography{start-end/reference}
 }
+\endgroup
 
 \end{document}
